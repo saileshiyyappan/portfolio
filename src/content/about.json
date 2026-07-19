@@ -1,0 +1,62 @@
+{
+  "title": "Systems & Product Engineering",
+  "subtitle": "About",
+  "description": "Sailesh Iyyappan Jr. is a Systems Product Engineer and Technical Founder focused on building patent-oriented products and intelligent technology systems by combining embedded hardware, IoT, AI-assisted software, and applied research. His work spans wearable health technology, engineering collaboration platforms, embedded systems, product prototyping, and innovation-driven system design. He focuses on designing complete technology systems from concept and architecture through development, testing, documentation, and product validation.",
+  "focusAreas": [
+    {
+      "id": "product-engineering",
+      "icon": "Box",
+      "title": "Product Engineering",
+      "description": "Designing and building complete products from concept through prototyping, testing, validation, and deployment."
+    },
+    {
+      "id": "embedded-systems",
+      "icon": "Cpu",
+      "title": "Embedded Systems",
+      "description": "Developing embedded hardware and firmware using ESP32 platforms, sensors, communication modules, and peripheral interfaces."
+    },
+    {
+      "id": "iot",
+      "icon": "Wifi",
+      "title": "Internet of Things (IoT)",
+      "description": " Building connected embedded systems using BLE, Wi-Fi, GSM, GPS, and cloud-ready communication architectures."
+    },
+    {
+      "id": "system-architecture",
+      "icon": "Boxes",
+      "title": "System Architecture",
+      "description": "Designing complete engineering ecosystems by integrating embedded hardware, firmware, software, mobile applications, and modular workflows."
+    },
+    {
+      "id": "ai-assisted-systems",
+      "icon": "Brain",
+      "title": "AI-Assisted Systems",
+      "description": "Exploring AI-assisted software, intelligent workflows, engineering automation, and machine learning integration into real-world products."
+    },
+    {
+      "id": "research-engineering",
+      "icon": "Microscope",
+      "title": "Research Engineering",
+      "description": "Conducting engineering research through literature review, experimentation, technical validation, documentation, and publication preparation."
+    },
+    {
+      "id": "patent-oriented-development",
+      "icon": "Lightbulb",
+      "title": "Patent-Oriented Development",
+      "description": "Developing innovative engineering concepts with potential intellectual property value through technical design, documentation, and invention-oriented product development."
+    },
+    {
+      "id": "full-stack-platforms",
+      "icon": "Code",
+      "title": "Full Stack Platforms",
+      "description": "Developing engineering software platforms, dashboards, APIs, and web applications that complement embedded hardware systems."
+    }
+  ],
+  "stats": [
+    { "label": "Engineering Projects", "value": "10+" },
+    { "label": "Hardware Prototypes", "value": "8+" },
+    { "label": "Software Platforms", "value": "2+" },
+    { "label": "Patent-Oriented Projects", "value": "+3" },
+    { "label": "Research & Publications", "value": "Active" }
+  ]
+}

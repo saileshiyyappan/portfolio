@@ -1,0 +1,16 @@
+{
+  "videos": [
+    {
+      "title": "Thermoelectric Mini Fridge Complete Demonstration",
+      "description": "Complete demonstration of the 45-liter air-cooled thermoelectric refrigerator showcasing the overall mechanical design, dual Peltier cooling system, internal compartment, electrical integration, and working prototype.",
+      "thumbnail": {
+        "src": "/images/fridge/FRIDGE_COVER IMAGE.jpg",
+        "caption": "Thermoelectric Mini Fridge Showcase",
+        "type": "image"
+      },
+      "duration": "",
+      "category": "Project Demo",
+      "youtubeUrl": ""
+    }
+  ]
+}

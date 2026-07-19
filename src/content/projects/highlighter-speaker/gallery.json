@@ -1,0 +1,116 @@
+{
+  "coverImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476995/COVER_IMAGE_rrovmw.webp",
+    "caption": "Highlighter Speaker Product Cover",
+    "type": "image"
+  },
+
+  "heroImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476997/HIGHLIGHTER_IMG_001_ajpfyo.webp",
+    "caption": "Highlighter Speaker MVP Prototype",
+    "type": "image"
+  },
+
+  "galleryImages": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477018/PATENT_IMAGE_FRONT_gt8ker.webp",
+      "caption": "Highlighter Speaker Patent Front View",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477014/PATENT_IMAGE_BACK_it6ztv.webp",
+      "caption": "Highlighter Speaker Patent Back View",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477019/PATENT_IMAGE_LEFT_SIDE_h0ootq.webp",
+      "caption": "Highlighter Speaker Patent Left Side",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477019/PATENT_IMAGE_RIGHT_SIDE_qbtpsd.webp",
+      "caption": "Highlighter Speaker Patent Right Side",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477019/PATENT_IMAGE_TOP_VIEW_h8yztc.webp",
+      "caption": "Highlighter Speaker Patent Top View",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477016/PATENT_IMAGE_BOTTOM_VIEW_qx2buj.webp",
+      "caption": "Highlighter Speaker Patent Bottom View",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477016/PATENT_IMAGE_CAP_OPENED_VIEW_ryybtn.webp",
+      "caption": "Highlighter Speaker Patent Cap Opened",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477017/PATENT_IMAGE_EXPLODED_VIEW_yi4p5u.webp",
+      "caption": "Highlighter Speaker Patent Exploded View",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477018/PATENT_IMAGE_FRONT_INTERNAL_COMPONENT_ARRANGEMENT_VIEW_ffdvmp.webp",
+      "caption": "Highlighter Speaker Front Internal Components",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477014/PATENT_IMAGE_BACK_INTERNAL_COMPONENT_ARRAGEMENT_VIEW_wyxhpv.webp",
+      "caption": "Highlighter Speaker Back Internal Components",
+      "type": "image"
+    }
+  ],
+
+  "architectureImages": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476997/HIGHLIGHTER_IMG_001_ajpfyo.webp",
+      "caption": "Highlighter Speaker Prototype 1",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477003/HIGHLIGHTER_IMG_001_WITH_STATIONARY_vyx8ha.webp",
+      "caption": "Highlighter Speaker Prototype 2",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477003/HIGHLIGHTER_IMG_001_WITH_TWS_mybeml.webp",
+      "caption": "Highlighter Speaker Prototype 3",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477005/HIGHLIGHTER_IMG_002_fh0ggv.webp",
+      "caption": "Highlighter Speaker Prototype 4",
+      "type": "image"
+    }
+  ],
+
+  "flowcharts": [],
+
+  "screenshots": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477013/HIGHLIGHTER_IMG_002_WITH_STATIONARY_rjaxun.webp",
+      "caption": "Highlighter Speaker Prototype 5",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477011/HIGHLIGHTER_IMG_002_WITH_TWS_uzofty.webp",
+      "caption": "Highlighter Speaker Prototype 6",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477010/HIGHLIGHTER_IMG_003_p54b8y.webp",
+      "caption": "Highlighter Speaker Prototype 7",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477013/HIGHLIGHTER_IMG_004_wiyuye.webp",
+      "caption": "Highlighter Speaker Prototype 8",
+      "type": "image"
+    }
+  ],
+
+  "prototypeImages": []
+}

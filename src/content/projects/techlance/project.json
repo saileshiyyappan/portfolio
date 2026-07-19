@@ -1,0 +1,179 @@
+{
+  "id": "techlance",
+  "slug": "techlance",
+  "title": "TECHLANCE",
+  "subtitle": "AI-Powered Engineering Collaboration Ecosystem",
+  "category": "AI-Powered Engineering Platform",
+  "status": "active",
+  "year": "2025",
+  "shortDescription": "Techlance is an AI-powered engineering collaboration platform that brings innovators, engineers, researchers, and suppliers together within a unified ecosystem. It combines project intelligence, AI-assisted decision making, collaboration tools, and blockchain-based trust mechanisms to transform engineering ideas into real-world products.",
+
+  "fullDescription": "TECHLANCE is a full-stack AI-powered engineering collaboration ecosystem developed to address one of the biggest challenges faced by engineering students, innovators, startups, freelancers, and technical professionals—the absence of a single platform that supports the complete engineering lifecycle. Existing platforms solve only isolated problems such as freelancing, project management, hardware sourcing, code hosting, or communication. Techlance integrates these fragmented workflows into one intelligent ecosystem. The platform enables users to submit engineering ideas, receive AI-powered project analysis, identify technical risks, evaluate innovation potential, predict project success, estimate development cost, match with suitable collaborators, source hardware components, communicate securely, and manage complete project execution from concept to delivery. By combining artificial intelligence, machine learning, cloud technologies, and blockchain-based trust systems, Techlance provides an intelligent engineering workspace capable of assisting technical teams throughout the entire product development lifecycle while reducing project failures and improving collaboration quality.",
+
+  "problemStatement": "Engineering innovation is often slowed by fragmented ecosystems where idea validation, technical collaboration, hardware procurement, project management, trust verification, and execution are distributed across multiple independent platforms. Students, researchers, startups, and freelance engineers frequently struggle to identify suitable collaborators, estimate project feasibility, evaluate technical risks, verify ownership of ideas, and manage engineering projects efficiently. The absence of an integrated engineering ecosystem results in duplicated effort, poor collaboration, increased project failure rates, limited visibility into project health, and reduced innovation productivity.",
+
+  "solution": "Techlance introduces a unified AI-powered engineering ecosystem that integrates project creation, AI-driven engineering intelligence, smart collaborator matching, supplier marketplace, blockchain-based trust verification, and collaborative project execution into a single platform. The system leverages multiple AI models to evaluate project novelty, estimate success probability, detect risks, recommend suitable engineering teams, estimate budgets, monitor project progress, and provide intelligent recovery recommendations. By combining these capabilities with real-time collaboration and secure blockchain-backed ownership mechanisms, Techlance transforms isolated engineering workflows into a connected, intelligent, and scalable development ecosystem.",
+
+  "architecture": [
+    "Next.js and React frontend providing responsive multi-role dashboards",
+    "Node.js and Express backend exposing modular REST APIs",
+    "Firebase Authentication for secure user and role management",
+    "Cloud Firestore for real-time project, collaboration, AI, and marketplace data",
+    "Firebase Storage for media, project documents, and user assets",
+    "Gemini API for intelligent project understanding and engineering assistance",
+    "Vertex AI and Vertex Embeddings for machine learning workflows and semantic analysis",
+    "AI Orchestrator coordinating multiple engineering intelligence models",
+    "Polygon blockchain integration for idea ownership proof, NDA verification, escrow concepts, and reputation systems"
+  ],
+
+  "innovation": [
+    "Unified engineering collaboration ecosystem combining AI, cloud, marketplace, and blockchain technologies",
+    "Multi-model AI orchestration framework integrating Risk AI, Trust AI, Progress AI, Success Prediction, Fraud Detection, Semantic Search, Dynamic Pricing, and Actor Matching",
+    "AI-assisted engineering project intelligence that evaluates feasibility before development begins",
+    "Engineering-specific collaborator recommendation engine based on technical skills, experience, availability, and AI compatibility",
+    "Integrated supplier marketplace enabling direct hardware procurement alongside software collaboration",
+    "Blockchain-backed trust architecture supporting idea ownership verification, contribution tracking, reputation management, and future milestone escrow mechanisms",
+    "Semantic engineering search using embeddings for discovering related ideas, projects, and technical experts",
+    "Scalable modular architecture supporting future enterprise deployment and intelligent engineering ecosystems"
+  ],
+
+  "futureWork": [
+    "Native Android and iOS mobile applications",
+    "Production deployment with enterprise-grade scalability and monitoring",
+    "Expansion of AI models using custom engineering datasets for improved prediction accuracy",
+    "Real-time collaborative whiteboard and engineering documentation tools",
+    "Voice-assisted engineering AI agent for project planning and technical consultation",
+    "Advanced blockchain implementation including decentralized reputation, milestone escrow, and immutable contribution tracking",
+    "Integration with CAD software, simulation platforms, Git repositories, and IoT development environments",
+    "Support for universities, research laboratories, startup incubators, innovation centers, and enterprise engineering organizations",
+    "Internationalization with multilingual engineering collaboration support",
+    "Comprehensive analytics dashboard providing engineering productivity, collaboration, and project performance insights"
+  ],
+
+  "technologies": [
+    "React.js",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Express.js",
+    "Firebase Authentication",
+    "Cloud Firestore",
+    "Firebase Storage",
+    "Gemini API",
+    "Vertex AI",
+    "Vertex Embeddings",
+    "Vertex AutoML",
+    "Google Cloud Platform",
+    "Machine Learning",
+    "Cosine Similarity",
+    "REST APIs",
+    "Blockchain",
+    "Polygon Amoy Testnet",
+    "Solidity",
+    "Hardhat",
+    "ethers.js",
+    "Git",
+    "GitHub"
+  ],
+
+  "tags": [
+    "AI",
+    "Machine Learning",
+    "Engineering Platform",
+    "Collaboration",
+    "Full Stack",
+    "Firebase",
+    "Vertex AI",
+    "Gemini",
+    "Blockchain",
+    "Startup",
+    "Research",
+    "SaaS",
+    "Engineering Intelligence",
+    "Innovation",
+    "Marketplace"
+  ],
+
+  "color": "from-neon-purple to-neon-pink",
+
+  "roles": [
+    "Founder",
+    "System Architect",
+    "Full Stack Developer",
+    "Backend Developer",
+    "Frontend Developer",
+    "AI Engineer",
+    "ML Engineer",
+    "Product Designer",
+    "Technical Researcher",
+    "Project Lead"
+  ],
+
+  "metrics": [
+    {
+      "label": "Project Stage",
+      "value": "Working Prototype"
+    },
+    {
+      "label": "AI Modules",
+      "value": "10+"
+    },
+    {
+      "label": "User Roles",
+      "value": "3"
+    },
+    {
+      "label": "Platform",
+      "value": "End-to-End Ecosystem"
+    }
+  ],
+
+  "links": [
+    {
+      "label": "Live Platform",
+      "url": "#",
+      "icon": "Globe"
+    },
+    {
+      "label": "GitHub",
+      "url": "#",
+      "icon": "Github"
+    },
+    {
+      "label": "Documentation",
+      "url": "#",
+      "icon": "FileText"
+    }
+  ],
+
+  "timeline": {
+    "startDate": "2025-01-01",
+    "milestones": [
+      {
+        "date": "2025-01",
+        "title": "Problem Identification & Concept Formation",
+        "description": "Identified the fragmented nature of engineering collaboration platforms and defined the vision for an AI-powered engineering ecosystem integrating collaboration, AI intelligence, marketplace services, and trust mechanisms."
+      },
+      {
+        "date": "2025-03",
+        "title": "System Architecture Design",
+        "description": "Designed the complete multi-layer architecture including frontend, backend, AI orchestration, Firebase cloud infrastructure, blockchain integration strategy, and modular engineering workflows."
+      },
+      {
+        "date": "2025-05",
+        "title": "Core Platform Development",
+        "description": "Developed responsive frontend interfaces, backend APIs, authentication, project management modules, supplier marketplace, user role system, and cloud database integration."
+      },
+      {
+        "date": "2025-06",
+        "title": "AI & Machine Learning Integration",
+        "description": "Integrated Gemini API, Vertex AI, semantic embeddings, and multiple engineering intelligence models including risk analysis, progress prediction, trust evaluation, actor matching, novelty detection, and project success prediction."
+      },
+      {
+        "date": "2025-06",
+        "title": "Working Prototype & Field Testing Preparation",
+        "description": "Completed an end-to-end working prototype integrating frontend, backend, AI systems, Firebase services, and blockchain concepts. The platform is currently being prepared for real-world field testing, user validation, and future startup development."
+      }
+    ]
+  }
+}

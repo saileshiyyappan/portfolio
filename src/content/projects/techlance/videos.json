@@ -1,0 +1,16 @@
+{
+  "videos": [
+    {
+      "title": "TECHLANCE Platform Demo",
+      "description": "Full platform walkthrough showing AI workflow automation, talent matching, and real-time collaboration.",
+      "thumbnail": {
+        "src": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&q=80",
+        "caption": "TECHLANCE Platform Demo",
+        "type": "image"
+      },
+      "duration": "5:12",
+      "category": "Product Demo",
+      "youtubeUrl": ""
+    }
+  ]
+}

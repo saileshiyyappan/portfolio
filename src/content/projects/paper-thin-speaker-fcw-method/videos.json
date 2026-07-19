@@ -1,0 +1,88 @@
+{
+  "videos": [
+    {
+      "title": "Paper Thin Speaker Without Diaphragm Test",
+      "description": "Experimental testing of the Flat Copper Winding (FCW) speaker prototype without the diaphragm to observe direct electromagnetic coil vibration and validate the proof-of-concept.",
+      "thumbnail": {
+        "src": "/images/paper speaker/PAPER_SPEAKER_TESTING WITHOUT DIAPHRAGM .jpg",
+        "caption": "Speaker Testing Without Diaphragm",
+        "type": "image"
+      },
+      "duration": "",
+      "category": "Component Testing",
+      "youtubeUrl": ""
+    },
+    {
+      "title": "Flat Copper Winding Complete Demonstration",
+      "description": "Complete demonstration of the Flat Copper Winding (FCW) architecture, highlighting the electromagnetic working principle and overall speaker prototype.",
+      "thumbnail": {
+        "src": "/images/paper speaker/PAPER_SPEAKER_.jpg",
+        "caption": "Flat Copper Winding Demonstration",
+        "type": "image"
+      },
+      "duration": "",
+      "category": "Project Demo",
+      "youtubeUrl": ""
+    },
+    {
+      "title": "Flat Copper Winding Fabrication",
+      "description": "Demonstration of manually winding the Flat Copper Winding (FCW) coil used as the primary electromagnetic actuator of the paper-thin speaker.",
+      "thumbnail": {
+        "src": "/images/paper speaker/PAPER_SPEAKER_COPPER WINEDING_002.jpg",
+        "caption": "Flat Copper Winding Fabrication",
+        "type": "image"
+      },
+      "duration": "",
+      "category": "Manufacturing",
+      "youtubeUrl": ""
+    },
+    {
+      "title": "Paper Thin Speaker Complete Setup",
+      "description": "Complete overview of the assembled paper-thin speaker prototype including the FCW coil, diaphragm, terminals, magnetic assembly, and testing setup.",
+      "thumbnail": {
+        "src": "/images/paper speaker/PAPER_SPEAKER_COVER IMAGE.jpg",
+        "caption": "Paper Thin Speaker Complete Setup",
+        "type": "image"
+      },
+      "duration": "",
+      "category": "Project Demo",
+      "youtubeUrl": ""
+    },
+    {
+      "title": "Paper Thin Speaker Dimension Measurement",
+      "description": "Measurement and inspection of the physical dimensions, thickness, and compact structure of the paper-thin speaker prototype.",
+      "thumbnail": {
+        "src": "/images/paper speaker/PAPER_SPEAKER_THINKNESS OF THE SQUARE SPEAKER.jpg",
+        "caption": "Paper Thin Speaker Size Measurement",
+        "type": "image"
+      },
+      "duration": "",
+      "category": "Engineering Analysis",
+      "youtubeUrl": ""
+    },
+    {
+      "title": "Paper Thin Speaker Performance Test",
+      "description": "Functional testing of the completed Flat Copper Winding speaker prototype to evaluate audible sound generation and overall operation.",
+      "thumbnail": {
+        "src": "/images/paper speaker/PAPER_SPEAKER_VERSION 2 TESTING AND COMPLETE PROJECT ON TABLE.jpg",
+        "caption": "Paper Thin Speaker Performance Test",
+        "type": "image"
+      },
+      "duration": "",
+      "category": "Prototype Testing",
+      "youtubeUrl": ""
+    },
+    {
+      "title": "Paper Thin Speaker With Diaphragm Test",
+      "description": "Demonstration of the completed speaker operating with the diaphragm installed, validating the full Flat Copper Winding speaker architecture.",
+      "thumbnail": {
+        "src": "/images/paper speaker/PAPER_SPEAKER_ASSEMBLED DIAPHRAGM.jpg",
+        "caption": "Paper Thin Speaker With Diaphragm",
+        "type": "image"
+      },
+      "duration": "",
+      "category": "Project Demo",
+      "youtubeUrl": ""
+    }
+  ]
+}

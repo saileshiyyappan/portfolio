@@ -1,0 +1,56 @@
+[
+  {
+    "id": "major-projects",
+    "title": "Engineering Projects",
+    "value": "10+",
+    "description": "Tier-1 and Tier-2 engineering projects spanning wearable healthcare, AI platforms, embedded systems, consumer electronics, thermal engineering, and industrial automation.",
+    "icon": "Box",
+    "color": "from-neon-blue to-neon-cyan",
+    "category": "Engineering Portfolio"
+  },
+  {
+    "id": "hardware-prototypes",
+    "title": "Hardware Prototypes",
+    "value": "8+",
+    "description": "Embedded hardware prototypes designed, assembled, tested, and validated across healthcare, consumer electronics, cooling systems, audio engineering, and automation.",
+    "icon": "Cpu",
+    "color": "from-neon-cyan to-neon-teal",
+    "category": "Engineering Portfolio"
+  },
+  {
+    "id": "software-platforms",
+    "title": "Software Systems",
+    "value": "2+",
+    "description": "Full-stack software platforms, embedded firmware, AI-assisted applications, dashboards, and real-time engineering tools developed alongside hardware systems.",
+    "icon": "Layers",
+    "color": "from-neon-teal to-neon-green",
+    "category": "Software Engineering"
+  },
+  {
+    "id": "patent-work",
+    "title": "Patent-Oriented Projects",
+    "value": "3+",
+    "description": "Novel engineering concepts under patent-oriented development, including wearable health systems, consumer hardware, and acoustic engineering innovations.",
+    "icon": "Lightbulb",
+    "color": "from-neon-green to-neon-blue",
+    "category": "Innovation"
+  },
+  {
+    "id": "research-work",
+    "title": "Research & Publications",
+    "value": "Active",
+    "description": "Research focused on embedded systems, wearable healthcare, AI-assisted engineering, IoT architectures, and product-oriented innovation with papers under preparation.",
+    "icon": "Microscope",
+    "color": "from-neon-purple to-neon-pink",
+    "category": "Research"
+  },
+  {
+    "id": "systems-completed",
+    "title": "End-to-End Development",
+    "value": "Concept to Prototype",
+    "description": "Projects are developed through complete engineering workflows including research, architecture, hardware design, firmware, software, testing, documentation, and prototype validation.",
+    "icon": "Boxes",
+    "color": "from-neon-pink to-neon-orange",
+    "category": "Engineering Workflow"
+  }
+]

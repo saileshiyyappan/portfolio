@@ -1,0 +1,50 @@
+{
+  "coverImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477097/W_FRIDGE_COVER_IMAGE_lzvoqe.webp",
+    "caption": "Water Based Cooling Fridge Project Cover",
+    "type": "image"
+  },
+
+  "heroImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477089/W_FRIDGE_001_z2u9lm.webp",
+    "caption": "Water Based Cooling Fridge MVP Prototype",
+    "type": "image"
+  },
+
+  "galleryImages": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477091/W_FRIDGE_002_ayigre.webp",
+      "caption": "Water Based Cooling Fridge Prototype 1",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477092/W_FRIDGE_003_mv9byy.webp",
+      "caption": "Water Based Cooling Fridge Prototype 2",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477092/W_FRIDGE_004_pc212c.webp",
+      "caption": "Water Based Cooling Fridge Prototype 3",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477093/W_FRIDGE_005_gmrpkm.webp",
+      "caption": "Water Based Cooling Fridge Prototype 4",
+      "type": "image"
+    }
+  ],
+
+  "architectureImages": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477098/W_FRIDGE_BOTTOM_PIC_a54vwq.webp",
+      "caption": "Water Based Cooling Fridge Bottom Assembly",
+      "type": "image"
+    }
+  ],
+
+  "flowcharts": [],
+
+  "screenshots": [],
+
+  "prototypeImages": []
+}

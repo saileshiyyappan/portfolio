@@ -1,0 +1,132 @@
+[
+  {
+    "id": "mowaers-demo",
+    "title": "MOWAERS / BAND Project Overview",
+    "description": "Overview of the modular wearable health monitoring system, embedded architecture, detachable sensor ecosystem, and emergency response framework.",
+    "thumbnail": {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476795/PATENT_IMG_FRONT_VIEW_nuup6p.webp",
+      "caption": "MOWAERS Overview",
+      "type": "image"
+    },
+    "duration": "Coming Soon",
+    "category": "Health-Tech",
+    "projectId": "mowaers-band"
+  },
+  {
+    "id": "techlance-demo",
+    "title": "TECHLANCE Platform Overview",
+    "description": "Introduction to the AI-powered engineering ecosystem for project management, collaboration, and intelligent engineering workflows.",
+    "thumbnail": {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477085/Screenshot_2026-04-28_230510_rhozme.webp",
+      "caption": "TECHLANCE Platform",
+      "type": "image"
+    },
+    "duration": "Coming Soon",
+    "category": "AI Platform",
+    "projectId": "techlance"
+  },
+  {
+    "id": "highlighter-demo",
+    "title": "Highlighter Bluetooth Speaker",
+    "description": "Patent-oriented Bluetooth speaker product showcasing industrial design, internal architecture, and prototype development.",
+    "thumbnail": {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476995/COVER_IMAGE_rrovmw.webp",
+      "caption": "Highlighter Speaker",
+      "type": "image"
+    },
+    "duration": "Coming Soon",
+    "category": "Consumer Hardware",
+    "projectId": "highlighter-speaker"
+  },
+  {
+    "id": "paper-speaker-demo",
+    "title": "Paper Thin Speaker Demonstration",
+    "description": "Experimental Flat Copper Winding (FCW) speaker prototype demonstrating ultra-thin electromagnetic speaker architecture.",
+    "thumbnail": {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477063/PAPER_SPEAKER_COVER_IMAGE_xkbpue.webp",
+      "caption": "Paper Speaker",
+      "type": "image"
+    },
+    "duration": "Multiple Videos",
+    "category": "Research",
+    "projectId": "paper-thin-speaker-fcw-method"
+  },
+  {
+    "id": "eip-demo",
+    "title": "Eco Industrial Park Prototype",
+    "description": "Automatic PCB dismantling concept for sustainable electronic waste recovery and recycling automation.",
+    "thumbnail": {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476920/AUTOMATIC__PCB_MISMANTLE_COVER_IMAGE_tpqvgf.webp",
+      "caption": "Eco Industrial Park",
+      "type": "image"
+    },
+    "duration": "Coming Soon",
+    "category": "Automation",
+    "projectId": "eip"
+  },
+  {
+    "id": "water-fridge-demo",
+    "title": "Water Based Cooling Fridge",
+    "description": "Improved thermoelectric refrigerator demonstrating water-assisted heat transfer for significantly better cooling performance.",
+    "thumbnail": {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477097/W_FRIDGE_COVER_IMAGE_lzvoqe.webp",
+      "caption": "Water Cooling Fridge",
+      "type": "image"
+    },
+    "duration": "2 Videos",
+    "category": "Thermal Engineering",
+    "projectId": "water-based-cooling-fridge"
+  },
+  {
+    "id": "fridge-demo",
+    "title": "Thermoelectric Mini Fridge",
+    "description": "45-liter dual-Peltier refrigerator prototype using forced-air cooling and thermoelectric refrigeration principles.",
+    "thumbnail": {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477377/FRIDGE_COVER_IMAGE_opzwrw.webp",
+      "caption": "Mini Fridge",
+      "type": "image"
+    },
+    "duration": "1 Video",
+    "category": "Thermal Engineering",
+    "projectId": "fridge"
+  },
+  {
+    "id": "cnc-demo",
+    "title": "Mini CNC Plotter",
+    "description": "DVD-drive-based CNC plotter capable of drawing G-code generated sketches and images using recycled hardware components.",
+    "thumbnail": {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476899/CNC_PLOTTER_COVER_IMAGE_kyp1dq.webp",
+      "caption": "Mini CNC Plotter",
+      "type": "image"
+    },
+    "duration": "3 Videos",
+    "category": "Automation",
+    "projectId": "cnc-plotter"
+  },
+  {
+    "id": "ble-bug-demo",
+    "title": "Bluetooth Bug Device",
+    "description": "Compact Bluetooth audio transmission project demonstrating wireless embedded communication concepts.",
+    "thumbnail": {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476796/PATENT_IMG_SIDE_VIEW_grbymt.webp",
+      "caption": "BLE Bug",
+      "type": "image"
+    },
+    "duration": "Coming Soon",
+    "category": "Embedded Systems",
+    "projectId": "ble-bug"
+  },
+  {
+    "id": "mp3-speaker-demo",
+    "title": "Portable MP3 Speaker",
+    "description": "Compact portable MP3 speaker integrating Bluetooth audio playback, embedded electronics, and custom enclosure design.",
+    "thumbnail": {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476997/HIGHLIGHTER_IMG_001_ajpfyo.webp",
+      "caption": "MP3 Speaker",
+      "type": "image"
+    },
+    "duration": "Coming Soon",
+    "category": "Consumer Electronics",
+    "projectId": "mp3-speaker"
+  }
+]

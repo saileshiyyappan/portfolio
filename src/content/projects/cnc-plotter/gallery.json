@@ -1,0 +1,60 @@
+{
+  "coverImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476899/CNC_PLOTTER_COVER_IMAGE_kyp1dq.webp",
+    "caption": "Mini CNC Plotter Project Cover",
+    "type": "image"
+  },
+
+  "heroImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476901/IMG-20240106-WA0014_sv53m7.webp",
+    "caption": "Mini CNC Plotter MVP Prototype",
+    "type": "image"
+  },
+
+  "galleryImages": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476899/IMG-20231231-WA0011_d7aks4.webp",
+      "caption": "Mini CNC Plotter Prototype 1",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476906/SPARE_OLD_DVD_PLAYER_vlnd29.webp",
+      "caption": "Mini CNC Plotter Development 1",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476904/IRON_MAN_SKETCH_dbsxls.webp",
+      "caption": "Mini CNC Plotter Output Sample 1",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476898/IMAGE_GCODE_xhvkki.webp",
+      "caption": "Mini CNC Plotter G-Code Preview",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476896/GCODE_x4kbgv.webp",
+      "caption": "Mini CNC Plotter G-Code Program",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476904/SOFTWARE_IRON_MAN_GCODE_b66jlb.webp",
+      "caption": "Mini CNC Plotter Software Output",
+      "type": "image"
+    }
+  ],
+
+  "architectureImages": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476901/INK_SOFTWARE_zglmxz.webp",
+      "caption": "Mini CNC Plotter Software Interface",
+      "type": "image"
+    }
+  ],
+
+  "flowcharts": [],
+
+  "screenshots": [],
+
+  "prototypeImages": []
+}

@@ -1,0 +1,160 @@
+{
+  "id": "ble-bug",
+  "slug": "ble-bug",
+  "title": "BlueTooth mini Bug",
+  "subtitle": "Ultra-Low Profile Dynamic Speaker Architecture Research",
+  "category": "Embedded Electronics Research Project",
+  "status": "active",
+  "year": "2026",
+
+  "shortDescription": "An experimental ultra-thin dynamic speaker architecture developed using the Flat Copper Winding (FCW) method to create lightweight, shape-flexible, and low-cost speakers for future smartphones, wearables, laptops, IoT devices, and embedded electronics.",
+
+  "fullDescription": "Paper Thin Speaker - FCW Method is an independent embedded electronics research project focused on redesigning the conventional dynamic speaker into an ultra-low profile architecture without changing its fundamental electromagnetic working principle. Instead of using a cylindrical voice coil and bulky mechanical structure, this research introduces a Flat Copper Winding (FCW) approach where the copper coil is arranged as a flat multi-layer winding integrated with an ultra-thin diaphragm, lightweight suspension, and thin magnetic assembly. The primary objective is not only to reduce speaker thickness but also to create a highly adaptable speaker architecture that can be manufactured in different shapes and dimensions according to available space inside electronic products. During the initial prototype phase, a completely hand-built speaker using paper, plastic tape, and a manually wound FCW coil successfully generated audible sound using an external dynamic speaker magnet, proving that the proposed electromagnetic architecture is feasible even without industrial manufacturing methods. The long-term vision of this research is to develop a practical speaker platform that enables thinner consumer electronics, simplified manufacturing, reduced material usage, improved internal space utilization, and flexible integration into products where conventional speaker modules are difficult to accommodate.",
+
+  "problemStatement": "Modern dynamic speakers have remained mechanically similar for decades and generally require bulky frames, cylindrical voice coils, dedicated speaker chambers, and fixed geometries. Although current speakers provide excellent sound quality, they consume valuable internal volume inside smartphones, laptops, wearables, IoT devices, and compact embedded products. This limits battery capacity, cooling systems, camera placement, and industrial design flexibility. Existing ultra-thin speaker technologies such as piezoelectric films, electrostatic speakers, MEMS speakers, and thin-film acoustic panels often require specialized materials, cleanroom fabrication, high-voltage operation, or complex manufacturing processes. There is a need for a simpler ultra-low profile dynamic speaker architecture that preserves conventional electromagnetic operation while significantly reducing thickness, manufacturing complexity, and integration constraints.",
+
+  "solution": "This project proposes the Flat Copper Winding (FCW) Speaker Architecture, an experimental ultra-low profile dynamic speaker concept built using four primary functional layers: an ultra-thin diaphragm, a Flat Copper Winding (FCW) coil, a lightweight suspension (spider), and a thin magnetic assembly. Unlike conventional cylindrical voice coils, the FCW is fabricated as a flat multi-layer winding that directly drives the diaphragm using the same Lorentz force principle employed in traditional speakers. The architecture allows the entire speaker module to remain extremely thin while maintaining compatibility with conventional audio amplifiers. The concept also enables the speaker to be fabricated in multiple geometries such as square, rectangular, strip, circular, curved, or custom shapes to fit unused cavities inside electronic devices. Early proof-of-concept prototypes successfully demonstrated audible sound generation using handmade materials, validating the feasibility of the architecture and establishing the foundation for future industrial optimization.",
+
+  "architecture": [
+    "Ultra-low profile four-layer dynamic speaker architecture",
+    "Lightweight diaphragm designed for full-surface vibration",
+    "Flat Copper Winding (FCW) multi-layer electromagnetic coil",
+    "Thin compliant suspension (Spider) for controlled diaphragm movement",
+    "Replaceable magnetic assembly supporting different magnet configurations",
+    "Shape-independent architecture allowing square, rectangular, strip, circular and custom speaker designs",
+    "Conventional amplifier compatibility using electromagnetic Lorentz-force actuation"
+  ],
+
+  "innovation": [
+    "Flat Copper Winding (FCW) replacing conventional cylindrical voice coil architecture",
+    "Ultra-low profile dynamic speaker architecture targeting sub-1.5 mm thickness",
+    "Shape-flexible speaker platform adaptable to available product cavities",
+    "Simplified manufacturing using conventional materials and electromagnetic principles",
+    "Potential reduction of internal space consumption in smartphones, laptops and wearable devices",
+    "Proof-of-concept prototype demonstrating audible sound using manually fabricated components",
+    "Research focused on architecture innovation rather than replacing fundamental speaker physics"
+  ],
+
+  "futureWork": [
+    "Develop industrial-grade FCW fabrication techniques using precision winding and flexible PCB technologies",
+    "Design custom thin magnetic assemblies using high-performance NdFeB magnets",
+    "Optimize diaphragm materials for improved bass response and overall sound pressure level",
+    "Engineer advanced spider geometries for higher diaphragm excursion and lower distortion",
+    "Experiment with multiple speaker geometries including rectangular, strip, circular, curved and custom form factors",
+    "Compare acoustic performance against commercial smartphone, laptop, TWS and wearable speakers",
+    "Measure frequency response, SPL, impedance, distortion, efficiency and thermal characteristics",
+    "Reduce total speaker thickness below 1.5 mm while maintaining practical audio performance",
+    "Develop manufacturing workflows suitable for large-scale industrial production",
+    "Prepare patent filing, research publication and technology demonstration for consumer electronics manufacturers"
+  ],
+
+  "technologies": [
+    "Embedded Electronics",
+    "Acoustic Engineering",
+    "Electromagnetic Systems",
+    "Dynamic Speaker Design",
+    "Mechanical Engineering",
+    "Prototype Development",
+    "Materials Engineering",
+    "Flexible Electronics",
+    "PCB Design",
+    "CAD Modeling"
+  ],
+
+  "tags": [
+    "speaker",
+    "fcw",
+    "flat-copper-winding",
+    "audio",
+    "embedded",
+    "electronics",
+    "research",
+    "thin-speaker",
+    "prototype",
+    "electromagnetics"
+  ],
+
+  "color": "from-orange-500 to-red-500",
+
+  "roles": [
+    "Founder",
+    "System Architect",
+    "Embedded Systems Engineer",
+    "Product Designer",
+    "Mechanical Design Researcher",
+    "Electronics Prototype Developer"
+  ],
+
+  "metrics": [
+    {
+      "label": "Prototype",
+      "value": "FCW v1.0"
+    },
+    {
+      "label": "Target Thickness",
+      "value": "< 1.5 mm"
+    },
+    {
+      "label": "Architecture",
+      "value": "4-Layer FCW"
+    },
+    {
+      "label": "Project Stage",
+      "value": "Proof of Concept"
+    }
+  ],
+
+  "links": [
+    {
+      "label": "Project Documentation",
+      "url": "#",
+      "icon": "FileText"
+    },
+    {
+      "label": "Prototype Images",
+      "url": "#",
+      "icon": "Image"
+    },
+    {
+      "label": "Development Notes",
+      "url": "#",
+      "icon": "BookOpen"
+    }
+  ],
+
+  "timeline": {
+    "startDate": "2025-07-020",
+    "milestones": [
+      {
+        "date": "2025-09",
+        "title": "Architecture Concept",
+        "description": "Studied conventional speaker technologies, identified thickness limitations, and proposed the Flat Copper Winding (FCW) architecture for ultra-low profile dynamic speakers."
+      },
+      {
+        "date": "2025-09",
+        "title": "Mechanical Design",
+        "description": "Designed the four-layer speaker architecture consisting of diaphragm, Flat Copper Winding coil, lightweight spider, and magnetic assembly while minimizing total thickness."
+      },
+      {
+        "date": "2025-09",
+        "title": "Prototype Fabrication",
+        "description": "Successfully hand-built the first FCW prototype using paper, plastic tape, manually wound flat copper coil, and low-cost materials without industrial equipment."
+      },
+      {
+        "date": "2025-09",
+        "title": "Proof of Concept",
+        "description": "Validated the proposed architecture by generating audible sound using an external dynamic speaker magnet, confirming the feasibility of the FCW electromagnetic concept."
+      },
+      {
+        "date": "2026-05",
+        "title": "Architecture Expansion",
+        "description": "Started investigating multiple speaker geometries, thin magnetic assemblies, diaphragm optimization, and industrial fabrication methods for future compact electronic devices."
+      },
+      {
+        "date": "2026-06",
+        "title": "Industrial Research",
+        "description": "Preparing engineering validation through acoustic measurements, prototype optimization, patent drafting, research publication, and future collaboration with consumer electronics manufacturers."
+      }
+    ]
+  }
+}

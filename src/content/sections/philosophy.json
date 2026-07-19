@@ -1,0 +1,44 @@
+[
+  {
+    "id": "build-real-products",
+    "icon": "Box",
+    "title": "Build Real Products",
+    "description": "Every project must result in a working, testable, and deployable product — not a concept or prototype that stops at the demo stage.",
+    "color": "from-neon-blue to-neon-cyan"
+  },
+  {
+    "id": "solve-real-problems",
+    "icon": "Search",
+    "title": "Solve Real Problems",
+    "description": "Engineering starts with understanding the problem domain deeply. Research the context, validate the need, then design the solution.",
+    "color": "from-neon-cyan to-neon-teal"
+  },
+  {
+    "id": "research-plus-engineering",
+    "icon": "Microscope",
+    "title": "Combine Research with Engineering",
+    "description": "Rigorous research methodology applied to engineering challenges. Literature review, hypothesis formation, experimentation, and validation.",
+    "color": "from-neon-teal to-neon-green"
+  },
+  {
+    "id": "design-systems",
+    "icon": "Boxes",
+    "title": "Design Systems, Not Isolated Features",
+    "description": "Individual features are meaningless without a coherent system. Architecture, interfaces, data flow, and integration are designed as a whole.",
+    "color": "from-neon-green to-neon-blue"
+  },
+  {
+    "id": "deployable-outcomes",
+    "icon": "Rocket",
+    "title": "Focus on Deployable Outcomes",
+    "description": "Engineering is complete when the system is deployed, monitored, and validated in the real world. Documentation and testing are part of the deliverable.",
+    "color": "from-neon-purple to-neon-pink"
+  },
+  {
+    "id": "continuous-improvement",
+    "icon": "TrendingUp",
+    "title": "Continuous Improvement Through Testing",
+    "description": "Every system is a hypothesis. Test, measure, iterate. Validation through real-world data is the only way to know if engineering decisions were correct.",
+    "color": "from-neon-pink to-neon-orange"
+  }
+]

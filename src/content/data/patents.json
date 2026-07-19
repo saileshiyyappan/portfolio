@@ -1,0 +1,83 @@
+[
+  {
+    "id": "patent-001",
+    "slug": "mowaers-utility-patent",
+    "title": "MOWAERS Modular Wearable Health Monitoring System",
+    "status": "in-preparation",
+    "inventors": ["Sailesh Iyyappan J R"],
+    "description": "Utility patent documentation for the MOWAERS (Modular Organ-Wise Analysis, Evaluation, Response and Safety System) wearable health monitoring platform. The invention focuses on a modular wearable architecture integrating detachable sensing modules, embedded electronics, personalized health analysis, and intelligent emergency response workflows. The patent documentation is currently under preparation and will continue to evolve alongside product development.",
+    "documents": [],
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476795/PATENT_IMG_FRONT_VIEW_nuup6p.webp",
+        "caption": "MOWAERS Patent Front View",
+        "type": "image"
+      },
+      {
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476794/PATENT_IMG_EXPLODE_VIEW_OF_M_AND_S_BAND_x0lzlm.webp",
+        "caption": "Exploded Architecture View",
+        "type": "image"
+      }
+    ],
+    "relatedProjects": ["mowaers-band"],
+    "claims": [
+      "Modular wearable health monitoring architecture.",
+      "Detachable organ-specific sensing modules.",
+      "Integrated emergency response framework."
+    ]
+  },
+  {
+    "id": "patent-002",
+    "slug": "highlighter-utility-patent",
+    "title": "Highlighter Multi-Purpose Bluetooth Speaker",
+    "status": "in-preparation",
+    "inventors": ["Sailesh Iyyappan J R"],
+    "description": "Utility patent documentation for the Highlighter Bluetooth Speaker focusing on an innovative multi-purpose product architecture combining consumer electronics with practical everyday utility. Documentation is actively being refined together with prototype development and engineering validation.",
+    "documents": [],
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477018/PATENT_IMAGE_FRONT_gt8ker.webp",
+        "caption": "Highlighter Patent Front View",
+        "type": "image"
+      },
+      {
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477017/PATENT_IMAGE_EXPLODED_VIEW_yi4p5u.webp",
+        "caption": "Exploded Internal Structure",
+        "type": "image"
+      }
+    ],
+    "relatedProjects": ["highlighter-speaker"],
+    "claims": [
+      "Multi-purpose consumer product architecture.",
+      "Integrated portable Bluetooth speaker design.",
+      "Optimized internal component arrangement."
+    ]
+  },
+  {
+    "id": "patent-003",
+    "slug": "mowaers-design-patent",
+    "title": "MOWAERS Wearable Band Industrial Design",
+    "status": "in-preparation",
+    "inventors": ["Sailesh Iyyappan J R"],
+    "description": "Design patent documentation covering the external industrial design, modular enclosure, detachable wearable mechanism, and overall visual appearance of the MOWAERS wearable system. The design continues to evolve as newer prototype revisions are completed.",
+    "documents": [],
+    "images": [
+      {
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476796/PATENT_IMG_SIDE_VIEW_grbymt.webp",
+        "caption": "Industrial Design View",
+        "type": "image"
+      },
+      {
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476795/PATENT_IMG_OPEN_BAND_VIEW_b2tlqw.webp",
+        "caption": "Open Band Design",
+        "type": "image"
+      }
+    ],
+    "relatedProjects": ["mowaers-band"],
+    "claims": [
+      "Modular wearable industrial design.",
+      "Detachable wearable enclosure system.",
+      "Novel external product appearance."
+    ]
+  }
+]

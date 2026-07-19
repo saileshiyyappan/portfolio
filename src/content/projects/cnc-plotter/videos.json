@@ -1,0 +1,40 @@
+{
+  "videos": [
+    {
+      "title": "Mini CNC Plotter Servo Test",
+      "description": "Testing the servo motor responsible for pen lifting and lowering during CNC plotting operations.",
+      "thumbnail": {
+        "src": "/images/cnc plotter/CNC_PLOTTER COVER IMAGE.jpg",
+        "caption": "Mini CNC Plotter Servo Test",
+        "type": "image"
+      },
+      "duration": "",
+      "category": "Component Testing",
+      "youtubeUrl": ""
+    },
+    {
+      "title": "Mini CNC Plotter Z-Axis Mechanism",
+      "description": "Demonstration of the Z-axis pen up and down mechanism using a servo motor for automated drawing operations.",
+      "thumbnail": {
+        "src": "/images/cnc plotter/CNC_PLOTTER COVER IMAGE.jpg",
+        "caption": "Mini CNC Plotter Z-Axis Test",
+        "type": "image"
+      },
+      "duration": "",
+      "category": "Mechanism Demo",
+      "youtubeUrl": ""
+    },
+    {
+      "title": "Mini CNC Plotter Complete Demonstration",
+      "description": "Complete functional demonstration of the DVD drive based Mini CNC Plotter executing G-code and producing automated drawings.",
+      "thumbnail": {
+        "src": "/images/cnc plotter/CNC_PLOTTER COVER IMAGE.jpg",
+        "caption": "Mini CNC Plotter Demo",
+        "type": "image"
+      },
+      "duration": "",
+      "category": "Project Demo",
+      "youtubeUrl": ""
+    }
+  ]
+}

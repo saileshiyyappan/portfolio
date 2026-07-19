@@ -1,0 +1,44 @@
+{
+  "coverImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476920/AUTOMATIC__PCB_MISMANTLE_COVER_IMAGE_tpqvgf.webp",
+    "caption": "Automatic PCB Dismantling System Cover",
+    "type": "image"
+  },
+
+  "heroImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476911/AUTOMATIC__PCB_MISMANTLE_001_mg99bl.webp",
+    "caption": "Automatic PCB Dismantling MVP Prototype",
+    "type": "image"
+  },
+
+  "galleryImages": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476915/AUTOMATIC__PCB_MISMANTLE_002_u27gjg.webp",
+      "caption": "Automatic PCB Dismantling Prototype 1",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476913/AUTOMATIC__PCB_MISMANTLE_003_hrx1sz.webp",
+      "caption": "Automatic PCB Dismantling Prototype 2",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476913/AUTOMATIC__PCB_MISMANTLE_004_rx1fes.webp",
+      "caption": "Automatic PCB Dismantling Prototype 3",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476916/AUTOMATIC__PCB_MISMANTLE_005_d3pyxt.webp",
+      "caption": "Automatic PCB Dismantling Prototype 4",
+      "type": "image"
+    }
+  ],
+
+  "architectureImages": [],
+
+  "flowcharts": [],
+
+  "screenshots": [],
+
+  "prototypeImages": []
+}

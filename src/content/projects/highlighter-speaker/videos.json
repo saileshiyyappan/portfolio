@@ -1,0 +1,16 @@
+{
+  "videos": [
+    {
+      "title": "Highlighter Speaker Demo",
+      "description": "Product demonstration showcasing acoustic performance, design details, and Bluetooth connectivity.",
+      "thumbnail": {
+        "src": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=1600&q=80",
+        "caption": "Highlighter Speaker Demo",
+        "type": "image"
+      },
+      "duration": "2:30",
+      "category": "Product Demo",
+      "youtubeUrl": ""
+    }
+  ]
+}

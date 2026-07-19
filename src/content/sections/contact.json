@@ -1,0 +1,185 @@
+{
+  "title": "Let's Build Together",
+  "subtitle": "Connect & Collaborate",
+  "description": "Open to engineering collaborations, research opportunities, product development, internships, technical discussions, and innovative technology partnerships.",
+
+  "socials": [
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/saileshiyyappan",
+      "icon": "Linkedin",
+      "color": "text-white",
+      "hoverColor": "hover:text-[#0A66C2]",
+      "glowColor": "hover:shadow-[0_0_30px_rgba(10,102,194,0.3)]"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "url": "https://github.com/saileshiyyappan",
+      "icon": "Github",
+      "color": "text-white",
+      "hoverColor": "hover:text-white",
+      "glowColor": "hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
+    },
+    {
+      "id": "email",
+      "name": "Email",
+      "url": "mailto:jr.saileshiyyappan@gmail.com",
+      "icon": "Mail",
+      "color": "text-white",
+      "hoverColor": "hover:text-neon-cyan",
+      "glowColor": "hover:shadow-[0_0_30px_rgba(6,182,212,0.3)]"
+    }
+  ],
+
+  "location": "Erode, Tamil Nadu, India",
+
+  "availability": "Open to internships, collaborations, research, and engineering opportunities",
+
+  "email": "jr.saileshiyyappan@gmail.com",
+
+  "contactCategories": [
+    {
+      "id": "primary",
+      "label": "Primary",
+      "color": "from-neon-blue to-neon-cyan",
+      "links": [
+        {
+          "name": "Gmail",
+          "url": "mailto:jr.saileshiyyappan@gmail.com",
+          "icon": "Mail",
+          "description": "Primary contact for all inquiries"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/saileshiyyappan",
+          "icon": "Linkedin",
+          "description": "Professional networking and collaborations"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/saileshiyyappan",
+          "icon": "Github",
+          "description": "Projects, source code, and repositories"
+        },
+        {
+          "name": "Portfolio",
+          "url": "/",
+          "icon": "Globe",
+          "description": "Engineering portfolio and featured projects"
+        }
+      ]
+    },
+
+    {
+      "id": "research",
+      "label": "Research",
+      "color": "from-neon-green to-neon-teal",
+      "links": [
+        {
+          "name": "Google Scholar",
+          "url": "https://scholar.google.com/saileshiyyappan",
+          "icon": "BookOpen",
+          "description": "Research publications and citations"
+        },
+        {
+          "name": "ORCID",
+          "url": "https://orcid.org/0009-0003-5424-0405",
+          "icon": "Fingerprint",
+          "description": "Researcher identification profile"
+        },
+        {
+          "name": "ResearchGate",
+          "url": "https://www.researchgate.net/profile/Sailesh-Iyyappan-J-R",
+          "icon": "Users",
+          "description": "Research projects and academic network"
+        }
+      ]
+    },
+
+    {
+      "id": "engineering",
+      "label": "Engineering",
+      "color": "from-neon-purple to-neon-pink",
+      "links": [
+        {
+          "name": "Stack Overflow",
+          "url": "https://stackoverflow.com/users/32879269/sailesh-iyyappan-j-r",
+          "icon": "HelpCircle",
+          "description": "Programming discussions and technical Q&A"
+        },
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/saileshiyyappanjr",
+          "icon": "Bot",
+          "description": "AI models, experiments, and datasets"
+        },
+        {
+          "name": "Kaggle",
+          "url": "https://www.kaggle.com/saileshiyyappanjr",
+          "icon": "Trophy",
+          "description": "Machine learning datasets and notebooks"
+        }
+      ]
+    },
+
+    {
+      "id": "developer",
+      "label": "Developer",
+      "color": "from-neon-orange to-neon-yellow",
+      "links": [
+        {
+          "name": "GitLab",
+          "url": "https://gitlab.com/saileshiyyappanjr",
+          "icon": "GitBranch",
+          "description": "Version control and software development"
+        },
+        {
+          "name": "LeetCode",
+          "url": "https://leetcode.com/u/saileshiyyappanjr/",
+          "icon": "Code2",
+          "description": "Problem solving and algorithm practice"
+        },
+        {
+          "name": "HackerRank",
+          "url": "https://www.hackerrank.com/profile/saileshjr",
+          "icon": "Terminal",
+          "description": "Programming skills and coding challenges"
+        }
+      ]
+    },
+
+    {
+      "id": "content",
+      "label": "Content",
+      "color": "from-neon-red to-neon-orange",
+      "links": [
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com/@SaileshIyyappanJR",
+          "icon": "Youtube",
+          "description": "Project demonstrations and engineering videos"
+        },
+        {
+          "name": "Medium",
+          "url": "https://medium.com/@jr.saileshiyyappan",
+          "icon": "FileText",
+          "description": "Technical articles and engineering blogs"
+        },
+        {
+          "name": "Hashnode",
+          "url": "https://hashnode.com/@saileshiyyappanjr",
+          "icon": "Notebook",
+          "description": "Development blogs and project documentation"
+        },
+        {
+          "name": "Dev.to",
+          "url": "https://dev.to/saileshiyyappanjr",
+          "icon": "FileCode",
+          "description": "Developer articles and technical writing"
+        }
+      ]
+    }
+  ]
+}

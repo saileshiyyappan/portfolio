@@ -1,0 +1,67 @@
+{
+  "coverImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476795/PATENT_IMG_FRONT_VIEW_nuup6p.webp",
+    "caption": "Complete MOWAERS Modular Wearable Health Monitoring System",
+    "type": "image"
+  },
+
+  "heroImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476801/VERSION_1_BAND_yl6j3h.webp",
+    "caption": "First Functional Prototype of MOWAERS Smart Band",
+    "type": "image"
+  },
+
+  "galleryImages": [
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476773/1ST_ORGIN_IMAGINARY_VIEW_utwgyc.webp", "caption": "Initial Concept Design for Wearable Health Device", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476795/PATENT_IMG_FRONT_VIEW_nuup6p.webp", "caption": "Front View of Complete Patent Design", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476794/PATENT_IMG_BACK_VIEW_qqikav.webp", "caption": "Back View of Modular Wearable System", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476798/PATENT_IMG_SIDE_VIEW_dpgil0.webp", "caption": "Side Profile of Smart Band Structure", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476797/PATENT_IMG_OPEN_BAND_VIEW_rcwhd2.webp", "caption": "Open Structure Showing Modular Band Layout", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476798/PATENT_IMG_SIDE_EXPLODE_VIEW_wxvktk.webp", "caption": "Exploded Side View of Internal Components", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476794/PATENT_IMG_D_BAND_EXPLODED_VIEW_vhvwnu.webp", "caption": "Exploded View of Detachable Sensor Band", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476796/PATENT_IMG_EXPLODE_VIEW_OF_M_AND_S_BAND_efvvph.webp", "caption": "Exploded Assembly of Main and Sub Bands", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476797/PATENT_IMG_HUMAN_BODY_AREAS_COVERD_BY_THE_COMPLETE_BAND_e2rwqk.webp", "caption": "Human Body Regions Monitored by Complete System", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476838/VERSION_2_BLUE_PRINT_j3ivcn.webp", "caption": "Mechanical Blueprint of Version Two Prototype", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476798/PCB_DESIGN_V1_ofqzul.webp", "caption": "Printed Circuit Board Layout Version One", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476799/Screenshot_2026-03-11_125516_eliuos.webp", "caption": "Overall Embedded System Architecture Diagram", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476800/SHB_DASHBOARD_xhvtih.webp", "caption": "Sensor Handling Block Monitoring Dashboard Interface", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476793/DATA_MEASURING_USING_GADGET_ndunyw.webp", "caption": "Prototype Measuring Real-Time Health Parameters", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476851/VITAL_MEASURING_GADGET_FOR_DATA_uenrub.webp", "caption": "Wearable Device Capturing Multiple Vital Signs", "type": "image" }
+  ],
+
+  "architectureImages": [
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476801/VERSION_1_BAND_yl6j3h.webp", "caption": "Complete Version One Main Band Prototype", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476891/VERSION_1_D_BAND_oisbrw.webp", "caption": "Version One Detachable Sensor Band Prototype", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476860/VERSION_1_PANEL_VIEW_gbc9ku.webp", "caption": "Panel Layout of Internal Band Structure", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476797/PARTIAL_VERSION_2_BAND_dazqbs.webp", "caption": "Partial Assembly of Version Two Prototype", "type": "image" }
+  ],
+
+  "flowcharts": [
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476800/V1_PROTOTYPE_DEMO_PURPOSE_jmfnbw.webp", "caption": "Demonstration Model Used for Prototype Presentation", "type": "image" }
+  ],
+
+  "screenshots": [
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476783/ASM_001_ASSEMBLY_OF_INTERNAL_COMPONENTS_M_BAND_sqkaxe.webp", "caption": "Initial Placement of Internal Main Band Components", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476777/ASM_002_ASSEMBLE_OF_INTERNAL_COMPONENTS_IN_M_BAND_BOTTOM_k8fbz1.webp", "caption": "Bottom Housing Component Installation Process", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476778/ASM_003_VERSION_1_COMPONENTS_ASEMBLE_v9rlti.webp", "caption": "Version One Hardware Components Fully Arranged", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476771/ASM_004_FINAL_ASSEMBLY_OF_COMPONENTS_M_BAND_o2yt3t.webp", "caption": "Final Component Assembly Inside Main Band", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476770/ASM_005_ASSEMBLE_OF_INTERNAL_COMPONENTS_IN_D_BAND_rfr0zl.webp", "caption": "Installing Internal Electronics Inside D-Band Module", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476767/ASM_006_COMPLETE_BODY_DESING_CUTS_yqb3se.webp", "caption": "Pvc sheet Cut Structural Parts Before Assembly", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476772/ASM_007_M_BAND_BODY_ASSEMBLE_azhyhb.webp", "caption": "Main Band Outer Body Successfully Assembled", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476773/ASM_008_COMPLETED_M_BAND_BODY_jko81i.webp", "caption": "Completed Main Band Enclosure Ready for Testing", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476799/ASM_080_COMPLETE_M_BAND_BODY_ASSEMBLE_lvshku.webp", "caption": "Alternate View of Completed Main Band Assembly", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476781/ASM_009_D_BAND_TOP_COMPONENTS_ASSEMBLE_hrbiuq.webp", "caption": "Top Side Components Installed Inside D-Band", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476777/ASM_010_COMPLETE_BODY_OF_M_AND_D_BANDS_phlqxn.webp", "caption": "Complete Mechanical Bodies of Both Band Modules", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476783/ASM_011_ASSEMBLE_OF_M_AND_D_BAND_ibn0ru.webp", "caption": "Main and Detachable Bands Connected Together", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476786/ASM_012_INTERNAL_COMPONENTS_ASSEMBLED_M_BAND_BOTTOM_aea813.webp", "caption": "Bottom Internal Components Successfully Installed", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476785/ASM_013_INTERNAL_COMPONENTS_OF_M_BAND_BOTTOM_wtjt1p.webp", "caption": "Detailed Bottom View of Embedded Electronics", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476788/ASM_014_INTERNAL_COMPONENTS_OF_M_BAMD_TOP_yjciez.webp", "caption": "Top Internal Electronics Arrangement Before Closing", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476792/ASM_015_D_BAND_TOP_COMPONENTS_ASSEMBLED_jgsswz.webp", "caption": "Top Module Components Fully Installed and Fixed", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476791/ASM_016_D_BAND_BOTTOM_COMPLETE_SENSOR_NODE_ASSEMBLED_fmvvwr.webp", "caption": "Complete Sensor Node Mounted Inside Bottom Module", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476795/ASM_017_COMPLETED_BODY_OF_M_AND_D_BAND_TOP_AND_BOTTOM_fblkje.webp", "caption": "Completed Top and Bottom Band Housing Assembly", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476793/ASM_018_INTERNAL_CONNECTION_utzyoa.webp", "caption": "Initial Internal Wiring Connections Between Modules", "type": "image" },
+    { "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476799/ASM_019_INTERNAL_CONNECTIONS_yqqmb3.webp", "caption": "Final Internal Electrical Connections and Wiring", "type": "image" }
+  ],
+
+  "prototypeImages": []
+}

@@ -1,0 +1,166 @@
+{
+  "id": "eip",
+  "slug": "eip",
+  "title": "Eco-Industrial Park (EIP)",
+  "subtitle": "Integrated Government-Centric Circular Recycling Infrastructure Research",
+  "category": "Industrial Systems & Sustainable Infrastructure Research Project",
+  "status": "active",
+  "year": "2026",
+
+  "shortDescription": "Eco-Industrial Park (EIP) is a long-term research project focused on designing an interconnected government-owned recycling ecosystem capable of maximizing resource recovery through integrated recycling plants, shared infrastructure, automated dismantling systems, renewable energy utilization, and closed-loop material circulation to transform waste into valuable raw materials.",
+
+  "fullDescription": "Eco-Industrial Park (EIP) is an independent systems engineering research project focused on developing a next-generation circular recycling infrastructure capable of processing multiple categories of waste within a single interconnected industrial ecosystem. Unlike conventional standalone recycling plants, the proposed EIP integrates e-waste, plastics, metals, paper, glass, rubber, tyres, batteries, organic waste, construction & demolition waste, medical waste, oil, chemical waste, water recycling, waste-to-energy, and future recycling industries into one coordinated industrial network. Every plant is interconnected so that the output or recovered material from one facility becomes the input for another whenever technically feasible, maximizing recycling efficiency while minimizing waste generation. The project investigates centralized waste management, shared industrial machinery, renewable energy integration, common utility infrastructure, automated dismantling technologies, intelligent material flow, reusable component recovery (Category-X), raw material extraction (Category-Y), and sustainable industrial planning. One of the primary engineering developments within this research is the Automatic PCB Dismantling Machine, designed to automate electronic component separation using controlled heating and vibration-assisted conveyor technology for improved recovery efficiency, reduced pollution, and safer recycling operations. The long-term vision is to establish a scalable government-operated Eco-Industrial Park capable of maximizing resource recovery, reducing dependence on imported raw materials, supporting domestic manufacturing, minimizing environmental impact, and strengthening India's circular economy.",
+
+  "problemStatement": "Existing recycling industries generally operate as isolated facilities dedicated to individual waste streams, resulting in duplicated infrastructure, underutilized machinery, fragmented logistics, low material recovery, higher transportation costs, inefficient energy usage, and significant waste leakage. Valuable reusable components are frequently destroyed during shredding processes, while recoverable materials remain distributed across multiple facilities with limited interconnection. Furthermore, many recycling systems depend on separate utilities, independent processing lines, and standalone investments instead of functioning as an integrated industrial ecosystem. There is a need for a centralized recycling architecture capable of combining multiple recycling sectors, maximizing resource utilization, sharing infrastructure, increasing recovery rates, reducing operational costs, minimizing environmental pollution, and enabling continuous circular material flow throughout the industrial network.",
+
+  "solution": "This research proposes a Government-Centric Eco-Industrial Park (EIP) that integrates multiple recycling industries into a centralized and interconnected industrial ecosystem. Waste collected through existing collection networks enters a common processing infrastructure where it is categorized, dismantled, separated, recovered, recycled, and redistributed through interconnected recycling plants. The system emphasizes industrial symbiosis by allowing recovered materials, reusable components, utilities, and shared machinery to circulate between facilities. Dedicated dismantling systems classify reusable Category-X components for testing and refurbishment while Category-Y materials undergo advanced recycling processes including mechanical separation, magnetic separation, eddy current separation, optical sorting, hydrometallurgical recovery, pyrometallurgical extraction, and other specialized recycling methods. Shared renewable energy systems, water recycling facilities, centralized logistics, pollution control, automated dismantling technologies, and intelligent infrastructure planning collectively improve recycling efficiency, reduce operational expenditure, maximize raw material recovery, and support long-term national resource security.",
+
+  "architecture": [
+    "Government-owned centralized Eco-Industrial Park infrastructure",
+    "Interconnected multi-industry recycling ecosystem",
+    "Centralized waste receiving and segregation hub",
+    "Layer-based recycling plant interconnectivity for continuous material flow",
+    "Shared machinery including magnetic, eddy current and optical separation systems",
+    "Automatic PCB dismantling line using conveyor-assisted thermal component separation",
+    "Category-X reusable component recovery with testing and repair lines",
+    "Category-Y raw material extraction through advanced recycling technologies",
+    "Integrated renewable energy generation and shared utility systems",
+    "Centralized water recycling and environmental management infrastructure"
+  ],
+
+  "innovation": [
+    "Integrated Eco-Industrial Park architecture combining multiple recycling industries into one coordinated infrastructure",
+    "Closed-loop industrial symbiosis allowing recovered outputs to become inputs for neighboring plants",
+    "Shared machinery model reducing infrastructure duplication and capital expenditure",
+    "Category-X and Category-Y recovery methodology separating reusable components from recyclable materials",
+    "Automatic PCB dismantling concept utilizing vibration-assisted conveyor motion with controlled thermal solder removal",
+    "Multi-layer industrial interconnectivity maximizing recycling rate across diverse waste categories",
+    "Government-controlled recycling ecosystem designed to reduce dependence on imported raw materials",
+    "Scalable infrastructure adaptable to future recycling technologies and industrial expansion"
+  ],
+
+  "futureWork": [
+    "Complete detailed engineering design of the Eco-Industrial Park master layout",
+    "Develop optimized waste collection framework suitable for Indian conditions",
+    "Model inter-plant material flow using simulation and systems engineering methods",
+    "Optimize shared machinery utilization across multiple recycling sectors",
+    "Develop intelligent logistics and internal transportation systems inside the EIP",
+    "Prototype and validate the Automatic PCB Dismantling Machine",
+    "Investigate AI-assisted waste identification and automated sorting technologies",
+    "Integrate renewable energy balancing, water recycling and carbon reduction strategies",
+    "Perform techno-economic analysis comparing existing recycling plants with the proposed EIP",
+    "Publish research paper, pursue patent opportunities and establish future government-industry collaborations"
+  ],
+
+  "technologies": [
+    "Industrial Ecology",
+    "Circular Economy",
+    "Waste Management Systems",
+    "Industrial Symbiosis",
+    "Mechanical Engineering",
+    "Automation",
+    "Recycling Engineering",
+    "Resource Recovery",
+    "Material Separation Technologies",
+    "Renewable Energy Integration",
+    "Environmental Engineering",
+    "Systems Engineering"
+  ],
+
+  "tags": [
+    "eco-industrial-park",
+    "recycling",
+    "waste-management",
+    "industrial-symbiosis",
+    "circular-economy",
+    "resource-recovery",
+    "pcb-dismantling",
+    "automation",
+    "government",
+    "research"
+  ],
+
+  "color": "from-green-600 to-emerald-500",
+
+  "roles": [
+    "Founder",
+    "Systems Architect",
+    "Industrial Infrastructure Researcher",
+    "Mechanical Design Researcher",
+    "Sustainability Researcher",
+    "Automation System Designer"
+  ],
+
+  "metrics": [
+    {
+      "label": "Waste Categories",
+      "value": "16+"
+    },
+    {
+      "label": "Research Focus",
+      "value": "Integrated EIP"
+    },
+    {
+      "label": "Architecture",
+      "value": "Closed-Loop"
+    },
+    {
+      "label": "Project Stage",
+      "value": "Concept Development"
+    }
+  ],
+
+  "links": [
+    {
+      "label": "Research Documentation",
+      "url": "#",
+      "icon": "FileText"
+    },
+    {
+      "label": "System Architecture",
+      "url": "#",
+      "icon": "Workflow"
+    },
+    {
+      "label": "Development Notes",
+      "url": "#",
+      "icon": "BookOpen"
+    }
+  ],
+
+  "timeline": {
+    "startDate": "2025-07-20",
+    "milestones": [
+      {
+        "date": "2025-08",
+        "title": "Concept Formation",
+        "description": "Initiated the Eco-Industrial Park concept by identifying the limitations of isolated recycling plants and proposing an interconnected government-operated recycling ecosystem."
+      },
+      {
+        "date": "2025-10",
+        "title": "Industrial Architecture",
+        "description": "Designed the preliminary interconnected infrastructure including multiple recycling sectors, shared machinery, centralized segregation, industrial symbiosis and material circulation."
+      },
+      {
+        "date": "2025-12",
+        "title": "Automatic PCB Dismantling Concept",
+        "description": "Designed and partially prototyped a conveyor-based automatic PCB dismantling machine utilizing controlled heating and vibration-assisted component separation to improve electronic waste recovery."
+      },
+      {
+        "date": "2026-03",
+        "title": "Recovery Methodology",
+        "description": "Developed Category-X reusable component recovery and Category-Y raw material extraction concepts supported by testing, repair and advanced recycling workflows."
+      },
+      {
+        "date": "2026-06",
+        "title": "System Expansion",
+        "description": "Expanded the research toward integrating renewable energy, water recycling, internal logistics, shared infrastructure, intelligent automation and complete Eco-Industrial Park master planning."
+      },
+      {
+        "date": "2026-07",
+        "title": "Research Development",
+        "description": "Currently analyzing global recycling infrastructures, identifying technical limitations, comparing international practices with Indian conditions, and developing engineering solutions for a comprehensive government-centric Eco-Industrial Park before preparing the final research paper and engineering validation."
+      }
+    ]
+  }
+}

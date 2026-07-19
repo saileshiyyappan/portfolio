@@ -1,0 +1,155 @@
+[
+  {
+    "id": "product-engineering",
+    "title": "Product Engineering",
+    "level": 90,
+    "description": "Designing engineering products from problem identification, architecture, prototyping, testing, documentation, and continuous iteration toward production-ready systems.",
+    "icon": "Box",
+    "color": "from-neon-blue to-neon-cyan",
+    "category": "Product",
+    "technologies": [
+      "Product Design",
+      "Rapid Prototyping",
+      "Figma",
+      "CAD Design",
+      "System Design",
+      "Documentation"
+    ]
+  },
+  {
+    "id": "embedded-systems",
+    "title": "Embedded Systems",
+    "level": 92,
+    "description": "Developing embedded hardware using ESP32-based platforms, sensor integration, serial communication, peripherals, and real-time device control.",
+    "icon": "Cpu",
+    "color": "from-neon-cyan to-neon-teal",
+    "category": "Hardware",
+    "technologies": [
+      "ESP32",
+      "Arduino",
+      "PlatformIO",
+      "I2C",
+      "UART",
+      "SPI"
+    ]
+  },
+  {
+    "id": "firmware-development",
+    "title": "Firmware Development",
+    "level": 90,
+    "description": "Building modular embedded firmware for sensing, communication, storage, Bluetooth, GPS, GSM, and hardware abstraction.",
+    "icon": "Code",
+    "color": "from-neon-teal to-neon-green",
+    "category": "Software",
+    "technologies": [
+      "C++",
+      "Arduino Framework",
+      "PlatformIO",
+      "VS Code",
+      "BLE",
+      "MicroSD"
+    ]
+  },
+  {
+    "id": "iot-engineering",
+    "title": "IoT Systems",
+    "level": 89,
+    "description": "Developing connected embedded systems integrating wireless communication, wearable devices, mobile applications, and cloud-ready architectures.",
+    "icon": "Wifi",
+    "color": "from-neon-green to-neon-blue",
+    "category": "Connectivity",
+    "technologies": [
+      "BLE",
+      "Wi-Fi",
+      "ESP32",
+      "SIM800L",
+      "GPS",
+      "IoT"
+    ]
+  },
+  {
+    "id": "system-architecture",
+    "title": "System Architecture",
+    "level": 92,
+    "description": "Designing complete engineering ecosystems combining embedded hardware, firmware, mobile applications, AI-assisted software, and scalable modular architectures.",
+    "icon": "Boxes",
+    "color": "from-neon-blue to-neon-purple",
+    "category": "Architecture",
+    "technologies": [
+      "System Design",
+      "Modular Architecture",
+      "Embedded Architecture",
+      "API Design",
+      "Workflow Design",
+      "Documentation"
+    ]
+  },
+  {
+    "id": "ai-engineering",
+    "title": "AI-Assisted Engineering",
+    "level": 84,
+    "description": "Integrating AI services, LLMs, engineering automation, intelligent workflows, and AI-assisted software into real-world engineering products.",
+    "icon": "Brain",
+    "color": "from-neon-purple to-neon-pink",
+    "category": "AI",
+    "technologies": [
+      "Gemini API",
+      "Vertex AI",
+      "OpenAI API",
+      "Python",
+      "Prompt Engineering",
+      "AI Workflows"
+    ]
+  },
+  {
+    "id": "full-stack-development",
+    "title": "Full Stack Development",
+    "level": 87,
+    "description": "Developing engineering software platforms with modern web technologies, backend services, dashboards, databases, and embedded system integration.",
+    "icon": "Layers",
+    "color": "from-neon-pink to-neon-orange",
+    "category": "Software",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Firebase",
+      "Flask"
+    ]
+  },
+  {
+    "id": "research-engineering",
+    "title": "Research Engineering",
+    "level": 90,
+    "description": "Conducting engineering research through literature review, prototype experimentation, technical validation, research documentation, and publication preparation.",
+    "icon": "Microscope",
+    "color": "from-neon-orange to-neon-yellow",
+    "category": "Research",
+    "technologies": [
+      "Research Writing",
+      "IEEE Format",
+      "Literature Review",
+      "Experimental Design",
+      "Documentation",
+      "Data Analysis"
+    ]
+  },
+  {
+    "id": "patent-development",
+    "title": "Patent-Oriented Development",
+    "level": 90,
+    "description": "Developing novel engineering concepts through invention design, prior-art analysis, technical documentation, and patent-oriented product development.",
+    "icon": "Lightbulb",
+    "color": "from-neon-yellow to-neon-blue",
+    "category": "Innovation",
+    "technologies": [
+      "Patent Drafting",
+      "Prior Art Search",
+      "Technical Drawings",
+      "Product Innovation",
+      "System Design",
+      "Documentation"
+    ]
+  }
+]

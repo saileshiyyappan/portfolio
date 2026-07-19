@@ -1,0 +1,118 @@
+[
+  {
+    "id": "paper-mowaers",
+    "slug": "mowaers-modular-health-monitoring-system",
+    "title": "MOWAERS: A Modular Wearable Health Monitoring and Emergency Response System",
+    "abstract": "This research presents MOWAERS (Modular Organ-Wise Analysis, Evaluation, Response and Safety System), a modular wearable health monitoring platform integrating detachable sensing architecture, embedded electronics, physiological signal acquisition, personalized health benchmarking, AI-assisted health analysis, and emergency response workflows. The work explores a scalable wearable architecture capable of supporting future multi-organ health monitoring applications through modular hardware and software integration.",
+    "authors": ["Sailesh Iyyappan J R"],
+    "publicationStatus": "in-preparation",
+    "journalOrConference": "",
+    "keywords": [
+      "Wearable Health Monitoring",
+      "Embedded Systems",
+      "IoT",
+      "ESP32",
+      "Biomedical Engineering",
+      "Emergency Response"
+    ],
+    "paperLink": "#",
+    "pdfLink": "#",
+    "researchImages": [
+      {
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476795/PATENT_IMG_FRONT_VIEW_nuup6p.webp",
+        "caption": "MOWAERS System Architecture",
+        "type": "image"
+      },
+      {
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476799/SHB_DASHBOARD_xvug5i.webp",
+        "caption": "Sensor Handling Block Dashboard",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "id": "paper-techlance",
+    "slug": "techlance-ai-engineering-platform",
+    "title": "TECHLANCE: An AI-Powered Engineering Collaboration and Product Development Platform",
+    "abstract": "This paper presents TECHLANCE, an AI-assisted engineering ecosystem designed to support project management, technical collaboration, intelligent documentation, and software-assisted engineering workflows. The platform integrates modern web technologies, AI services, and modular system architecture to improve engineering productivity throughout the product development lifecycle.",
+    "authors": ["Sailesh Iyyappan J R"],
+    "publicationStatus": "in-preparation",
+    "journalOrConference": "",
+    "keywords": [
+      "Artificial Intelligence",
+      "Engineering Platform",
+      "Full Stack Development",
+      "Product Engineering",
+      "Workflow Automation"
+    ],
+    "paperLink": "#",
+    "pdfLink": "#",
+    "researchImages": [
+      {
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477085/Screenshot_2026-04-28_230510_rhozme.webp",
+        "caption": "TECHLANCE Platform Overview",
+        "type": "image"
+      },
+      {
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477082/Screenshot_2026-04-28_230127_fzx4f0.webp",
+        "caption": "Engineering Dashboard",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "id": "paper-eip",
+    "slug": "eco-industrial-park-automation",
+    "title": "Automated PCB Component Recovery System for Eco Industrial Park Applications",
+    "abstract": "This research investigates an automated electronic waste processing concept for Eco Industrial Park environments. The proposed system focuses on reducing manual PCB dismantling by introducing an automated component recovery workflow that supports sustainable recycling, electronic waste management, and material reuse while minimizing processing time and labor requirements.",
+    "authors": ["Sailesh Iyyappan J R"],
+    "publicationStatus": "in-preparation",
+    "journalOrConference": "",
+    "keywords": [
+      "E-Waste",
+      "Industrial Automation",
+      "PCB Recycling",
+      "Sustainability",
+      "Embedded Systems"
+    ],
+    "paperLink": "#",
+    "pdfLink": "#",
+    "researchImages": [
+      {
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476920/AUTOMATIC__PCB_MISMANTLE_COVER_IMAGE_tpqvgf.webp",
+        "caption": "Automated PCB Dismantling Prototype",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "id": "paper-paper-speaker",
+    "slug": "paper-thin-speaker-fcw-method",
+    "title": "Paper Thin Dynamic Speaker Using the Flat Copper Winding (FCW) Method",
+    "abstract": "This research proposes the Flat Copper Winding (FCW) method as an alternative architecture for developing ultra-thin dynamic speakers. Instead of using a conventional cylindrical voice coil, the proposed design employs a flat multi-layer winding to reduce overall speaker thickness while maintaining electromagnetic operation. Experimental prototypes demonstrate the feasibility of the concept and establish the foundation for future optimization and industrial development.",
+    "authors": ["Sailesh Iyyappan J R"],
+    "publicationStatus": "in-preparation",
+    "journalOrConference": "",
+    "keywords": [
+      "Acoustic Engineering",
+      "Dynamic Speaker",
+      "Flat Copper Winding",
+      "Embedded Electronics",
+      "Product Design"
+    ],
+    "paperLink": "#",
+    "pdfLink": "#",
+    "researchImages": [
+      {
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477063/PAPER_SPEAKER_COVER_IMAGE_xkbpue.webp",
+        "caption": "Paper Thin Speaker Prototype",
+        "type": "image"
+      },
+      {
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477084/PAPER_SPEAKER_VERSION_2_TESTING_AND_COMPLETE_PROJECT_ON_TABLE_fmx4tm.webp",
+        "caption": "Prototype Testing",
+        "type": "image"
+      }
+    ]
+  }
+]

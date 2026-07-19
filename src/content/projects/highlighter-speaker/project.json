@@ -1,0 +1,133 @@
+{
+  "id": "highlighter",
+  "slug": "highlighter-speaker",
+  "title": "HIGHLIGHTER BLUETOOTH SPEAKER",
+  "subtitle": "Patent-Oriented Miniaturized Portable Audio Device",
+  "category": "Consumer Electronics / Embedded Hardware Product",
+  "status": "prototype",
+  "year": "2025",
+  "shortDescription": "A patent-oriented highlighter-shaped portable audio device that integrates Bluetooth audio playback, standalone MP3 playback, compact embedded electronics, and a concealed consumer product form factor within a conventional stationery highlighter enclosure.",
+  "fullDescription": "The Highlighter Bluetooth Speaker is a patent-oriented embedded consumer electronics project that transforms the external appearance of a conventional stationery highlighter into a fully functional portable audio device. Unlike conventional pen-shaped multimedia devices that primarily retain writing functionality, this invention intentionally removes the writing mechanism and repurposes the internal volume of the highlighter body for compact electronic integration. The prototype demonstrates the practical implementation of a Bluetooth-enabled portable speaker using salvaged electronic components, including a Bluetooth audio motherboard, rechargeable lithium-ion battery, miniature loudspeaker, and integrated control circuitry. The project focuses on compact product engineering, internal component miniaturization, efficient space utilization, embedded hardware integration, and multifunctional audio playback. Future versions are designed to support both Bluetooth streaming and standalone MP3 playback through a microSD card interface while incorporating dual listening modes, allowing users to switch between low-volume personal listening and amplified speaker output. The invention serves as both a practical consumer electronics prototype and a patent-oriented product platform that explores unconventional industrial design, product concealment, and multifunctional portable audio systems.",
+  "problemStatement": "Conventional portable Bluetooth speakers are easily recognizable electronic devices, often occupying unnecessary space while offering limited novelty in industrial design. Existing pen-shaped multimedia devices largely preserve writing functionality and integrate audio merely as an additional feature. There exists limited research and commercial exploration into transforming everyday stationery products into dedicated portable consumer audio devices without maintaining their original writing purpose. The challenge addressed by this project is to engineer a compact, fully functional portable speaker that preserves the external appearance of a standard highlighter while internally accommodating embedded electronics, rechargeable power, wireless communication, and future standalone audio playback capabilities.",
+  "solution": "A highlighter-shaped portable audio device that disguises itself as an ordinary stationery highlighter while functioning as a dedicated embedded audio system. The device integrates Bluetooth audio playback, rechargeable battery operation, miniature loudspeaker, multifunction control buttons, status indication, microphone support, and a patent-oriented internal component arrangement. Future upgrades include standalone MP3 playback through a microSD card, user-selectable audio output modes, custom compact amplifier circuitry, and a unified embedded audio platform designed specifically for miniature consumer electronics.",
+  "architecture": [
+    "Highlighter-inspired industrial design preserving the external appearance of conventional stationery while housing embedded electronics.",
+    "Embedded Bluetooth audio motherboard with integrated wireless audio streaming, multifunction button control, LED indication, battery management, and microphone support.",
+    "Rechargeable lithium-ion battery powering the complete portable audio platform within the compact enclosure.",
+    "Miniature full-range loudspeaker positioned for efficient sound projection while maintaining internal space optimization.",
+    "Dedicated internal component arrangement engineered for maximum utilization of the highlighter body without modifying its external geometry.",
+    "Future standalone MP3 playback architecture utilizing a microSD card interface integrated alongside Bluetooth functionality.",
+    "User-selectable audio source architecture allowing Bluetooth streaming or standalone MP3 playback using hardware switching.",
+    "Future custom low-noise amplifier platform supporting both normal listening mode and amplified speaker mode through hardware-based switching.",
+    "Compact embedded hardware architecture emphasizing serviceability, modular upgrades, and future product evolution."
+  ],
+  "innovation": [
+    "Transformation of a conventional stationery highlighter into a dedicated portable consumer audio device without retaining writing functionality.",
+    "Patent-oriented internal component arrangement optimized specifically for miniature highlighter dimensions.",
+    "Practical implementation using recycled consumer electronics components, demonstrating sustainable hardware prototyping.",
+    "Compact embedded architecture enabling future expansion without altering the external industrial design.",
+    "Concealed product form factor providing discreet everyday portability while functioning as a complete portable speaker.",
+    "Future dual audio playback platform supporting both Bluetooth streaming and standalone MP3 playback within a single compact enclosure.",
+    "Future dual listening modes allowing personal low-volume listening and amplified speaker output through hardware-based switching.",
+    "Design philosophy emphasizing product miniaturization, embedded integration, and unconventional consumer electronics packaging."
+  ],
+  "futureWork": [
+    "Integration of standalone MP3 playback using a dedicated microSD card interface.",
+    "Development of a custom low-noise Class-D amplifier circuit replacing commercial amplifier modules.",
+    "Implementation of hardware-selectable Bluetooth and MP3 playback modes through miniature slide switches.",
+    "Dual listening modes supporting personal listening and amplified speaker operation.",
+    "Custom compact PCB integrating amplifier, power routing, audio switching, and filtering circuitry.",
+    "Improved acoustic chamber design for enhanced audio quality within the confined enclosure.",
+    "USB-C charging architecture with integrated battery protection and power management.",
+    "Product miniaturization through custom embedded PCB replacing salvaged development boards.",
+    "Consumer-grade enclosure redesign optimized for manufacturability while preserving the original highlighter appearance.",
+    "Commercial product validation, industrial design refinement, and manufacturing optimization."
+  ],
+  "technologies": [
+    "Embedded Systems",
+    "Bluetooth Audio Electronics",
+    "Portable Consumer Electronics",
+    "Lithium-Ion Battery Systems",
+    "MicroSD Audio Playback",
+    "Class-D Audio Amplification",
+    "Embedded Hardware Prototyping",
+    "Product Miniaturization",
+    "Industrial Product Design",
+    "Hardware Reverse Engineering",
+    "PCB Design",
+    "Rapid Hardware Prototyping"
+  ],
+  "tags": [
+    "embedded-hardware",
+    "bluetooth-speaker",
+    "consumer-electronics",
+    "portable-audio",
+    "miniaturization",
+    "industrial-design",
+    "embedded-systems",
+    "product-engineering",
+    "hardware-prototype",
+    "patent-oriented",
+    "audio-electronics",
+    "innovation"
+  ],
+  "color": "from-neon-orange to-neon-yellow",
+  "roles": [
+    "Founder",
+    "Product Engineer",
+    "Embedded Systems Engineer",
+    "Hardware Designer",
+    "Consumer Electronics Designer",
+    "Prototype Developer",
+    "System Architect",
+    "Industrial Product Designer",
+    "Researcher",
+    "Patent Inventor"
+  ],
+  "metrics": [
+    { "label": "Prototype Versions", "value": "Multiple Iterations" },
+    { "label": "Product Status", "value": "Working Prototype" },
+    { "label": "Patent Status", "value": "Patent Draft Completed" },
+    { "label": "Internal Electronics", "value": "Bluetooth + Rechargeable Audio Platform" }
+  ],
+  "links": [
+    { "label": "Patent Documentation", "url": "#", "icon": "FileText" },
+    { "label": "Prototype Demonstration", "url": "#", "icon": "PlayCircle" }
+  ],
+  "timeline": {
+    "startDate": "2025-07-01",
+    "endDate": "Present",
+    "milestones": [
+      {
+        "date": "2025-07",
+        "title": "Project Conceptualization",
+        "description": "Identified the concept of transforming a discarded stationery highlighter into a concealed portable Bluetooth speaker while preserving its external appearance."
+      },
+      {
+        "date": "2025-08",
+        "title": "Prototype Development",
+        "description": "Constructed the first working hardware prototype using recycled Bluetooth neckband electronics, lithium-ion battery, miniature speaker, and embedded control circuitry."
+      },
+      {
+        "date": "2025-09",
+        "title": "Mechanical Integration",
+        "description": "Optimized internal component placement to maximize available space while maintaining the original highlighter form factor."
+      },
+      {
+        "date": "2025-10",
+        "title": "Patent Documentation",
+        "description": "Prepared complete utility patent documentation including engineering drawings, exploded views, figure descriptions, detailed specification, prior art comparison, and invention disclosure."
+      },
+      {
+        "date": "2025-11",
+        "title": "Architecture Enhancement",
+        "description": "Designed future hardware architecture supporting standalone MP3 playback, compact amplifier integration, dual audio modes, and modular embedded electronics."
+      },
+      {
+        "date": "Present",
+        "title": "Product Refinement",
+        "description": "Rebuilding the hardware platform with improved embedded architecture, reduced component count, custom amplifier design, and enhanced manufacturability for future consumer product development."
+      }
+    ]
+  }
+}

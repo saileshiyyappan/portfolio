@@ -1,0 +1,121 @@
+{
+  "coverImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477063/PAPER_SPEAKER_COVER_IMAGE_xkbpue.webp",
+    "caption": "Paper Speaker Project Cover",
+    "type": "image"
+  },
+
+  "heroImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477084/PAPER_SPEAKER_VERSION_2_TESTING_AND_COMPLETE_PROJECT_ON_TABLE_fmx4tm.webp",
+    "caption": "Paper Speaker MVP Prototype",
+    "type": "image"
+  },
+
+  "galleryImages": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477053/PAPER_SPEAKER__vs3y7z.webp",
+      "caption": "Paper Speaker Prototype 1",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477078/PAPER_SPEAKER_VERSION_1_SQUARE_SPEAKER_ejjwps.webp",
+      "caption": "Paper Speaker Prototype 2",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477078/PAPER_SPEAKER_VERSION_2_BODY_BASE_gm3t6q.webp",
+      "caption": "Paper Speaker Prototype 3",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477074/PAPER_SPEAKER_VERSION_2_BODY_002_otgwo7.webp",
+      "caption": "Paper Speaker Prototype 4",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477071/PAPER_SPEAKER_V2_BODY_BASE_AND_FRAME_o6kb1l.webp",
+      "caption": "Paper Speaker Prototype 5",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477084/PAPER_SPEAKER_VERSION_2_TESTING_AND_COMPLETE_PROJECT_ON_TABLE_fmx4tm.webp",
+      "caption": "Paper Speaker Prototype 6",
+      "type": "image"
+    }
+  ],
+
+  "architectureImages": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477064/PAPER_SPEAKER_DISMANTLED_SQUARE_SPEAKER_ir8ya0.webp",
+      "caption": "Paper Speaker Development 1",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477069/PAPER_SPEAKER_THINKNESS_OF_THE_SQUARE_SPEAKER_brzy5k.webp",
+      "caption": "Paper Speaker Development 2",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477060/PAPER_SPEAKER_BACK_SIDE_OF_THE_SQUARE_SPEAKER_gbw6qd.webp",
+      "caption": "Paper Speaker Development 3",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477058/PAPER_SPEAKER_BACK_SIDE_wfa1qf.webp",
+      "caption": "Paper Speaker Development 4",
+      "type": "image"
+    }
+  ],
+
+  "flowcharts": [],
+
+  "screenshots": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477071/PAPER_SPEAKER_FCW_COPPER_COIL_WINEDING_tqc6s3.webp",
+      "caption": "Paper Speaker Assembly 1",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477063/PAPER_SPEAKER_COPPER_WINEDING_002_neg2e7.webp",
+      "caption": "Paper Speaker Assembly 2",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477063/PAPER_SPEAKER_CONNECTING_TERMINALS_TO_THE_COIL_re9zic.webp",
+      "caption": "Paper Speaker Assembly 3",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477083/PAPER_SPEAKER_WIRING_THE_TERMINALS_av5nip.webp",
+      "caption": "Paper Speaker Assembly 4",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477055/PAPER_SPEAKER_ASM_001_FCW_ON_BASE_hiu1yw.webp",
+      "caption": "Paper Speaker Assembly 5",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477062/PAPER_SPEAKER_ASSEMBLED_DIAPHRAGM_bhi6iq.webp",
+      "caption": "Paper Speaker Assembly 6",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477072/PAPER_SPEAKER_TESTING_WITHOUT_DIAPHRAGM_f4vrx4.webp",
+      "caption": "Paper Speaker Testing 1",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477070/PAPER_SPEAKER_TESTING_WITHOUT_DIAPHRAGM_002_af8tnb.webp",
+      "caption": "Paper Speaker Testing 2",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477072/PAPER_SPEAKER_TOOLS_USED_FOR_FCW_goqfky.webp",
+      "caption": "Paper Speaker Development Tools",
+      "type": "image"
+    }
+  ],
+
+  "prototypeImages": []
+}

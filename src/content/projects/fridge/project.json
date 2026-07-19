@@ -1,0 +1,149 @@
+{
+  "id": "fridge",
+  "slug": "fridge",
+  "title": "Thermoelectric Mini Fridge",
+  "subtitle": "45L Peltier Module Based Portable Cooling System",
+  "category": "Tier-2 | Embedded Electronics & Thermal Engineering Project",
+  "status": "completed",
+  "year": "2020",
+
+  "shortDescription": "A completed Tier-2 engineering project that demonstrates a 45-liter thermoelectric refrigerator built using dual Peltier modules, forced-air cooling, aluminum heat sinks, and a high-current power supply to study semiconductor-based refrigeration without conventional compressors.",
+
+  "fullDescription": "The Thermoelectric Mini Fridge is a completed Tier-2 engineering project developed to understand semiconductor-based refrigeration using the Peltier effect. The system was designed as a compact 45-liter portable refrigerator powered by a 12V 15A switched-mode power supply and two thermoelectric Peltier modules. Large aluminum heat sinks and high-speed cooling fans were used on both the hot and cold sides to improve heat transfer efficiency and maintain continuous cooling performance. The project involved designing the cooling chamber, thermal insulation, airflow management, electrical wiring, and mechanical assembly while evaluating the cooling capability of thermoelectric refrigeration as an alternative to conventional compressor-based cooling systems. This project strengthened practical knowledge in power electronics, thermal management, embedded electronics, and prototype fabrication.",
+
+  "problemStatement": "Conventional refrigerators depend on compressor-based vapor compression systems, which are bulky, mechanically complex, noisy, and require refrigerant gases. For small portable cooling applications, an inexpensive solid-state cooling solution can provide an educational platform to study thermal management, semiconductor cooling, and compact refrigeration systems.",
+
+  "solution": "This project implements a portable thermoelectric refrigerator using two Peltier modules powered by a 12V 15A SMPS. The cooling system transfers heat from the insulated chamber to the external environment using aluminum heat sinks and forced-air cooling fans. The prototype demonstrates compressor-free refrigeration while providing practical understanding of thermoelectric cooling, power distribution, heat dissipation, insulation techniques, and portable cooling system design.",
+
+  "architecture": [
+    "45-liter insulated cooling chamber",
+    "Dual TEC1 thermoelectric Peltier modules",
+    "12V 15A switched-mode power supply",
+    "High-performance aluminum heat sinks",
+    "Dual forced-air cooling fan system",
+    "Hot-side and cold-side thermal isolation",
+    "Direct DC power distribution architecture",
+    "Portable compressor-free cooling system"
+  ],
+
+  "innovation": [
+    "Low-cost 45-liter thermoelectric refrigeration prototype",
+    "Dual Peltier module cooling architecture",
+    "Compressor-free semiconductor cooling system",
+    "Portable refrigeration using forced-air heat dissipation",
+    "Educational demonstration of thermoelectric cooling principles"
+  ],
+
+  "futureWork": [
+    "Integrate automatic digital temperature control",
+    "Implement PWM-based cooling power regulation",
+    "Improve insulation for higher thermal efficiency",
+    "Add battery backup for portable operation",
+    "Optimize airflow using CFD-based thermal design",
+    "Upgrade to industrial-grade thermoelectric modules"
+  ],
+
+  "technologies": [
+    "Thermoelectric Cooling",
+    "TEC1 Peltier Modules",
+    "SMPS",
+    "DC Cooling Fans",
+    "Heat Sink Design",
+    "Thermal Management",
+    "Mechanical Fabrication",
+    "Power Electronics",
+    "Embedded Electronics",
+    "Prototype Development"
+  ],
+
+  "tags": [
+    "peltier",
+    "thermoelectric",
+    "cooling",
+    "fridge",
+    "thermal-management",
+    "electronics",
+    "prototype",
+    "tier-2",
+    "engineering",
+    "portable-cooling"
+  ],
+
+  "color": "from-cyan-500 to-blue-600",
+
+  "roles": [
+    "Embedded Systems Learner",
+    "Electronics Prototype Developer",
+    "Mechanical Fabrication",
+    "Thermal System Designer",
+    "Project Builder"
+  ],
+
+  "metrics": [
+    {
+      "label": "Project Type",
+      "value": "Tier-2"
+    },
+    {
+      "label": "Cooling Capacity",
+      "value": "45 Liters"
+    },
+    {
+      "label": "Cooling Modules",
+      "value": "Dual Peltier"
+    },
+    {
+      "label": "Status",
+      "value": "Completed"
+    }
+  ],
+
+  "links": [
+    {
+      "label": "Project Documentation",
+      "url": "#",
+      "icon": "FileText"
+    },
+    {
+      "label": "Prototype Images",
+      "url": "#",
+      "icon": "Image"
+    },
+    {
+      "label": "Development Notes",
+      "url": "#",
+      "icon": "BookOpen"
+    }
+  ],
+
+  "timeline": {
+    "startDate": "2020-09-11",
+    "milestones": [
+      {
+        "date": "2020-09",
+        "title": "Project Planning",
+        "description": "Studied thermoelectric refrigeration principles, selected Peltier modules, and designed the overall cooling system."
+      },
+      {
+        "date": "2020-09",
+        "title": "Mechanical Fabrication",
+        "description": "Constructed the insulated refrigerator body, mounted heat sinks, cooling fans, and prepared the cooling chamber."
+      },
+      {
+        "date": "2020-09",
+        "title": "Electrical Integration",
+        "description": "Integrated the dual Peltier modules, 12V 15A SMPS, cooling fans, wiring, and complete power distribution."
+      },
+      {
+        "date": "2020-09",
+        "title": "Performance Testing",
+        "description": "Evaluated cooling performance, airflow, heat dissipation, and overall thermal efficiency under continuous operation."
+      },
+      {
+        "date": "2020-09",
+        "title": "Completed Tier-2 Project",
+        "description": "Successfully completed the portable 45-liter thermoelectric refrigerator, demonstrating compressor-free cooling using dual Peltier modules and forced-air thermal management."
+      }
+    ]
+  }
+}

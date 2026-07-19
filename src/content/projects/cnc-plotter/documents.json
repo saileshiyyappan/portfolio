@@ -1,0 +1,40 @@
+{
+  "researchPapers": [
+    {
+      "title": "Sensor Fusion for Wearable Health Monitoring",
+      "url": "#",
+      "type": "pdf"
+    }
+  ],
+  "technicalDocuments": [
+    {
+      "title": "MOWAERS System Architecture Specification",
+      "url": "#",
+      "type": "pdf"
+    },
+    {
+      "title": "API Documentation v2.0",
+      "url": "#",
+      "type": "pdf"
+    }
+  ],
+  "patentDocuments": [
+    {
+      "title": "Modular Wearable Sensor Architecture - Patent Filing",
+      "url": "#",
+      "type": "pdf"
+    },
+    {
+      "title": "Automated Emergency Response System - Patent Filing",
+      "url": "#",
+      "type": "pdf"
+    }
+  ],
+  "pdfs": [
+    {
+      "title": "MOWAERS User Manual",
+      "url": "#",
+      "type": "pdf"
+    }
+  ]
+}

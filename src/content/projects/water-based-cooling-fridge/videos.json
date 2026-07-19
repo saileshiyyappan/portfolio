@@ -1,0 +1,28 @@
+{
+  "videos": [
+    {
+      "title": "Water Based Cooling Fridge Performance Test",
+      "description": "Performance evaluation of the modified water-cooled thermoelectric refrigerator, demonstrating the cooling efficiency achieved through water-assisted heat dissipation and improved thermal management.",
+      "thumbnail": {
+        "src": "/images/water based cooling fridge/W_FRIDGE_COVER IMAGE.jpg",
+        "caption": "Water Based Cooling Fridge Testing",
+        "type": "image"
+      },
+      "duration": "",
+      "category": "Performance Testing",
+      "youtubeUrl": ""
+    },
+    {
+      "title": "Water Based Cooling Fridge Complete Demonstration",
+      "description": "Complete demonstration of the second-generation water-based thermoelectric refrigerator, showcasing the cooling architecture, water circulation system, radiator assembly, and overall prototype operation.",
+      "thumbnail": {
+        "src": "/images/water based cooling fridge/W_FRIDGE_COVER IMAGE.jpg",
+        "caption": "Water Based Cooling Fridge Demo",
+        "type": "image"
+      },
+      "duration": "",
+      "category": "Project Demo",
+      "youtubeUrl": ""
+    }
+  ]
+}

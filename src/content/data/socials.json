@@ -1,0 +1,38 @@
+[
+  {
+    "id": "linkedin",
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/in/saileshiyyappan",
+    "icon": "Linkedin",
+    "color": "text-white",
+    "hoverColor": "hover:text-[#0A66C2]",
+    "glowColor": "hover:shadow-[0_0_30px_rgba(10,102,194,0.3)]"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "url": "https://github.com/saileshiyyappan",
+    "icon": "Github",
+    "color": "text-white",
+    "hoverColor": "hover:text-white",
+    "glowColor": "hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
+  },
+  {
+    "id": "email",
+    "name": "Email",
+    "url": "mailto:jr.saileshiyyappan@gmail.com",
+    "icon": "Mail",
+    "color": "text-white",
+    "hoverColor": "hover:text-neon-cyan",
+    "glowColor": "hover:shadow-[0_0_30px_rgba(6,182,212,0.3)]"
+  },
+  {
+    "id": "twitter",
+    "name": "X (Twitter)",
+    "url": "https://x.com/saileshiyyappan",
+    "icon": "Twitter",
+    "color": "text-white",
+    "hoverColor": "hover:text-[#1DA1F2]",
+    "glowColor": "hover:shadow-[0_0_30px_rgba(29,161,242,0.3)]"
+  }
+]

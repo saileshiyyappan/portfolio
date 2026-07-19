@@ -1,0 +1,154 @@
+{
+  "id": "cnc-plotter",
+  "slug": "cnc-plotter",
+  "title": "Mini CNC Plotter",
+  "subtitle": "DVD Drive Based Two-Axis CNC Drawing Machine",
+  "category": "Tier-2 | Educational Embedded Systems Project",
+  "status": "completed",
+  "year": "2019",
+
+  "shortDescription": "A completed Tier-2 embedded systems project developed in 2019 that converts digital images and G-code into physical drawings using a low-cost CNC plotter built from recycled DVD drive mechanisms, stepper motors, and an Arduino-based motion control system.",
+
+  "fullDescription": "The Mini CNC Plotter is a completed Tier-2 educational embedded systems project developed in 2019 to understand the fundamentals of Computer Numerical Control (CNC), motion control, stepper motor synchronization, and G-code interpretation. The machine was built using recycled DVD drive mechanisms to create precise two-axis linear motion while a servo motor controlled the pen lifting mechanism. An Arduino-based controller executed G-code generated from vector graphics, allowing the machine to reproduce sketches, text, logos, and simple engineering drawings on paper. The project served as an early milestone in learning embedded systems, firmware development, mechanical assembly, electronics integration, and digital manufacturing. Although simple in design, it established the practical engineering foundation that later evolved into larger embedded hardware projects.",
+
+  "problemStatement": "Commercial CNC machines are expensive for beginners and educational institutions, making it difficult for students to gain hands-on experience with motion control, G-code programming, and computer-controlled manufacturing. A compact, affordable, and easy-to-build CNC platform is required to help learners understand the fundamentals of embedded automation and digital fabrication.",
+
+  "solution": "This project demonstrates a compact and low-cost CNC plotting system built using recycled DVD drive mechanisms, Arduino firmware, stepper motor drivers, and open-source G-code software. Digital images are converted into G-code instructions, which are interpreted by the controller to produce accurate two-axis movements while a servo motor controls the pen. The result is an educational CNC platform capable of drawing sketches and simple graphics while providing practical experience in embedded programming, mechanical integration, electronics, and automation.",
+
+  "architecture": [
+    "Arduino Uno based motion controller",
+    "Two-axis linear movement using recycled DVD drive mechanisms",
+    "A4988 stepper motor driver based motor control",
+    "Servo motor based pen lifting mechanism",
+    "GRBL firmware for G-code interpretation",
+    "USB serial communication between PC and controller",
+    "Open-source G-code generation workflow",
+    "Compact desktop CNC plotting architecture"
+  ],
+
+  "innovation": [
+    "Low-cost CNC plotter developed using recycled DVD drive mechanisms",
+    "Affordable educational platform for learning embedded motion control",
+    "Practical implementation of G-code based drawing automation",
+    "Hands-on introduction to CNC machine architecture and firmware",
+    "Compact desktop machine suitable for academic demonstrations"
+  ],
+
+  "futureWork": [
+    "Increase drawing accuracy using precision linear guides",
+    "Expand plotting area with custom mechanical frames",
+    "Add automatic homing and calibration functions",
+    "Upgrade firmware for smoother motion interpolation",
+    "Integrate wireless control and SD card based G-code execution",
+    "Extend the platform for laser engraving and PCB plotting applications"
+  ],
+
+  "technologies": [
+    "Arduino Uno",
+    "GRBL Firmware",
+    "Stepper Motors",
+    "A4988 Stepper Drivers",
+    "Servo Motor",
+    "DVD Drive Linear Mechanism",
+    "G-Code",
+    "Embedded Systems",
+    "Motion Control",
+    "Mechanical Assembly"
+  ],
+
+  "tags": [
+    "cnc",
+    "plotter",
+    "arduino",
+    "embedded",
+    "gcode",
+    "automation",
+    "motion-control",
+    "stepper-motor",
+    "educational-project",
+    "tier-2"
+  ],
+
+  "color": "from-slate-600 to-slate-800",
+
+  "roles": [
+    "Embedded Systems Learner",
+    "Firmware Developer",
+    "Hardware Assembler",
+    "Mechanical Integrator",
+    "Prototype Builder"
+  ],
+
+  "metrics": [
+    {
+      "label": "Project Type",
+      "value": "Tier-2"
+    },
+    {
+      "label": "Status",
+      "value": "Completed"
+    },
+    {
+      "label": "Motion Axes",
+      "value": "2-Axis"
+    },
+    {
+      "label": "Controller",
+      "value": "Arduino Uno"
+    }
+  ],
+
+  "links": [
+    {
+      "label": "Project Documentation",
+      "url": "#",
+      "icon": "FileText"
+    },
+    {
+      "label": "Prototype Images",
+      "url": "#",
+      "icon": "Image"
+    },
+    {
+      "label": "Development Notes",
+      "url": "#",
+      "icon": "BookOpen"
+    }
+  ],
+
+  "timeline": {
+    "startDate": "2019-06-01",
+    "milestones": [
+      {
+        "date": "2019-06",
+        "title": "Project Planning",
+        "description": "Studied CNC plotter concepts, selected DVD drive mechanisms, and planned the mechanical and electronic architecture."
+      },
+      {
+        "date": "2019-06",
+        "title": "Mechanical Assembly",
+        "description": "Built the two-axis frame using recycled DVD drives, mounted stepper motors, and integrated the pen lifting mechanism."
+      },
+      {
+        "date": "2019-06",
+        "title": "Electronics Integration",
+        "description": "Integrated the Arduino controller, A4988 motor drivers, stepper motors, servo motor, and power circuitry."
+      },
+      {
+        "date": "2019-06",
+        "title": "Firmware Development",
+        "description": "Configured GRBL firmware, generated G-code from digital images, and established communication with CNC control software."
+      },
+      {
+        "date": "2019-06",
+        "title": "Testing & Calibration",
+        "description": "Calibrated axis movement, optimized drawing accuracy, and successfully plotted multiple sketches and designs."
+      },
+      {
+        "date": "2019-06",
+        "title": "Completed Tier-2 Project",
+        "description": "Successfully completed the Mini CNC Plotter as a Tier-2 educational embedded systems project, demonstrating G-code execution, motion control, firmware integration, and low-cost CNC automation."
+      }
+    ]
+  }
+}

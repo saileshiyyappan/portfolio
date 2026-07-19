@@ -1,0 +1,66 @@
+{
+  "coverImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477081/Screenshot_2026-04-28_222500_sj1vqw.webp",
+    "caption": "TechLance MVP Cover",
+    "type": "image"
+  },
+  "heroImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477081/Screenshot_2026-04-28_222500_sj1vqw.webp",
+    "caption": "TechLance MVP Interface",
+    "type": "image"
+  },
+  "galleryImages": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477075/Screenshot_2026-04-27_184756_d1ymih.webp",
+      "caption": "TechLance Prototype 1",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477077/Screenshot_2026-04-27_192112_iga94o.webp",
+      "caption": "TechLance Prototype 2",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477078/Screenshot_2026-04-28_221950_zzuzfn.webp",
+      "caption": "TechLance Prototype 3",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477079/Screenshot_2026-04-28_222157_hbz9zl.webp",
+      "caption": "TechLance Prototype 4",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477080/Screenshot_2026-04-28_222319_tdsdpo.webp",
+      "caption": "TechLance Prototype 5",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477081/Screenshot_2026-04-28_222500_sj1vqw.webp",
+      "caption": "TechLance Prototype 6",
+      "type": "image"
+    }
+  ],
+  "architectureImages": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477084/Screenshot_2026-04-28_230300_cwwq2e.webp",
+      "caption": "TechLance MVP Dashboard",
+      "type": "image"
+    }
+  ],
+  "flowcharts": [],
+  "screenshots": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477082/Screenshot_2026-04-28_230127_fzx4f0.webp",
+      "caption": "TechLance MVP Screen",
+      "type": "image"
+    }
+  ],
+  "prototypeImages": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477085/Screenshot_2026-04-28_230510_rhozme.webp",
+      "caption": "TechLance MVP Prototype",
+      "type": "image"
+    }
+  ]
+}

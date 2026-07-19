@@ -1,0 +1,169 @@
+{
+  "id": "mowaers",
+  "slug": "mowaers-band",
+  "title": "MOWAERS / BAND",
+  "subtitle": "Modular Wearable Health Monitoring & Emergency Response System",
+  "category": "Health-Tech | Embedded Systems | Wearable Medical IoT",
+  "status": "active",
+  "year": "2025",
+  "shortDescription": "A patent-oriented modular wearable health monitoring system integrating embedded hardware, detachable sensing architecture, personalized health analysis, AI-assisted decision support, and emergency response workflows through a wearable band and companion mobile application.",
+  "fullDescription": "MOWAERS (Modular Organ-Wise Analysis, Evaluation, Response and Safety System), also referred to as BAND, is a next-generation modular wearable health monitoring platform designed to move beyond conventional wrist-only smart bands. The system combines modular wearable hardware, detachable sensing architecture, embedded firmware, Bluetooth communication, mobile applications, physiological signal processing, personalized health baselines, organ-oriented monitoring, and emergency response automation. The project focuses on creating an extensible engineering platform capable of supporting multi-organ health assessment rather than functioning as a single-purpose fitness wearable. The complete system consists of a Main Band (M-Band), Detachable Band (D-Band), optional Sub-Bands, embedded sensing modules, mobile application, firmware architecture, AI-assisted analysis pipeline, emergency communication workflow, and patent-oriented modular mechanical design. The project has been developed as a working engineering prototype intended for future industrial miniaturization, validation, and commercialization.",
+  "problemStatement": "Most consumer wearable devices primarily acquire limited physiological data from a fixed wrist location and provide generalized wellness metrics. They offer limited flexibility for organ-specific sensing, personalized health baselines, modular expansion, integrated emergency workflows, and scalable embedded architectures suitable for future healthcare applications. Existing solutions also lack detachable sensing mechanisms that allow measurements from multiple body locations while maintaining a unified software and hardware ecosystem.",
+  "solution": "MOWAERS introduces a modular wearable ecosystem consisting of a wearable main band and detachable sensing module capable of acquiring physiological signals from multiple body locations through a unified embedded platform. The system integrates personalized health benchmark generation (PHB), Sensor Handling Block (SHB), B-FIT sensor placement validation, Compare Engine, Condition Engine, Trend Analysis, and CRIB emergency response framework. The wearable communicates with a companion mobile application through Bluetooth Low Energy, enabling guided health assessments, historical trend visualization, caregiver interaction, emergency workflows, and future cloud integration while maintaining a scalable firmware architecture.",
+  "architecture": [
+    "Dual wearable architecture consisting of a Main Band (M-Band) and detachable sensing module (D-Band).",
+    "ESP32-based primary controller with ESP32-C3 detachable sensing node communicating through Bluetooth Low Energy.",
+    "Modular sensor architecture supporting ECG, PPG, motion sensing, environmental sensing, and future sensor expansion.",
+    "Personalized Health Benchmark (PHB) framework for user-specific baseline generation.",
+    "Sensor Handling Block (SHB) implementing structured multi-stage physiological data acquisition.",
+    "B-FIT placement validation framework for sensor positioning verification before analysis.",
+    "Compare Engine for baseline versus live physiological comparison.",
+    "Condition Engine for organ-wise and overall physiological condition assessment.",
+    "Trend Engine for longitudinal visualization of test-wise, daily, weekly, and monthly health records.",
+    "CRIB emergency workflow integrating emergency detection, user confirmation, escalation, communication, and future caregiver support.",
+    "Bluetooth Low Energy communication between wearable hardware and mobile application.",
+    "SD card based local data storage architecture supporting offline operation and future synchronization.",
+    "Modular firmware architecture developed using PlatformIO and VS Code for scalable embedded development."
+  ],
+  "innovation": [
+    "Novel modular detachable wearable architecture enabling organ-specific physiological measurements.",
+    "Integrated wearable ecosystem combining detachable hardware, embedded firmware, mobile application, and health analysis pipeline.",
+    "Personalized Health Benchmark (PHB) framework replacing generalized population thresholds with user-specific references.",
+    "B-FIT sensor placement validation concept to evaluate signal acquisition quality before health analysis.",
+    "Two-stage Sensor Handling Block (SHB) workflow separating direct physiological measurements and derived health parameters.",
+    "Multi-layer health interpretation pipeline consisting of Compare Engine, Condition Engine, Trend Engine, and CRIB emergency workflow.",
+    "Chest-press ECG acquisition concept enabling improved signal acquisition compared to conventional wrist-only configurations.",
+    "Patent-oriented mechanical architecture allowing detachable sensing modules for future expansion without redesigning the primary wearable."
+  ],
+  "futureWork": [
+    "Industrial redesign using compact custom PCB architecture and miniaturized electronics.",
+    "Migration from development boards to production-grade embedded hardware.",
+    "Integration of industrial medical-grade sensors for improved physiological accuracy.",
+    "Flexible PCB and wearable electronics miniaturization.",
+    "Extended physiological sensing including EMG, GSR, EEG, respiratory sensing, and additional biosensors.",
+    "Cloud synchronization and secure remote healthcare dashboard integration.",
+    "Advanced AI-assisted health prediction and anomaly detection using larger datasets.",
+    "Clinical validation studies comparing measurements with certified medical reference devices.",
+    "Preparation for regulatory compliance and future commercialization.",
+    "Industrial manufacturing partnerships for wearable enclosure optimization and product engineering."
+  ],
+  "technologies": [
+    "ESP32 DevKit V1",
+    "ESP32-C3 Super Mini",
+    "Bluetooth Low Energy (BLE)",
+    "MAX30102",
+    "AD8232 ECG",
+    "MPU6050",
+    "BMP180",
+    "DHT11",
+    "SIM800L GSM",
+    "NEO-6M GPS",
+    "OLED Display",
+    "MicroSD Storage",
+    "Arduino Framework",
+    "PlatformIO",
+    "VS Code",
+    "React",
+    "TypeScript",
+    "Vite",
+    "Flask",
+    "Python"
+  ],
+  "tags": [
+    "wearable",
+    "health-tech",
+    "embedded",
+    "iot",
+    "medical-device",
+    "bluetooth",
+    "firmware",
+    "mobile-app",
+    "patent",
+    "esp32",
+    "research",
+    "health-monitoring"
+  ],
+  "color": "from-neon-blue to-neon-cyan",
+  "roles": [
+    "Founder",
+    "System Architect",
+    "Embedded Systems Engineer",
+    "Hardware Designer",
+    "Firmware Developer",
+    "IoT Engineer",
+    "Mobile Application Developer",
+    "Product Designer",
+    "Researcher",
+    "Technical Project Lead"
+  ],
+  "metrics": [
+    {
+      "label": "Prototype Stage",
+      "value": "TRL-6"
+    },
+    {
+      "label": "Embedded Sensors",
+      "value": "8+"
+    },
+    {
+      "label": "Mobile Application",
+      "value": "Completed"
+    },
+    {
+      "label": "Architecture",
+      "value": "Modular"
+    }
+  ],
+  "links": [
+    {
+      "label": "Project Documentation",
+      "url": "#",
+      "icon": "FileText"
+    },
+    {
+      "label": "Source Repository",
+      "url": "#",
+      "icon": "Github"
+    },
+    {
+      "label": "Prototype Demonstration",
+      "url": "#",
+      "icon": "Globe"
+    }
+  ],
+  "timeline": {
+    "startDate": "2024-02-14",
+    "milestones": [
+      {
+        "date": "2024-06",
+        "title": "Concept & Research",
+        "description": "Defined the modular wearable health monitoring concept, identified engineering challenges, performed literature review, and established the initial system architecture."
+      },
+      {
+        "date": "2025-03",
+        "title": "System Architecture",
+        "description": "Designed the complete hardware architecture, firmware workflow, communication pipeline, detachable wearable concept, and overall software ecosystem."
+      },
+      {
+        "date": "2025-03",
+        "title": "Prototype Development",
+        "description": "Built the first working wearable prototype integrating embedded hardware, physiological sensors, communication modules, and modular wearable structure."
+      },
+      {
+        "date": "2025-11",
+        "title": "Firmware & Mobile Integration",
+        "description": "Completed embedded firmware, Bluetooth communication, mobile application integration, sensor acquisition pipeline, and end-to-end data flow."
+      },
+      {
+        "date": "2025-11",
+        "title": "Patent Documentation",
+        "description": "Prepared comprehensive patent documentation including engineering drawings, system architecture, workflows, and invention disclosure materials."
+      },
+      {
+        "date": "2026-06",
+        "title": "Working Engineering Prototype",
+        "description": "Achieved a functional TRL-6 engineering prototype demonstrating wearable operation, modular sensing, mobile application workflow, emergency architecture, and complete engineering documentation."
+      }
+    ]
+  }
+}

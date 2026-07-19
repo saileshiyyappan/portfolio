@@ -1,0 +1,152 @@
+{
+  "id": "water-based-cooling-fridge",
+  "slug": "water-based-cooling-fridge",
+  "title": "Water Based Cooling Fridge",
+  "subtitle": "Modified Thermoelectric Refrigeration with Water Cooling",
+  "category": "Tier-2 | Embedded Electronics & Thermal Engineering Project",
+  "status": "completed",
+  "year": "2023",
+
+  "shortDescription": "A completed Tier-2 engineering project that redesigns a conventional Peltier refrigerator by replacing air-based heat transfer with a water-assisted cooling loop, significantly improving cooling efficiency and achieving temperatures below 15°C within approximately 30–60 minutes.",
+
+  "fullDescription": "The Water Based Cooling Fridge is a completed Tier-2 engineering project developed on 06/05/2023 as the second generation of the earlier air-cooled thermoelectric refrigerator. The project originated after observing that many DIY Peltier refrigerator tutorials available online often fail to achieve practical cooling performance because the hot side of the Peltier module is cooled only by air. As heat accumulates, the temperature difference across the Peltier module decreases, resulting in poor cooling efficiency and disappointing real-world performance. To address this limitation, the project replaces conventional air-only heat dissipation with a water-assisted cooling system. Since water possesses significantly higher thermal conductivity and heat capacity than air, it absorbs and transports heat much more effectively, allowing the hot side of the Peltier modules to remain cooler and maintain a larger temperature difference. The prototype successfully demonstrated a noticeable improvement in cooling performance, reaching temperatures below 15°C within approximately 30 minutes to one hour under experimental conditions. The project validates that efficient thermoelectric refrigeration is achievable using proper thermal management and provides an improved approach for students and hobbyists attempting to build practical Peltier refrigerators.",
+
+  "problemStatement": "Many DIY thermoelectric refrigerator projects available on YouTube and online communities claim impressive cooling performance but often fail to achieve those results in practice. Most designs rely only on air-cooled heat sinks and fans to remove heat from the hot side of the Peltier module. As the hot side temperature rises, the temperature difference across the module decreases, dramatically reducing cooling efficiency. This results in slow cooling, poor temperature reduction, and frustration for beginners attempting to recreate these projects.",
+
+  "solution": "This project modifies the conventional Peltier refrigerator architecture by introducing a water-assisted heat removal system on the hot side of the thermoelectric modules. Instead of relying entirely on air cooling, circulating water continuously removes heat from the hot side and transfers it to an external radiator where fans dissipate the heat more efficiently. Because water transfers thermal energy much faster than air, the Peltier modules operate with a larger temperature difference, resulting in improved cooling performance. Experimental testing demonstrated that the refrigerator was capable of reaching temperatures below 15°C within approximately 30 to 60 minutes, proving that effective thermoelectric refrigeration is achievable using improved thermal management rather than simply increasing electrical power.",
+
+  "architecture": [
+    "45-liter insulated cooling chamber",
+    "Dual TEC1 thermoelectric Peltier modules",
+    "12V 15A switched-mode power supply",
+    "Water cooling block mounted on hot side",
+    "Closed-loop water circulation system",
+    "DC water pump for continuous coolant flow",
+    "External radiator with cooling fans",
+    "Thermal paste and insulated mounting assembly",
+    "Compressor-free refrigeration architecture"
+  ],
+
+  "innovation": [
+    "Second-generation improvement over the previous air-cooled refrigerator",
+    "Water-assisted thermal management replacing conventional air-only cooling",
+    "Improved heat removal from the hot side of the Peltier modules",
+    "Demonstrated significantly improved cooling efficiency using the same thermoelectric principle",
+    "Practical educational solution addressing common DIY Peltier refrigerator limitations",
+    "Validated that effective cooling depends on thermal management rather than increasing power alone"
+  ],
+
+  "futureWork": [
+    "Implement digital temperature monitoring and automatic control",
+    "Optimize coolant flow rate for maximum thermal efficiency",
+    "Design a compact custom water block for improved heat transfer",
+    "Integrate battery-powered portable operation",
+    "Evaluate different coolant mixtures and radiator configurations",
+    "Compare performance against compressor-based portable refrigerators",
+    "Develop a fully enclosed commercial prototype"
+  ],
+
+  "technologies": [
+    "Thermoelectric Cooling",
+    "TEC1 Peltier Modules",
+    "Water Cooling System",
+    "DC Water Pump",
+    "Radiator Cooling",
+    "Thermal Management",
+    "SMPS",
+    "Heat Sink Design",
+    "Mechanical Fabrication",
+    "Prototype Development"
+  ],
+
+  "tags": [
+    "water-cooling",
+    "peltier",
+    "thermoelectric",
+    "fridge",
+    "thermal-management",
+    "engineering",
+    "prototype",
+    "cooling-system",
+    "tier-2",
+    "heat-transfer"
+  ],
+
+  "color": "from-sky-500 to-cyan-600",
+
+  "roles": [
+    "Embedded Systems Learner",
+    "Thermal System Designer",
+    "Mechanical Fabrication",
+    "Electronics Prototype Developer",
+    "Project Builder"
+  ],
+
+  "metrics": [
+    {
+      "label": "Project Type",
+      "value": "Tier-2"
+    },
+    {
+      "label": "Cooling Method",
+      "value": "Water Assisted"
+    },
+    {
+      "label": "Target Temperature",
+      "value": "<15°C"
+    },
+    {
+      "label": "Status",
+      "value": "Completed"
+    }
+  ],
+
+  "links": [
+    {
+      "label": "Project Documentation",
+      "url": "#",
+      "icon": "FileText"
+    },
+    {
+      "label": "Prototype Images",
+      "url": "#",
+      "icon": "Image"
+    },
+    {
+      "label": "Development Notes",
+      "url": "#",
+      "icon": "BookOpen"
+    }
+  ],
+
+  "timeline": {
+    "startDate": "2023-05-06",
+    "milestones": [
+      {
+        "date": "2023-05",
+        "title": "Problem Analysis",
+        "description": "Studied the limitations of conventional DIY Peltier refrigerators and identified inefficient hot-side air cooling as the primary cause of poor performance."
+      },
+      {
+        "date": "2023-05",
+        "title": "System Redesign",
+        "description": "Redesigned the previous air-cooled refrigerator by introducing a closed-loop water cooling system with radiator, pump, and cooling block."
+      },
+      {
+        "date": "2023-05",
+        "title": "Prototype Assembly",
+        "description": "Integrated dual Peltier modules, water block, pump, radiator, cooling fans, SMPS, and insulated cooling chamber into the upgraded prototype."
+      },
+      {
+        "date": "2023-05",
+        "title": "Performance Evaluation",
+        "description": "Measured cooling performance under continuous operation and verified that the improved thermal management significantly increased refrigeration efficiency."
+      },
+      {
+        "date": "2023-05",
+        "title": "Completed Tier-2 Project",
+        "description": "Successfully demonstrated an improved water-assisted thermoelectric refrigerator capable of achieving temperatures below 15°C within approximately 30–60 minutes, validating the effectiveness of enhanced thermal management."
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "coverImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477377/FRIDGE_COVER_IMAGE_opzwrw.webp",
+    "caption": "Portable Thermoelectric Mini Fridge Cover",
+    "type": "image"
+  },
+
+  "heroImage": {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477378/FRIDGE_IMAGE_001_yyqeu7.webp",
+    "caption": "Portable Mini Fridge MVP Prototype",
+    "type": "image"
+  },
+
+  "galleryImages": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477385/FRIDGE_IMAGE_002_tixl1u.webp",
+      "caption": "Portable Mini Fridge Prototype 1",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477381/FRIDGE_IMAGE_003_zcbmqm.webp",
+      "caption": "Portable Mini Fridge Prototype 2",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477383/FRIDGE_IMAGE_004_n3yrug.webp",
+      "caption": "Portable Mini Fridge Prototype 3",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477384/FRIDGE_IMAGE_005_kzotfb.webp",
+      "caption": "Portable Mini Fridge Prototype 4",
+      "type": "image"
+    }
+  ],
+
+  "architectureImages": [
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477380/FRIDGE_CIRCUITS_AND_COMPONENTS_PELTIER_SMPS_PELTIER_MODULE_xrgrgh.webp",
+      "caption": "Portable Mini Fridge Hardware Components",
+      "type": "image"
+    }
+  ],
+
+  "flowcharts": [],
+
+  "screenshots": [],
+
+  "prototypeImages": []
+}

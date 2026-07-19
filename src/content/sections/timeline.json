@@ -1,0 +1,86 @@
+[
+  {
+    "id": "engineering-foundation",
+    "year": "2019",
+    "title": "Engineering Foundation",
+    "description": "Started exploring electronics, Arduino programming, embedded systems, and DIY engineering by building small Tier-2 and Tier-3 projects to understand practical hardware development.",
+    "icon": "Search",
+    "color": "text-neon-blue",
+    "bgColor": "bg-neon-blue/10"
+  },
+  {
+    "id": "school-projects",
+    "year": "2020-2023",
+    "title": "School Engineering Projects",
+    "description": "Completed multiple Tier-2 engineering projects including CNC Plotter, Thermoelectric Refrigerator, Water-Based Cooling Refrigerator, MP3 Speaker, BLE Bug, and other embedded hardware prototypes while developing practical experience in electronics and mechanical fabrication.",
+    "icon": "Wrench",
+    "color": "text-neon-cyan",
+    "bgColor": "bg-neon-cyan/10",
+    "relatedProjectIds": [
+      "cnc-plotter",
+      "fridge",
+      "water-based-cooling-fridge",
+      "mp3-speaker",
+      "ble-bug"
+    ]
+  },
+  {
+    "id": "university-beginning",
+    "year": "2023",
+    "title": "University & Tier-1 Projects",
+    "description": "Joined VIT AP University and transitioned from educational prototypes to large-scale product engineering, beginning the development of patent-oriented Tier-1 projects with complete hardware and software ecosystems.",
+    "icon": "GraduationCap",
+    "color": "text-neon-teal",
+    "bgColor": "bg-neon-teal/10",
+    "relatedProjectIds": [
+      "mowaers-band",
+      "highlighter-speaker",
+      "paper-thin-speaker-fcw-method"
+    ]
+  },
+  {
+    "id": "system-architecture",
+    "year": "2024-2025",
+    "title": "System Architecture & Product Development",
+    "description": "Designed complete embedded hardware architectures, firmware, AI-assisted software platforms, mobile applications, and modular engineering workflows while expanding multiple Tier-1 projects into end-to-end engineering systems.",
+    "icon": "Boxes",
+    "color": "text-neon-green",
+    "bgColor": "bg-neon-green/10",
+    "relatedProjectIds": [
+      "mowaers-band",
+      "techlance",
+      "highlighter-speaker",
+      "paper-thin-speaker-fcw-method"
+    ]
+  },
+  {
+    "id": "research-patent",
+    "year": "2025-2026",
+    "title": "Research & Patent-Oriented Development",
+    "description": "Expanded projects into research-oriented and patent-oriented engineering work through technical documentation, invention drafting, system validation, portfolio development, and preparation for future publications and intellectual property filings.",
+    "icon": "FileCheck",
+    "color": "text-neon-purple",
+    "bgColor": "bg-neon-purple/10",
+    "relatedProjectIds": [
+      "mowaers-band",
+      "highlighter-speaker",
+      "paper-thin-speaker-fcw-method",
+      "techlance"
+    ]
+  },
+  {
+    "id": "portfolio-phase",
+    "year": "2026",
+    "title": "Engineering Portfolio & Professional Presence",
+    "description": "Established a complete engineering portfolio, technical documentation, professional profiles, and project ecosystem while preparing products for research publications, collaborations, internships, startup opportunities, and future commercialization.",
+    "icon": "Rocket",
+    "color": "text-neon-orange",
+    "bgColor": "bg-neon-orange/10",
+    "relatedProjectIds": [
+      "mowaers-band",
+      "techlance",
+      "highlighter-speaker",
+      "paper-thin-speaker-fcw-method"
+    ]
+  }
+]
