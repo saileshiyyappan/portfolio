@@ -102,18 +102,16 @@ export async function loadProjectFromCMS(slug: string): Promise<Project | null> 
 
     const baseProject = projectData as Partial<Project>;
 
-    const normalizeMedia = (it: unknown): Project['galleryImages'][0] => {
+const normalizeMedia = (it: unknown): Project['galleryImages'][0] => {
   const item = it as Partial<Project['galleryImages'][0]> | undefined;
 
-  const type =
-    item?.type === 'video' || item?.type === 'image'
-      ? item.type
-      : 'image';
+  const mediaType: 'image' | 'video' =
+    item?.type === 'video' ? 'video' : 'image';
 
   return {
-    src: (item?.src as string) || '',
-    caption: (item?.caption as string) || '',
-    type,
+    src: typeof item?.src === 'string' ? item.src : '',
+    caption: typeof item?.caption === 'string' ? item.caption : '',
+    type: mediaType,
   };
 };
 
