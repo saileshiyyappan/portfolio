@@ -4,18 +4,14 @@ import { motion } from 'framer-motion';
 import { ArrowUp, Heart } from 'lucide-react';
 import Link from 'next/link';
 import Container from '@/components/ui/Container';
+import { getFooterNavigationLinks, scrollToHref } from '@/lib/navigation';
 
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const quickLinks = [
-    { label: 'About', href: '/#about' },
-    { label: 'Projects', href: '/projects' },
-    { label: 'Skills', href: '/#skills' },
-    { label: 'Contact', href: '/#contact' },
-  ];
+  const quickLinks = getFooterNavigationLinks();
 
   return (
     <footer className="relative py-16 border-t border-white/5">
@@ -34,14 +30,14 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="flex flex-wrap justify-center gap-6">
             {quickLinks.map((link) => (
-              <Link
+              <button
                 key={link.label}
-                href={link.href}
+                onClick={() => scrollToHref(link.href)}
                 className="font-body text-sm text-void12 hover:text-white transition-colors relative group"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 h-[1px] bg-neon-cyan w-0 group-hover:w-full transition-all duration-300" />
-              </Link>
+              </button>
             ))}
           </div>
 

@@ -105,6 +105,11 @@ export interface Achievement {
 
 // ==================== SKILL ====================
 
+export interface SkillTechnology {
+  name: string;
+  logo?: string;
+}
+
 export interface Skill {
   id: string;
   title: string;
@@ -113,7 +118,7 @@ export interface Skill {
   icon: string;
   color: string;
   category?: string;
-  technologies?: string[];
+  technologies?: SkillTechnology[];
 }
 
 // ==================== TIMELINE ====================
@@ -148,6 +153,7 @@ export interface SocialLink {
   name: string;
   url: string;
   icon: string;
+  label?: string;
   color: string;
   hoverColor: string;
   glowColor: string;

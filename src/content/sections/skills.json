@@ -8,12 +8,12 @@
     "color": "from-neon-blue to-neon-cyan",
     "category": "Product",
     "technologies": [
-      "Product Design",
-      "Rapid Prototyping",
-      "Figma",
-      "CAD Design",
-      "System Design",
-      "Documentation"
+      { "name": "Product Design", "logo": "figma" },
+      { "name": "Rapid Prototyping", "logo": "figma" },
+      { "name": "Figma", "logo": "figma" },
+      { "name": "CAD Design", "logo": "figma" },
+      { "name": "System Design", "logo": "figma" },
+      { "name": "Documentation", "logo": "markdown" }
     ]
   },
   {
@@ -25,12 +25,12 @@
     "color": "from-neon-cyan to-neon-teal",
     "category": "Hardware",
     "technologies": [
-      "ESP32",
-      "Arduino",
-      "PlatformIO",
-      "I2C",
-      "UART",
-      "SPI"
+      { "name": "ESP32", "logo": "esp32" },
+      { "name": "Arduino", "logo": "arduino" },
+      { "name": "PlatformIO", "logo": "platformio" },
+      { "name": "I2C", "logo": "raspberrypi" },
+      { "name": "UART", "logo": "raspberrypi" },
+      { "name": "SPI", "logo": "raspberrypi" }
     ]
   },
   {
@@ -42,12 +42,12 @@
     "color": "from-neon-teal to-neon-green",
     "category": "Software",
     "technologies": [
-      "C++",
-      "Arduino Framework",
-      "PlatformIO",
-      "VS Code",
-      "BLE",
-      "MicroSD"
+      { "name": "C++", "logo": "cplusplus" },
+      { "name": "Arduino Framework", "logo": "arduino" },
+      { "name": "PlatformIO", "logo": "platformio" },
+      { "name": "VS Code", "logo": "vscode" },
+      { "name": "BLE", "logo": "ble" },
+      { "name": "MicroSD", "logo": "raspberrypi" }
     ]
   },
   {
@@ -59,12 +59,12 @@
     "color": "from-neon-green to-neon-blue",
     "category": "Connectivity",
     "technologies": [
-      "BLE",
-      "Wi-Fi",
-      "ESP32",
-      "SIM800L",
-      "GPS",
-      "IoT"
+      { "name": "BLE", "logo": "ble" },
+      { "name": "Wi-Fi", "logo": "wifi" },
+      { "name": "ESP32", "logo": "esp32" },
+      { "name": "SIM800L", "logo": "raspberrypi" },
+      { "name": "GPS", "logo": "raspberrypi" },
+      { "name": "IoT", "logo": "linux" }
     ]
   },
   {
@@ -76,12 +76,12 @@
     "color": "from-neon-blue to-neon-purple",
     "category": "Architecture",
     "technologies": [
-      "System Design",
-      "Modular Architecture",
-      "Embedded Architecture",
-      "API Design",
-      "Workflow Design",
-      "Documentation"
+      { "name": "System Design", "logo": "linux" },
+      { "name": "Modular Architecture", "logo": "react" },
+      { "name": "Embedded Architecture", "logo": "raspberrypi" },
+      { "name": "API Design", "logo": "fastapi" },
+      { "name": "Workflow Design", "logo": "notion" },
+      { "name": "Documentation", "logo": "markdown" }
     ]
   },
   {
@@ -93,12 +93,12 @@
     "color": "from-neon-purple to-neon-pink",
     "category": "AI",
     "technologies": [
-      "Gemini API",
-      "Vertex AI",
-      "OpenAI API",
-      "Python",
-      "Prompt Engineering",
-      "AI Workflows"
+      { "name": "Gemini API", "logo": "gemini" },
+      { "name": "Vertex AI", "logo": "google-cloud" },
+      { "name": "OpenAI API", "logo": "openai" },
+      { "name": "Python", "logo": "python" },
+      { "name": "Prompt Engineering", "logo": "openai" },
+      { "name": "AI Workflows", "logo": "openai" }
     ]
   },
   {
@@ -110,12 +110,12 @@
     "color": "from-neon-pink to-neon-orange",
     "category": "Software",
     "technologies": [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Firebase",
-      "Flask"
+      { "name": "Next.js", "logo": "nextjs" },
+      { "name": "React", "logo": "react" },
+      { "name": "TypeScript", "logo": "typescript" },
+      { "name": "Node.js", "logo": "nodejs" },
+      { "name": "Firebase", "logo": "firebase" },
+      { "name": "Flask", "logo": "flask" }
     ]
   },
   {
@@ -127,12 +127,12 @@
     "color": "from-neon-orange to-neon-yellow",
     "category": "Research",
     "technologies": [
-      "Research Writing",
-      "IEEE Format",
-      "Literature Review",
-      "Experimental Design",
-      "Documentation",
-      "Data Analysis"
+      { "name": "Research Writing", "logo": "markdown" },
+      { "name": "IEEE Format", "logo": "filetext" },
+      { "name": "Literature Review", "logo": "bookopen" },
+      { "name": "Experimental Design", "logo": "wrench" },
+      { "name": "Documentation", "logo": "markdown" },
+      { "name": "Data Analysis", "logo": "trendingup" }
     ]
   },
   {
@@ -144,12 +144,12 @@
     "color": "from-neon-yellow to-neon-blue",
     "category": "Innovation",
     "technologies": [
-      "Patent Drafting",
-      "Prior Art Search",
-      "Technical Drawings",
-      "Product Innovation",
-      "System Design",
-      "Documentation"
+      { "name": "Patent Drafting", "logo": "filetext" },
+      { "name": "Prior Art Search", "logo": "search" },
+      { "name": "Technical Drawings", "logo": "pen-tool" },
+      { "name": "Product Innovation", "logo": "lightbulb" },
+      { "name": "System Design", "logo": "boxes" },
+      { "name": "Documentation", "logo": "markdown" }
     ]
   }
 ]

@@ -7,33 +7,17 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useModal } from '@/context/ModalContext';
 import { NavLink } from '@/types';
-
-const navLinks: NavLink[] = [
-  { label: 'About', href: '#about' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Timeline', href: '#timeline' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Contact', href: '#contact' },
-];
-
-const pageNavLinks: NavLink[] = [
-  { label: 'About', href: '/#about' },
-  { label: 'Projects', href: '/projects' },
-  { label: 'Gallery', href: '/#gallery' },
-  { label: 'Timeline', href: '/#timeline' },
-  { label: 'Skills', href: '/#skills' },
-  { label: 'Contact', href: '/#contact' },
-];
+import { getHomeNavigationLinks, getPageNavigationLinks, scrollToHref } from '@/lib/navigation';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('hero');
   const pathname = usePathname();
   const isHome = pathname === '/';
   const { isModalOpen } = useModal();
 
-  const links = isHome ? navLinks : pageNavLinks;
+  const links = isHome ? getHomeNavigationLinks() : getPageNavigationLinks();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 80);
@@ -50,30 +34,27 @@ export default function Navigation() {
     return () => { document.body.style.overflow = ''; };
   }, [isMobileOpen]);
 
+  useEffect(() => {
+    if (!isHome) return;
+
+    const sections = document.querySelectorAll<HTMLElement>('[id]');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleEntry = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visibleEntry?.target?.id) {
+          setActiveSection(visibleEntry.target.id);
+        }
+      },
+      { threshold: [0.25, 0.5, 0.75] }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, [isHome]);
+
   const scrollTo = useCallback((href: string) => {
     setIsMobileOpen(false);
-    if (href.startsWith('/#')) {
-      const target = href.slice(1);
-      const el = document.querySelector(target);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-        return;
-      }
-      window.location.href = href;
-      return;
-    }
-
-    if (href.startsWith('#')) {
-      const el = document.querySelector(href);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      }
-      return;
-    }
-
-    if (href.startsWith('/')) {
-      window.location.href = href;
-    }
+    scrollToHref(href);
   }, []);
 
   return (
@@ -95,7 +76,7 @@ export default function Navigation() {
 
           <div className="hidden md:flex items-center gap-8">
             {links.map((link) => (
-              <NavItem key={link.label} link={link} onClick={() => scrollTo(link.href)} />
+              <NavItem key={link.label} link={link} isActive={isHome ? activeSection === link.href.replace('#', '') : pathname === '/projects' && link.label === 'Projects'} onClick={() => scrollTo(link.href)} />
             ))}
           </div>
 
@@ -139,26 +120,22 @@ export default function Navigation() {
   );
 }
 
-function NavItem({ link, onClick }: { link: NavLink; onClick: () => void }) {
+function NavItem({ link, isActive, onClick }: { link: NavLink; isActive: boolean; onClick: () => void }) {
+  const className = `relative font-body text-sm transition-colors group ${isActive ? 'text-white' : 'text-void14 hover:text-white'}`;
+
   if (link.href.startsWith('/')) {
     return (
-      <Link
-        href={link.href}
-        className="relative font-body text-sm text-void14 hover:text-white transition-colors group"
-      >
+      <Link href={link.href} className={className}>
         {link.label}
-        <span className="absolute -bottom-1 left-0 h-[1px] bg-neon-cyan w-0 group-hover:w-full transition-all duration-300" />
+        <span className={`absolute -bottom-1 left-0 h-[1px] bg-neon-cyan transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'}`} />
       </Link>
     );
   }
 
   return (
-    <button
-      onClick={onClick}
-      className="relative font-body text-sm text-void14 hover:text-white transition-colors group"
-    >
+    <button onClick={onClick} className={className}>
       {link.label}
-      <span className="absolute -bottom-1 left-0 h-[1px] bg-neon-cyan w-0 group-hover:w-full transition-all duration-300" />
+      <span className={`absolute -bottom-1 left-0 h-[1px] bg-neon-cyan transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'}`} />
     </button>
   );
 }

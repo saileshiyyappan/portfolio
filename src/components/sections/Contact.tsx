@@ -2,24 +2,16 @@
 
 import { memo } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, ArrowUpRight, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, MapPin, ArrowUpRight } from 'lucide-react';
 import { contactData } from '@/data/contact';
 import { socialLinks } from '@/data/socials';
 import { useInView } from '@/hooks/useInView';
 import { staggerContainer, staggerItem } from '@/lib/animations';
 import SectionHeader from '@/components/ui/SectionHeader';
 import Container from '@/components/ui/Container';
-
-
-const iconMap: Record<string, React.ComponentType<{ size?: number | string; className?: string }>> = {
-  Linkedin,
-  Github,
-  Mail,
-  Twitter,
-};
+import TechnologyLogo from '@/components/ui/TechnologyLogo';
 
 const SocialLink = memo(function SocialLink({ social }: { social: typeof socialLinks[0] }) {
-  const IconComponent = iconMap[social.icon] || Mail;
   return (
     <motion.a
       href={social.url}
@@ -30,11 +22,11 @@ const SocialLink = memo(function SocialLink({ social }: { social: typeof socialL
       whileHover={{ x: 5 }}
     >
       <div className="w-10 h-10 rounded-lg bg-neon-blue/10 flex items-center justify-center group-hover:bg-neon-blue/20 transition-colors flex-shrink-0">
-        <IconComponent size={18} className="text-neon-cyan" />
+        <TechnologyLogo name={social.icon} size={18} color="text-neon-cyan" label={social.label || social.name} />
       </div>
       <div className="flex-1 min-w-0">
         <div className="font-heading font-medium text-white text-sm">{social.name}</div>
-        <div className="font-body text-xs text-void13 truncate">{social.url}</div>
+        <div className="font-body text-xs text-void13 truncate">{social.label || social.url}</div>
       </div>
       <ArrowUpRight size={14} className="text-void12 group-hover:text-white transition-colors flex-shrink-0" />
     </motion.a>

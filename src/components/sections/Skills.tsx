@@ -9,6 +9,7 @@ import { staggerItem } from '@/lib/animations';
 import SectionHeader from '@/components/ui/SectionHeader';
 import Container from '@/components/ui/Container';
 import IconRenderer from '@/components/ui/IconRenderer';
+import TechnologyLogo from '@/components/ui/TechnologyLogo';
 
 const SkillCard = memo(function SkillCard({ skill, index }: { skill: Skill; index: number }) {
   const { ref, isInView } = useInView({ rootMargin: '-50px' });
@@ -54,8 +55,9 @@ const SkillCard = memo(function SkillCard({ skill, index }: { skill: Skill; inde
           transition={{ duration: 0.3 }}
         >
           {skill.technologies?.map((tech) => (
-            <span key={tech} className="px-2 py-0.5 glass rounded text-[10px] font-body text-void12 border border-white/5">
-              {tech}
+            <span key={tech.name} className="inline-flex items-center gap-1.5 px-2 py-0.5 glass rounded text-[10px] font-body text-void12 border border-white/5">
+              <TechnologyLogo name={tech.logo || tech.name} size={12} color="text-white" label={tech.name} />
+              <span>{tech.name}</span>
             </span>
           ))}
         </motion.div>
