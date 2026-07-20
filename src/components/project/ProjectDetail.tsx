@@ -2,7 +2,7 @@
 
 import { memo, useCallback, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowUpRight, ExternalLink, FileText, Cpu, Layers, Lightbulb, BarChart3, Clock, Users, CheckCircle2 } from 'lucide-react';
+import { ArrowUpRight, ExternalLink, FileText, Cpu, Layers, Lightbulb, BarChart3, Clock, Users, CheckCircle2 } from 'lucide-react';
 import { Project } from '@/types';
 import Container from '@/components/ui/Container';
 import { fadeUp } from '@/lib/animations';
