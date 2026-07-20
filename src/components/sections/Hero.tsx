@@ -25,7 +25,7 @@ export default function Hero() {
     <section
       ref={containerRef}
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-[calc(100vh-var(--navbar-height))] flex items-start justify-center pt-[var(--navbar-height)] pb-8 overflow-hidden"
     >
       <motion.div
         className="relative z-10 max-w-6xl mx-auto px-6 text-center"

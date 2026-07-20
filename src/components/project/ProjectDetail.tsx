@@ -2,7 +2,6 @@
 
 import { memo, useCallback, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import { ArrowLeft, ArrowUpRight, ExternalLink, FileText, Cpu, Layers, Lightbulb, BarChart3, Clock, Users, CheckCircle2 } from 'lucide-react';
 import { Project } from '@/types';
 import Container from '@/components/ui/Container';
@@ -100,12 +99,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
   return (
     <Container>
       <motion.div initial="hidden" animate="visible" variants={fadeUp}>
-        {/* Back Navigation */}
-        <Link href="/projects" className="inline-flex items-center gap-2 text-void14 hover:text-white transition-colors mb-8">
-          <ArrowLeft size={16} />
-          <span className="font-body text-sm">Back to Projects</span>
-        </Link>
-
         {/* Hero */}
         <div className="relative rounded-3xl overflow-hidden mb-16">
           <div className="relative aspect-[21/9] lg:aspect-[3/1]">

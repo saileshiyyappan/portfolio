@@ -53,11 +53,27 @@ export default function Navigation() {
   const scrollTo = useCallback((href: string) => {
     setIsMobileOpen(false);
     if (href.startsWith('/#')) {
+      const target = href.slice(1);
+      const el = document.querySelector(target);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
       window.location.href = href;
       return;
     }
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+
+    if (href.startsWith('#')) {
+      const el = document.querySelector(href);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+      return;
+    }
+
+    if (href.startsWith('/')) {
+      window.location.href = href;
+    }
   }, []);
 
   return (

@@ -29,6 +29,7 @@ const ImageViewerContent = memo(function ImageViewerContent({
   onPrev,
 }: ImageViewerProps) {
   const [scale, setScale] = useState(1);
+  const [rotation, setRotation] = useState(0);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
@@ -41,6 +42,10 @@ const ImageViewerContent = memo(function ImageViewerContent({
   const resetZoom = useCallback(() => {
     setScale(1);
     setPosition({ x: 0, y: 0 });
+  }, []);
+
+  const rotateImage = useCallback(() => {
+    setRotation((r) => (r + 90) % 360);
   }, []);
 
   const handleKeyDown = useCallback(
@@ -67,6 +72,7 @@ const ImageViewerContent = memo(function ImageViewerContent({
 
   useEffect(() => {
     resetZoom();
+    setRotation(0);
   }, [currentIndex, resetZoom]);
 
   const handleWheel = (e: React.WheelEvent) => {
@@ -165,9 +171,9 @@ const ImageViewerContent = memo(function ImageViewerContent({
                 <ZoomIn size={14} className="text-white" />
               </button>
               <button
-                onClick={resetZoom}
+                onClick={rotateImage}
                 className="w-9 h-9 rounded-full glass flex items-center justify-center hover:bg-white/10 transition-colors"
-                aria-label="Reset zoom"
+                aria-label="Rotate image"
               >
                 <RotateCcw size={14} className="text-white" />
               </button>
@@ -207,7 +213,8 @@ const ImageViewerContent = memo(function ImageViewerContent({
                 alt={currentItem.caption || ''}
                 className="max-w-[90vw] max-h-[75vh] object-contain rounded-lg cursor-grab active:cursor-grabbing select-none"
                 style={{
-                  transform: `translate(${position.x}px, ${position.y}px) scale(${scale})`,
+                  transform: `translate(${position.x}px, ${position.y}px) scale(${scale}) rotate(${rotation}deg)`,
+                  transformOrigin: 'center center',
                   transition: isDragging ? 'none' : 'transform 0.2s ease-out',
                 }}
                 onWheel={handleWheel}
