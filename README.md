@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# 🚀 SAILESH IYYAPPAN JR.
 
-First, run the development server:
+# Systems Product Engineer • Technical Founder
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Embedded Systems • Artificial Intelligence • IoT • Full Stack Development • Product Engineering • Applied Research
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[🌐 Portfolio](saileshiyyappan.vercel.app) •
+[💼 LinkedIn](https://www.linkedin.com/in/saileshiyyappan) •
+[💻 GitHub](https://github.com/saileshiyyappan) •
+[🦊 GitLab](https://gitlab.com/saileshiyyappanjr)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+</div>
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+# 👋 Welcome
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Welcome to my engineering portfolio repository.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This repository contains the complete source code for my personal portfolio website, showcasing my work across embedded systems, artificial intelligence, IoT, full-stack software development, research, and product engineering.
 
-## Deploy on Vercel
+I focus on designing practical engineering systems that combine hardware, software, and intelligent algorithms to solve real-world problems. My work emphasizes innovation, scalability, and patent-oriented product development.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 🚀 Featured Engineering Projects
+
+## 🩺 M-BAND (MOWAERS)
+
+Modular wearable healthcare platform capable of monitoring multiple physiological parameters through detachable sensor modules.
+
+- ESP32 Embedded System
+- ECG Monitoring
+- SpO₂ & Heart Rate
+- GPS + GSM Emergency System
+- Bluetooth Connectivity
+- SD Card Logging
+- Machine Learning Assisted Sensor Validation
+- Research & Patent Oriented
+
+---
+
+## 🤖 TechLance
+
+AI-powered engineering ecosystem built to simplify project development, documentation, collaboration, and intelligent engineering workflows.
+
+---
+
+## 🔊 Highlighter Bluetooth Speaker
+
+Patent-oriented consumer hardware project focused on developing an efficient speaker architecture with improved acoustic performance using a simplified design approach.
+
+---
+
+## 💧 Smart Digital Water Distribution Unit
+
+Offline-first smart water dispensing system with RFID authentication, embedded automation, and intelligent water management.
+
+---
+
+# 💻 Technology Stack
+
+### Languages
+
+C • C++ • Python • Java • JavaScript • TypeScript
+
+### Frontend
+
+React • Next.js • Tailwind CSS • HTML • CSS
+
+### Backend
+
+Node.js • Express • Firebase • REST APIs
+
+### Embedded Systems
+
+ESP32 • Arduino • PlatformIO • BLE • GPS • GSM • Sensors
+
+### Artificial Intelligence
+
+Machine Learning • Vertex AI • Gemini API
+
+### Tools
+
+Git • GitHub • VS Code • Figma • Postman
+
+---
+
+# 🌟 Objectives
+
+This portfolio demonstrates my journey in building intelligent engineering products that integrate:
+
+- Embedded Hardware
+- IoT Systems
+- Artificial Intelligence
+- Full Stack Applications
+- Product Development
+- Applied Research
+- Patent-Oriented Innovation
+
+---
+
+# 📬 Contact
+
+**LinkedIn**
+
+https://www.linkedin.com/in/saileshiyyappan
+
+**Portfolio**
+
+saileshiyyappan.vercel.app
+**GitHub**
+
+https://github.com/saileshiyyappan
+
+---
+
+## ⭐ Thank you for visiting my portfolio!
