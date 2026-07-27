@@ -131,17 +131,17 @@
   "links": [
     {
       "label": "Live Platform",
-      "url": "#",
+      "url": "https://techlance.vercel.app",
       "icon": "Globe"
     },
     {
       "label": "GitHub",
-      "url": "#",
+      "url": "https://github.com/saileshiyyappan",
       "icon": "Github"
     },
     {
       "label": "Documentation",
-      "url": "#",
+      "url": "https://drive.google.com/drive/folders/1FaHskWUHxjWoiQrN2s7xX4Bl2f_nv1uO?usp=drive_link",
       "icon": "FileText"
     }
   ],

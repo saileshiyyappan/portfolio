@@ -113,17 +113,17 @@
   "links": [
     {
       "label": "Research Documentation",
-      "url": "#",
+      "url": "https://drive.google.com/drive/folders/1r4CkV4Ju_3-iZcPhi8Blkb9bTsmANne6?usp=drive_link",
       "icon": "FileText"
     },
     {
       "label": "System Architecture",
-      "url": "#",
+      "url": "https://orcid.org/0009-0003-5424-0405",
       "icon": "Workflow"
     },
     {
-      "label": "Development Notes",
-      "url": "#",
+      "label": "Explanation Video",
+      "url": "https://youtube.com/@SaileshIyyappanJR",
       "icon": "BookOpen"
     }
   ],

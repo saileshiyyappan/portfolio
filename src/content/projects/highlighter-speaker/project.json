@@ -91,8 +91,8 @@
     { "label": "Internal Electronics", "value": "Bluetooth + Rechargeable Audio Platform" }
   ],
   "links": [
-    { "label": "Patent Documentation", "url": "#", "icon": "FileText" },
-    { "label": "Prototype Demonstration", "url": "#", "icon": "PlayCircle" }
+    { "label": "Patent Documentation", "url": "https://drive.google.com/drive/folders/1n95daHeFTEAwl_U-26tEBimmvb3Uf-FD?usp=drive_link", "icon": "FileText" },
+    { "label": "Prototype Demonstration", "url": "https://youtube.com/@SaileshIyyappanJR", "icon": "PlayCircle" }
   ],
   "timeline": {
     "startDate": "2025-07-01",

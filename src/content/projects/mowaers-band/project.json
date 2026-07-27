@@ -117,17 +117,17 @@
   "links": [
     {
       "label": "Project Documentation",
-      "url": "#",
+      "url": "https://drive.google.com/file/d/1nE0oQ6CezpotlDIEBIWpwPDr30pWL2hk/view?usp=drive_link",
       "icon": "FileText"
     },
     {
       "label": "Source Repository",
-      "url": "#",
+      "url": "https://github.com/saileshiyyappan",
       "icon": "Github"
     },
     {
       "label": "Prototype Demonstration",
-      "url": "#",
+      "url": "https://www.youtube.com/@SaileshIyyappanJR",
       "icon": "Globe"
     }
   ],

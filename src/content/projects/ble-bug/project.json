@@ -91,17 +91,17 @@
   "links": [
     {
       "label": "Project Documentation",
-      "url": "#",
+      "url": "https://drive.google.com/drive/folders/1oieVCY-p7tXBZGQ525U-w3RbZO7HaQkm?usp=drive_link",
       "icon": "FileText"
     },
     {
-      "label": "Project Images",
-      "url": "#",
+      "label": "Project Demo",
+      "url": "https://www.youtube.com/@SaileshIyyappanJR",
       "icon": "Image"
     },
     {
-      "label": "Development Notes",
-      "url": "#",
+      "label": "GitHub",
+      "url": "https://github.com/saileshiyyappan",
       "icon": "BookOpen"
     }
   ],
