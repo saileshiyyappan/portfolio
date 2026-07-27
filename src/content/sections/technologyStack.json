@@ -1,0 +1,98 @@
+{
+  "title": "Technology Stack",
+  "subtitle": "Technologies, platforms and engineering domains I use to design intelligent products.",
+  "categories": [
+    {
+      "title": "Programming Languages",
+      "items": [
+        { "name": "C", "image": "/assets/logos/c.svg", "alt": "C", "website": "https://en.wikipedia.org/wiki/C_(programming_language)" },
+        { "name": "C++", "image": "/assets/logos/cplusplus.svg", "alt": "C++", "website": "https://isocpp.org" },
+        { "name": "Python", "image": "/assets/logos/python.svg", "alt": "Python", "website": "https://python.org" },
+        { "name": "Java", "image": "/assets/logos/java.svg", "alt": "Java", "website": "https://java.com" },
+        { "name": "JavaScript", "image": "/assets/logos/javascript.svg", "alt": "JavaScript", "website": "https://developer.mozilla.org/docs/Web/JavaScript" },
+        { "name": "TypeScript", "image": "/assets/logos/typescript.svg", "alt": "TypeScript", "website": "https://www.typescriptlang.org" },
+        { "name": "HTML5", "image": "/assets/logos/html5.svg", "alt": "HTML5", "website": "https://developer.mozilla.org/docs/Web/HTML" },
+        { "name": "CSS3", "image": "/assets/logos/css3.svg", "alt": "CSS3", "website": "https://developer.mozilla.org/docs/Web/CSS" }
+      ]
+    },
+
+    {
+      "title": "Embedded Systems & IoT",
+      "items": [
+        { "name": "ESP32", "image": "/assets/logos/espressif.svg", "alt": "ESP32" },
+        { "name": "ESP32-C3", "image": "/assets/logos/espressif.svg", "alt": "ESP32-C3" },
+        { "name": "Arduino", "image": "/assets/logos/arduino.svg", "alt": "Arduino" },
+        { "name": "PlatformIO", "image": "/assets/logos/platformio.svg", "alt": "PlatformIO" },
+        { "name": "Bluetooth Low Energy (BLE)", "image": "/assets/logos/bluetooth.svg", "alt": "Bluetooth" },
+        { "name": "Wi-Fi", "image": "/assets/icons/wifi.svg", "alt": "WiFi" },
+        { "name": "GSM", "image": "/assets/logos/gsm.svg", "alt": "GSM" },
+        { "name": "GPS", "image": "/assets/logos/gps.svg", "alt": "GPS" },
+        { "name": "PCB Design", "image": "/assets/logos/pcb.svg", "alt": "PCB Design" },
+        { "name": "Embedded Firmware", "image": "/assets/logos/emb.svg", "alt": "Embedded Firmware" },
+        { "name": "Sensors & Actuators", "image": "/assets/logos/sensor.svg", "alt": "Sensors" },
+        { "name": "Microcontrollers", "image": "/assets/logos/microcontroller.svg", "alt": "MCU" },
+        { "name": "Serial Communication", "image": "/assets/logos/serial.svg", "alt": "Serial" },
+        { "name": "I2C", "image": "/assets/logos/i2c-bus.svg", "alt": "I2C" },
+        { "name": "SPI", "image": "/assets/logos/spi.svg", "alt": "SPI" },
+        { "name": "UART", "image": "/assets/logos/uart.svg", "alt": "UART" }
+      ]
+    },
+
+    {
+      "title": "Full Stack Development",
+      "items": [
+        { "name": "React", "image": "/assets/logos/react.svg", "alt": "React" },
+        { "name": "Next.js", "image": "/assets/logos/nextjs.svg", "alt": "Next.js" },
+        { "name": "Vite", "image": "/assets/logos/vite.svg", "alt": "Vite" },
+        { "name": "Node.js", "image": "/assets/logos/nodejs.svg", "alt": "Node.js" },
+        { "name": "Express.js", "image": "/assets/logos/express.svg", "alt": "Express.js" },
+        { "name": "Firebase", "image": "/assets/logos/firebase.svg", "alt": "Firebase" },
+        { "name": "Firestore", "image": "/assets/logos/firestore.svg", "alt": "Firestore" },
+        { "name": "Tailwind CSS", "image": "/assets/logos/tailwindcss.svg", "alt": "Tailwind CSS" },
+        { "name": "REST API", "image": "/assets/logos/rest-api.svg", "alt": "REST API" },
+        { "name": "Responsive Web Design", "image": "/assets/logos/responsive-design.svg", "alt": "Responsive Design" }
+      ]
+    },
+
+    {
+      "title": "Artificial Intelligence & Data",
+      "items": [
+        { "name": "Google Gemini API", "image": "/assets/logos/gemini.svg", "alt": "Gemini" },
+        { "name": "Vertex AI", "image": "/assets/logos/google-cloud.svg", "alt": "Vertex AI" },
+        { "name": "Machine Learning", "image": "/assets/logos/ml.svg" },
+        { "name": "Data Processing", "image": "/assets/logos/data.svg" },
+        { "name": "Prompt Engineering", "image": "/assets/logos/pmt.svg" },
+        { "name": "Rule-Based Intelligence", "image": "/assets/logos/rule-ai.svg" },
+        { "name": "AI-assisted Systems", "image": "/assets/logos/Artificial-Intelligence.svg" },
+        { "name": "Applied Research", "image": "/assets/logos/research.svg" }
+      ]
+    },
+
+    {
+      "title": "Database & Cloud",
+      "items": [
+        { "name": "Firebase", "image": "/assets/logos/firebase.svg" },
+        { "name": "Cloud Firestore", "image": "/assets/logos/firestore.svg" },
+        { "name": "Firebase Storage", "image": "/assets/logos/firebase.svg" },
+        { "name": "Google Cloud Platform", "image": "/assets/logos/google-cloud.svg" },
+        { "name": "Cloud Storage", "image": "/assets/logos/cloud.svg" }
+      ]
+    },
+
+    {
+      "title": "Developer Tools",
+      "items": [
+        { "name": "Git", "image": "/assets/logos/git.svg" },
+        { "name": "GitHub", "image": "/assets/logos/github.svg" },
+        { "name": "GitLab", "image": "/assets/logos/gitlab.svg" },
+        { "name": "Figma", "image": "/assets/logos/figma.svg" },
+        { "name": "Linux", "image": "/assets/logos/linux.svg" },
+        { "name": "Arduino IDE", "image": "/assets/logos/arduino.svg" },
+        { "name": "PlatformIO IDE", "image": "/assets/logos/platformio.svg" },
+        { "name": "Postman", "image": "/assets/logos/postman.svg" },
+        { "name": "Docker", "image": "/assets/logos/docker.svg" },
+        { "name": "Flask", "image": "/assets/logos/flask.svg" }
+      ]
+    }
+  ]
+}

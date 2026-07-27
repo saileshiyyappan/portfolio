@@ -26,7 +26,7 @@
       "id": "email",
       "name": "Email",
       "url": "mailto:jr.saileshiyyappan@gmail.com",
-      "icon": "Mail",
+      "icon": "gmail",
       "color": "text-white",
       "hoverColor": "hover:text-neon-cyan",
       "glowColor": "hover:shadow-[0_0_30px_rgba(6,182,212,0.3)]"
@@ -48,7 +48,7 @@
         {
           "name": "Gmail",
           "url": "mailto:jr.saileshiyyappan@gmail.com",
-          "icon": "Mail",
+          "icon": "gmail",
           "description": "Primary contact for all inquiries"
         },
         {

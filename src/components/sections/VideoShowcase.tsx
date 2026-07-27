@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState, memo, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { Play, ExternalLink } from 'lucide-react';
@@ -37,11 +38,13 @@ const CinematicVideoCard = memo(function CinematicVideoCard({ video, index }: { 
           className={`relative aspect-[16/9] overflow-hidden rounded-3xl border border-white/10 bg-void/70 shadow-2xl ${hasVideo ? 'cursor-pointer' : 'cursor-default'}`}
           onClick={hasVideo ? handleOpen : undefined}
         >
-          <img
+          <Image
             src={video.thumbnail.src || '/images/techlance/Screenshot 2026-04-28 230510.png'}
             alt={video.title}
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
-            loading="lazy"
+            unoptimized={video.thumbnail.src?.startsWith('http')}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-void/95 via-void/30 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-r from-void/40 via-transparent to-void/20" />

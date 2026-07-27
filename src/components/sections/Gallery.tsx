@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState, memo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ZoomIn } from 'lucide-react';
@@ -31,11 +32,13 @@ const GalleryItem = memo(function GalleryItem({
       onClick={onClick}
     >
       <div className={`relative ${aspect}`}>
-        <img
+        <Image
           src={img.src}
           alt={img.caption}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-          loading="lazy"
+          unoptimized={img.src.startsWith('http')}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-void/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">

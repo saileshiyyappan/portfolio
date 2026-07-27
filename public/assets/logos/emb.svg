@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <!-- Microcontroller / Chip Body -->
+  <rect x="5" y="5" width="14" height="14" rx="2" stroke="#1C274C" stroke-width="1.5" fill="#f8fafc"/>
+  
+  <!-- IC Pins - Top -->
+  <path d="M8 5V2M12 5V2M16 5V2" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- IC Pins - Bottom -->
+  <path d="M8 19V22M12 19V22M16 19V22" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- IC Pins - Left -->
+  <path d="M5 8H2M5 12H2M5 16H2" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- IC Pins - Right -->
+  <path d="M19 8H22M19 12H22M19 16H22" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Code Brackets / Firmware Symbol inside chip -->
+  <path d="M9 10L7 12L9 14" stroke="#4e7896" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M15 10L17 12L15 14" stroke="#4e7896" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13 9L11 15" stroke="#f58219" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

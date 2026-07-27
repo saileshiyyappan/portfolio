@@ -107,7 +107,7 @@ export interface Achievement {
 
 export interface SkillTechnology {
   name: string;
-  logo?: string;
+  image?: string;
 }
 
 export interface Skill {
@@ -152,7 +152,7 @@ export interface SocialLink {
   id: string;
   name: string;
   url: string;
-  icon: string;
+  image?: string;
   label?: string;
   color: string;
   hoverColor: string;

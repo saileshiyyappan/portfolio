@@ -56,7 +56,7 @@ const SkillCard = memo(function SkillCard({ skill, index }: { skill: Skill; inde
         >
           {skill.technologies?.map((tech) => (
             <span key={tech.name} className="inline-flex items-center gap-1.5 px-2 py-0.5 glass rounded text-[10px] font-body text-void12 border border-white/5">
-              <TechnologyLogo name={tech.logo || tech.name} size={12} color="text-white" label={tech.name} />
+              <TechnologyLogo name={tech.name} image={tech.image} size={14} className="text-white" label={tech.name} />
               <span>{tech.name}</span>
             </span>
           ))}

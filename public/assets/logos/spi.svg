@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  
+  <!-- Central IC Chip Body (Matching style) -->
+  <rect x="6" y="6" width="12" height="12" rx="2.5" fill="#4285F4"/>
+  
+  <!-- SPI Bus Lines / Traces as Pins -->
+  <!-- Top: SCK (Clock) -->
+  <path d="M12 6V2.5" stroke="#4285F4" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="12" cy="2" r="0.8" fill="#4285F4"/>
+
+  <!-- Left: MOSI (Master Out Slave In) -->
+  <path d="M6 9H2.5" stroke="#4285F4" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="2" cy="9" r="0.8" fill="#4285F4"/>
+
+  <!-- Left: MISO (Master In Slave Out) -->
+  <path d="M6 15H2.5" stroke="#4285F4" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="2" cy="15" r="0.8" fill="#4285F4"/>
+
+  <!-- Right: CS / SS (Chip Select) -->
+  <path d="M18 9H21.5" stroke="#4285F4" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="22" cy="9" r="0.8" fill="#4285F4"/>
+
+  <!-- Bottom: Ground / Power or extra pin -->
+  <path d="M12 18V21.5" stroke="#4285F4" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="12" cy="22" r="0.8" fill="#4285F4"/>
+
+  <!-- Internal Bus / SPI Communication Symbol inside Chip -->
+  <path d="M9 10.5H15M9 13.5H15" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M10.5 9L9 10.5L10.5 12" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13.5 12L15 13.5L13.5 15" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

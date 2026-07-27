@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useCallback, memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -92,10 +93,13 @@ const LightboxContent = memo(function LightboxContent({
             exit="exit"
             onClick={(e) => e.stopPropagation()}
           >
-            <img
+            <Image
               src={currentItem.src}
               alt={currentItem.caption || ''}
+              width={1600}
+              height={1000}
               className="max-w-full max-h-[75vh] object-contain rounded-lg"
+              unoptimized={currentItem.src.startsWith('http')}
             />
             <div className="mt-4 text-center">
               {currentItem.category && (

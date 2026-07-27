@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
@@ -78,7 +79,7 @@ export default function PatentDetail({ patent }: PatentDetailProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {patent.images.map((img, i) => (
                 <div key={i} className="relative aspect-video rounded-xl overflow-hidden">
-                  <img src={img.src} alt={img.caption || ''} className="w-full h-full object-cover" />
+                  <Image src={img.src} alt={img.caption || ''} fill sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-cover" unoptimized={img.src.startsWith('http')} />
                   {img.caption && (
                     <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-void/80 to-transparent">
                       <p className="font-body text-xs text-white/80">{img.caption}</p>

@@ -29,7 +29,7 @@
     "year": "2023",
     "title": "University & Tier-1 Projects",
     "description": "Joined VIT AP University and transitioned from educational prototypes to large-scale product engineering, beginning the development of patent-oriented Tier-1 projects with complete hardware and software ecosystems.",
-    "icon": "GraduationCap",
+    "icon": "college-cap",
     "color": "text-neon-teal",
     "bgColor": "bg-neon-teal/10",
     "relatedProjectIds": [
@@ -58,7 +58,7 @@
     "year": "2025-2026",
     "title": "Research & Patent-Oriented Development",
     "description": "Expanded projects into research-oriented and patent-oriented engineering work through technical documentation, invention drafting, system validation, portfolio development, and preparation for future publications and intellectual property filings.",
-    "icon": "FileCheck",
+    "icon": "pen-nib",
     "color": "text-neon-purple",
     "bgColor": "bg-neon-purple/10",
     "relatedProjectIds": [
@@ -73,7 +73,7 @@
     "year": "2026",
     "title": "Engineering Portfolio & Professional Presence",
     "description": "Established a complete engineering portfolio, technical documentation, professional profiles, and project ecosystem while preparing products for research publications, collaborations, internships, startup opportunities, and future commercialization.",
-    "icon": "Rocket",
+    "icon": "patent",
     "color": "text-neon-orange",
     "bgColor": "bg-neon-orange/10",
     "relatedProjectIds": [

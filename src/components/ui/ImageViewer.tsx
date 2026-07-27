@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useCallback, useRef, useState, memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react';
@@ -208,10 +209,13 @@ const ImageViewerContent = memo(function ImageViewerContent({
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.2 }}
             >
-              <img
+              <Image
                 src={currentItem.src}
                 alt={currentItem.caption || ''}
+                width={1600}
+                height={1000}
                 className="max-w-[90vw] max-h-[75vh] object-contain rounded-lg cursor-grab active:cursor-grabbing select-none"
+                unoptimized={currentItem.src.startsWith('http')}
                 style={{
                   transform: `translate(${position.x}px, ${position.y}px) scale(${scale}) rotate(${rotation}deg)`,
                   transformOrigin: 'center center',

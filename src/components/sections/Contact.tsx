@@ -22,7 +22,7 @@ const SocialLink = memo(function SocialLink({ social }: { social: typeof socialL
       whileHover={{ x: 5 }}
     >
       <div className="w-10 h-10 rounded-lg bg-neon-blue/10 flex items-center justify-center group-hover:bg-neon-blue/20 transition-colors flex-shrink-0">
-        <TechnologyLogo name={social.icon} size={18} color="text-neon-cyan" label={social.label || social.name} />
+        <TechnologyLogo name={social.name} image={social.image} size={20} className="text-neon-cyan" label={social.label || social.name} />
       </div>
       <div className="flex-1 min-w-0">
         <div className="font-heading font-medium text-white text-sm">{social.name}</div>

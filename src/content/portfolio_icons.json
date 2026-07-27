@@ -1,0 +1,209 @@
+{
+  "default": {
+    "type": "svg",
+    "src": "/assets/icons/default.svg"
+  },
+  "arrow-up": {
+    "type": "svg",
+    "src": "/assets/icons/arrow-up.svg"
+  },
+  "arrow-down": {
+    "type": "svg",
+    "src": "/assets/icons/arrow-down.svg"
+  },
+  "arrow-up-right": {
+    "type": "svg",
+    "src": "/assets/icons/arrow-up-right.svg"
+  },
+  "sparkles": {
+    "type": "svg",
+    "src": "/assets/icons/sparkles.svg"
+  },
+  "mail": {
+    "type": "svg",
+    "src": "/assets/icons/mail.svg"
+  },
+  "map-pin": {
+    "type": "svg",
+    "src": "/assets/icons/map-pin.svg"
+  },
+
+  "linkedin": {
+    "type": "image",
+    "src": "/assets/logos/linkedin.svg"
+  },
+  "github": {
+    "type": "image",
+    "src": "/assets/logos/github.svg"
+  },
+  "twitter": {
+    "type": "image",
+    "src": "/assets/logos/twitter.svg"
+  },
+  "react": {
+    "type": "image",
+    "src": "/assets/logos/react.svg"
+  },
+  "nextjs": {
+    "type": "image",
+    "src": "/assets/logos/nextjs.svg"
+  },
+  "python": {
+    "type": "image",
+    "src": "/assets/logos/python.svg"
+  },
+  "youtube": {
+    "type": "image",
+    "src": "/assets/logos/youtube.svg"
+  },
+
+  "wifi": {
+    "type": "svg",
+    "src": "/assets/icons/wifi.svg"
+  },
+  "box": {
+    "type": "svg",
+    "src": "/assets/icons/boxes.svg"
+  },
+  "cpu": {
+    "type": "svg",
+    "src": "/assets/icons/cpu.svg"
+  },
+  "brain": {
+    "type": "svg",
+    "src": "/assets/icons/brain.svg"
+  },
+  "microscope": {
+    "type": "svg",
+    "src": "/assets/icons/microscope.svg"
+  },
+  "lightbulb": {
+    "type": "svg",
+    "src": "/assets/icons/lightbulb.svg"
+  },
+  "code": {
+    "type": "svg",
+    "src": "/assets/icons/code.svg"
+  },
+  "boxes": {
+    "type": "svg",
+    "src": "/assets/icons/boxes.svg"
+  },
+  "layers": {
+    "type": "svg",
+    "src": "/assets/icons/layers.svg"
+  },
+  "search": {
+    "type": "svg",
+    "src": "/assets/icons/search.svg"
+  },
+  "wrench": {
+    "type": "svg",
+    "src": "/assets/icons/wrench.svg"
+  },
+  "file-text": {
+    "type": "svg",
+    "src": "/assets/icons/file-text.svg"
+  },
+  "book-open": {
+    "type": "svg",
+    "src": "/assets/icons/book-open.svg"
+  },
+  "globe": {
+    "type": "svg",
+    "src": "/assets/icons/globe.svg"
+  },
+  "play": {
+    "type": "svg",
+    "src": "/assets/icons/play.svg"
+  },
+  "external-link": {
+    "type": "svg",
+    "src": "/assets/icons/external-link.svg"
+  },
+
+  "architect-sys": {
+    "type": "svg",
+    "src": "/assets/icons/architect-sys.svg"
+  },
+  "sys-pro-eng": {
+    "type": "svg",
+    "src": "/assets/icons/sys-pro-eng.svg"
+  },
+  "system-archi": {
+    "type": "svg",
+    "src": "/assets/icons/system-archi.svg"
+  },
+  "test-tube-research": {
+    "type": "svg",
+    "src": "/assets/icons/test-tube-research.svg"
+  },
+  "tools": {
+    "type": "svg",
+    "src": "/assets/icons/tools.svg"
+  },
+  "bulb": {
+    "type": "svg",
+    "src": "/assets/icons/bulb.svg"
+  },
+  "college-cap": {
+    "type": "svg",
+    "src": "/assets/icons/college-cap.svg"
+  },
+  "cube": {
+    "type": "svg",
+    "src": "/assets/icons/cube.svg"
+  },
+  "design": {
+    "type": "svg",
+    "src": "/assets/icons/design.svg"
+  },
+  "emb-sys": {
+    "type": "svg",
+    "src": "/assets/icons/emb-sys.svg"
+  },
+  "focus": {
+    "type": "svg",
+    "src": "/assets/icons/focus.svg"
+  },
+  "iot": {
+    "type": "svg",
+    "src": "/assets/icons/iot.svg"
+  },
+  "iot-icon": {
+    "type": "svg",
+    "src": "/assets/icons/iot-icon.svg"
+  },
+  "patent": {
+    "type": "svg",
+    "src": "/assets/icons/patent.svg"
+  },
+  "pen-nib": {
+    "type": "svg",
+    "src": "/assets/icons/pen-nib.svg"
+  },
+  "pen-testing": {
+    "type": "svg",
+    "src": "/assets/icons/pen-testing.svg"
+  },
+  "product-engineer": {
+    "type": "svg",
+    "src": "/assets/icons/product-engineer.svg"
+  },
+  "research": {
+    "type": "svg",
+    "src": "/assets/icons/research.svg"
+  },
+  "roc": {
+    "type": "svg",
+    "src": "/assets/icons/roc.svg"
+  },
+  "screw": {
+    "type": "svg",
+    "src": "/assets/icons/screw.svg"
+  },
+  "gmail": {
+    "type": "svg",
+    "src": "/assets/logo/gmail.svg"
+  }
+}

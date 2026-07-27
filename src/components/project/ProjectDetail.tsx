@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { memo, useCallback, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, ExternalLink, FileText, Cpu, Layers, Lightbulb, BarChart3, Clock, Users, CheckCircle2 } from 'lucide-react';
@@ -31,7 +32,7 @@ const GalleryImage = memo(function GalleryImage({ img, onClick }: { img: Project
       whileHover={{ scale: 1.02 }}
       onClick={onClick}
     >
-      <img src={img.src} alt={img.caption || ''} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+      <Image src={img.src} alt={img.caption || ''} fill sizes="(max-width: 768px) 100vw, 33vw" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" unoptimized={img.src.startsWith('http')} />
       <div className="absolute inset-0 bg-void/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
         <ArrowUpRight size={24} className="text-white" />
       </div>
@@ -52,7 +53,7 @@ const VideoCard = memo(function VideoCard({ video, onClick, fallbackImage }: { v
       className={`relative aspect-video overflow-hidden rounded-3xl border border-white/10 bg-void/70 shadow-2xl ${hasVideo ? 'cursor-pointer' : 'cursor-default'}`}
       onClick={hasVideo ? onClick : undefined}
     >
-      <img src={fallbackImage} alt={video.caption || ''} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+      <Image src={fallbackImage} alt={video.caption || ''} fill sizes="(max-width: 768px) 100vw, 50vw" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" unoptimized={fallbackImage.startsWith('http')} />
       <div className="absolute inset-0 bg-gradient-to-t from-void/95 via-void/30 to-transparent" />
       <div className="absolute inset-0 flex items-center justify-center">
         {hasVideo ? (
@@ -102,7 +103,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         {/* Hero */}
         <div className="relative rounded-3xl overflow-hidden mb-16">
           <div className="relative aspect-[21/9] lg:aspect-[3/1]">
-            <img src={project.coverImage.src} alt={project.title} className="w-full h-full object-cover" loading="lazy" />
+            <Image src={project.coverImage.src} alt={project.title} fill sizes="100vw" className="w-full h-full object-cover" unoptimized={project.coverImage.src.startsWith('http')} />
             <div className="absolute inset-0 bg-gradient-to-t from-void via-void/40 to-transparent" />
             <div className="absolute inset-0 bg-gradient-to-r from-void/60 via-transparent to-transparent" />
           </div>

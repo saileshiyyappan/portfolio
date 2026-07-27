@@ -4,16 +4,16 @@
     "title": "Product Engineering",
     "level": 90,
     "description": "Designing engineering products from problem identification, architecture, prototyping, testing, documentation, and continuous iteration toward production-ready systems.",
-    "icon": "Box",
+    "icon": "sys-pro-eng",
     "color": "from-neon-blue to-neon-cyan",
     "category": "Product",
     "technologies": [
-      { "name": "Product Design", "logo": "figma" },
-      { "name": "Rapid Prototyping", "logo": "figma" },
-      { "name": "Figma", "logo": "figma" },
-      { "name": "CAD Design", "logo": "figma" },
-      { "name": "System Design", "logo": "figma" },
-      { "name": "Documentation", "logo": "markdown" }
+      { "name": "Product Design", "image": "/assets/logos/figma.svg" },
+      { "name": "Rapid Prototyping", "image": "/assets/logos/figma.svg" },
+      { "name": "Figma", "image": "/assets/logos/figma.svg" },
+      { "name": "CAD Design", "image": "/assets/logos/figma.svg" },
+      { "name": "System Design", "image": "/assets/logos/emb.svg" },
+      { "name": "Documentation", "image": "/assets/icons/file-text.svg" }
     ]
   },
   {
@@ -25,12 +25,12 @@
     "color": "from-neon-cyan to-neon-teal",
     "category": "Hardware",
     "technologies": [
-      { "name": "ESP32", "logo": "esp32" },
-      { "name": "Arduino", "logo": "arduino" },
-      { "name": "PlatformIO", "logo": "platformio" },
-      { "name": "I2C", "logo": "raspberrypi" },
-      { "name": "UART", "logo": "raspberrypi" },
-      { "name": "SPI", "logo": "raspberrypi" }
+      { "name": "ESP32", "image": "/assets/logos/espressif.svg" },
+      { "name": "Arduino", "image": "/assets/logos/arduino.svg" },
+      { "name": "PlatformIO", "image": "/assets/logos/platformio.svg" },
+      { "name": "I2C", "image": "/assets/logos/i2c-bus.svg" },
+      { "name": "UART", "image": "/assets/logos/uart.svg" },
+      { "name": "SPI", "image": "/assets/logos/spi.svg" }
     ]
   },
   {
@@ -42,12 +42,12 @@
     "color": "from-neon-teal to-neon-green",
     "category": "Software",
     "technologies": [
-      { "name": "C++", "logo": "cplusplus" },
-      { "name": "Arduino Framework", "logo": "arduino" },
-      { "name": "PlatformIO", "logo": "platformio" },
-      { "name": "VS Code", "logo": "vscode" },
-      { "name": "BLE", "logo": "ble" },
-      { "name": "MicroSD", "logo": "raspberrypi" }
+      { "name": "C++", "image": "/assets/logos/cplusplus.svg" },
+      { "name": "Arduino Framework", "image": "/assets/logos/arduino.svg" },
+      { "name": "PlatformIO", "image": "/assets/logos/platformio.svg" },
+      { "name": "VS Code", "image": "/assets/logos/vs-code.svg" },
+      { "name": "BLE", "image": "/assets/logos/bluetooth.svg" },
+      { "name": "MicroSD", "image": "/assets/logos/cloud.svg" }
     ]
   },
   {
@@ -59,12 +59,12 @@
     "color": "from-neon-green to-neon-blue",
     "category": "Connectivity",
     "technologies": [
-      { "name": "BLE", "logo": "ble" },
-      { "name": "Wi-Fi", "logo": "wifi" },
-      { "name": "ESP32", "logo": "esp32" },
-      { "name": "SIM800L", "logo": "raspberrypi" },
-      { "name": "GPS", "logo": "raspberrypi" },
-      { "name": "IoT", "logo": "linux" }
+      { "name": "BLE", "image": "/assets/logos/bluetooth.svg" },
+      { "name": "Wi-Fi", "image": "/assets/icons/wifi.svg" },
+      { "name": "ESP32", "image": "/assets/logos/espressif.svg" },
+      { "name": "SIM800L", "image": "/assets/logos/gsm.svg" },
+      { "name": "GPS", "image": "/assets/logos/gps.svg" },
+      { "name": "IoT", "image": "/assets/logos/cloud.svg" }
     ]
   },
   {
@@ -72,16 +72,16 @@
     "title": "System Architecture",
     "level": 92,
     "description": "Designing complete engineering ecosystems combining embedded hardware, firmware, mobile applications, AI-assisted software, and scalable modular architectures.",
-    "icon": "Boxes",
+    "icon": "system-archi",
     "color": "from-neon-blue to-neon-purple",
     "category": "Architecture",
     "technologies": [
-      { "name": "System Design", "logo": "linux" },
-      { "name": "Modular Architecture", "logo": "react" },
-      { "name": "Embedded Architecture", "logo": "raspberrypi" },
-      { "name": "API Design", "logo": "fastapi" },
-      { "name": "Workflow Design", "logo": "notion" },
-      { "name": "Documentation", "logo": "markdown" }
+      { "name": "System Design", "image": "/assets/logos/emb.svg" },
+      { "name": "Modular Architecture", "image": "/assets/logos/react.svg" },
+      { "name": "Embedded Architecture", "image": "/assets/logos/emb.svg" },
+      { "name": "API Design", "image": "/assets/logos/rest-api.svg" },
+      { "name": "Workflow Design", "image": "/assets/logos/pmt.svg" },
+      { "name": "Documentation", "image": "/assets/icons/file-text.svg" }
     ]
   },
   {
@@ -93,12 +93,12 @@
     "color": "from-neon-purple to-neon-pink",
     "category": "AI",
     "technologies": [
-      { "name": "Gemini API", "logo": "gemini" },
-      { "name": "Vertex AI", "logo": "google-cloud" },
-      { "name": "OpenAI API", "logo": "openai" },
-      { "name": "Python", "logo": "python" },
-      { "name": "Prompt Engineering", "logo": "openai" },
-      { "name": "AI Workflows", "logo": "openai" }
+      { "name": "Gemini API", "image": "/assets/logos/gemini.svg" },
+      { "name": "Vertex AI", "image": "/assets/logos/google-cloud.svg" },
+      { "name": "OpenAI API", "image": "/assets/logos/Artificial-Intelligence.svg" },
+      { "name": "Python", "image": "/assets/logos/python.svg" },
+      { "name": "Prompt Engineering", "image": "/assets/logos/pmt.svg" },
+      { "name": "AI Workflows", "image": "/assets/logos/Artificial-Intelligence.svg" }
     ]
   },
   {
@@ -110,12 +110,12 @@
     "color": "from-neon-pink to-neon-orange",
     "category": "Software",
     "technologies": [
-      { "name": "Next.js", "logo": "nextjs" },
-      { "name": "React", "logo": "react" },
-      { "name": "TypeScript", "logo": "typescript" },
-      { "name": "Node.js", "logo": "nodejs" },
-      { "name": "Firebase", "logo": "firebase" },
-      { "name": "Flask", "logo": "flask" }
+      { "name": "Next.js", "image": "/assets/logos/nextjs.svg" },
+      { "name": "React", "image": "/assets/logos/react.svg" },
+      { "name": "TypeScript", "image": "/assets/logos/typescript.svg" },
+      { "name": "Node.js", "image": "/assets/logos/nodejs.svg" },
+      { "name": "Firebase", "image": "/assets/logos/firebase.svg" },
+      { "name": "Flask", "image": "/assets/logos/flask.svg" }
     ]
   },
   {
@@ -127,12 +127,12 @@
     "color": "from-neon-orange to-neon-yellow",
     "category": "Research",
     "technologies": [
-      { "name": "Research Writing", "logo": "markdown" },
-      { "name": "IEEE Format", "logo": "filetext" },
-      { "name": "Literature Review", "logo": "bookopen" },
-      { "name": "Experimental Design", "logo": "wrench" },
-      { "name": "Documentation", "logo": "markdown" },
-      { "name": "Data Analysis", "logo": "trendingup" }
+      { "name": "Research Writing", "image": "/assets/icons/file-text.svg" },
+      { "name": "IEEE Format", "image": "/assets/icons/file-text.svg" },
+      { "name": "Literature Review", "image": "/assets/icons/book-open.svg" },
+      { "name": "Experimental Design", "image": "/assets/icons/wrench.svg" },
+      { "name": "Documentation", "image": "/assets/icons/file-text.svg" },
+      { "name": "Data Analysis", "image": "/assets/icons/brain.svg" }
     ]
   },
   {
@@ -144,12 +144,12 @@
     "color": "from-neon-yellow to-neon-blue",
     "category": "Innovation",
     "technologies": [
-      { "name": "Patent Drafting", "logo": "filetext" },
-      { "name": "Prior Art Search", "logo": "search" },
-      { "name": "Technical Drawings", "logo": "pen-tool" },
-      { "name": "Product Innovation", "logo": "lightbulb" },
-      { "name": "System Design", "logo": "boxes" },
-      { "name": "Documentation", "logo": "markdown" }
+      { "name": "Patent Drafting", "image": "/assets/icons/file-text.svg" },
+      { "name": "Prior Art Search", "image": "/assets/icons/search.svg" },
+      { "name": "Technical Drawings", "image": "/assets/logos/research.svg" },
+      { "name": "Product Innovation", "image": "/assets/icons/lightbulb.svg" },
+      { "name": "System Design", "image": "/assets/icons/boxes.svg" },
+      { "name": "Documentation", "image": "/assets/icons/file-text.svg" }
     ]
   }
 ]

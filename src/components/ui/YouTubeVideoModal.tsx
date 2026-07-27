@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useMemo, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ExternalLink, X } from 'lucide-react';
@@ -112,7 +113,7 @@ export default function YouTubeVideoModal({
                   </p>
                 </div>
                 {thumbnailUrl && (
-                  <img src={thumbnailUrl} alt={title || 'Thumbnail'} className="h-44 w-full max-w-md rounded-2xl object-cover" />
+                  <Image src={thumbnailUrl} alt={title || 'Thumbnail'} width={640} height={360} className="h-44 w-full max-w-md rounded-2xl object-cover" unoptimized={thumbnailUrl.startsWith('http')} />
                 )}
               </div>
             )}

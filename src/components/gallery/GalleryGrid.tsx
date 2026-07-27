@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ZoomIn, Grid3X3, LayoutGrid, Image as ImageIcon, Maximize2 } from 'lucide-react';
@@ -129,10 +130,13 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                 onClick={() => openLightbox(i)}
               >
                 <div className={`relative ${getAspectClass(img.aspectRatio)}`}>
-                  <img
+                  <Image
                     src={img.src}
                     alt={img.caption}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    unoptimized={img.src.startsWith('http')}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-void/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -169,10 +173,13 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                 transition={{ duration: 0.4, delay: i * 0.05 }}
                 onClick={() => openLightbox(i)}
               >
-                <img
+                <Image
                   src={img.src}
                   alt={img.caption}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  unoptimized={img.src.startsWith('http')}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-void/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -207,10 +214,13 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                 transition={{ duration: 0.5 }}
                 onClick={() => openLightbox(0)}
               >
-                <img
+                <Image
                   src={filteredImages[0].src}
                   alt={filteredImages[0].caption}
+                  fill
+                  sizes="(max-width: 1200px) 100vw, 80vw"
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  unoptimized={filteredImages[0].src.startsWith('http')}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-void/20 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
@@ -230,10 +240,13 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                   transition={{ duration: 0.4, delay: i * 0.05 }}
                   onClick={() => openLightbox(i + 1)}
                 >
-                  <img
+                  <Image
                     src={img.src}
                     alt={img.caption}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    unoptimized={img.src.startsWith('http')}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-void/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="absolute bottom-3 left-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">

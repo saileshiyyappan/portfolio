@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect, memo, useCallback } from 'react';
+import Image from 'next/image';
+import { useState, useEffect, memo, useCallback, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
@@ -28,7 +29,7 @@ function StatusBadge({ status }: { status: Project['status'] }) {
 
 const ProjectShowcase = memo(function ProjectShowcase({ project, index }: { project: Project; index: number }) {
   const { ref, isInView } = useInView({ rootMargin: '-50px' });
-  const images = Array.isArray(project.galleryImages) ? project.galleryImages : [];
+  const safeImages = useMemo(() => Array.isArray(project.galleryImages) ? project.galleryImages : [], [project.galleryImages]);
   const [activeImage, setActiveImage] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
@@ -36,37 +37,37 @@ const ProjectShowcase = memo(function ProjectShowcase({ project, index }: { proj
   const isEven = index % 2 === 0;
 
   const openLightbox = useCallback((idx: number) => {
-    if (!images || images.length === 0) return;
-    const clamped = Math.max(0, Math.min(idx, images.length - 1));
+    if (!safeImages.length) return;
+    const clamped = Math.max(0, Math.min(idx, safeImages.length - 1));
     setLightboxIndex(clamped);
     setLightboxOpen(true);
-  }, [images]);
+  }, [safeImages]);
 
   const nextImage = useCallback(() => {
-    if (!images || images.length === 0) return;
-    setLightboxIndex((prev) => (prev + 1) % images.length);
-  }, [images]);
+    if (!safeImages.length) return;
+    setLightboxIndex((prev) => (prev + 1) % safeImages.length);
+  }, [safeImages]);
 
   const prevImage = useCallback(() => {
-    if (!images || images.length === 0) return;
-    setLightboxIndex((prev) => (prev - 1 + images.length) % images.length);
-  }, [images]);
+    if (!safeImages.length) return;
+    setLightboxIndex((prev) => (prev - 1 + safeImages.length) % safeImages.length);
+  }, [safeImages]);
 
-  const lightboxItems = images.map((img) => ({
+  const lightboxItems = safeImages.map((img) => ({
     src: img.src,
     caption: img.caption,
   }));
 
   // Keep activeImage within bounds if gallery changes
   useEffect(() => {
-    if (!images || images.length === 0) {
+    if (!safeImages.length) {
       setActiveImage(0);
       return;
     }
-    if (activeImage > images.length - 1) {
-      setActiveImage(images.length - 1);
+    if (activeImage > safeImages.length - 1) {
+      setActiveImage(safeImages.length - 1);
     }
-  }, [images, activeImage]);
+  }, [safeImages.length, activeImage]);
 
   return (
     <>
@@ -89,12 +90,14 @@ const ProjectShowcase = memo(function ProjectShowcase({ project, index }: { proj
                 transition={{ duration: 0.6 }}
                 onClick={() => openLightbox(activeImage)}
               >
-                {images && images.length > 0 ? (
-                  <img
-                    src={images[activeImage].src}
-                    alt={images[activeImage].caption || ''}
+                {safeImages.length > 0 ? (
+                  <Image
+                    src={safeImages[activeImage].src}
+                    alt={safeImages[activeImage].caption || ''}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                    loading="lazy"
+                    unoptimized={safeImages[activeImage].src.startsWith('http')}
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center bg-void11 text-void14 text-sm font-body">
@@ -105,10 +108,10 @@ const ProjectShowcase = memo(function ProjectShowcase({ project, index }: { proj
                 
                 {/* Image Navigation Dots */}
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-                  {images.slice(0, 4).map((_, i) => (
+                  {safeImages.slice(0, 4).map((_, i) => (
                     <button
                       key={i}
-                      onClick={(e) => { e.stopPropagation(); setActiveImage(Math.min(i, Math.max(0, images.length - 1))); }}
+                      onClick={(e) => { e.stopPropagation(); setActiveImage(Math.min(i, Math.max(0, safeImages.length - 1))); }}
                       className={`w-2 h-2 rounded-full transition-all ${activeImage === i ? 'bg-white w-6' : 'bg-white/40 hover:bg-white/60'}`}
                     />
                   ))}

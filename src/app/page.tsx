@@ -15,6 +15,7 @@ const Gallery = lazy(() => import('@/components/sections/Gallery'));
 const VideoShowcase = lazy(() => import('@/components/sections/VideoShowcase'));
 const Timeline = lazy(() => import('@/components/sections/Timeline'));
 const Skills = lazy(() => import('@/components/sections/Skills'));
+const TechnologyStack = lazy(() => import('@/components/sections/TechnologyStack'));
 const Achievements = lazy(() => import('@/components/sections/Achievements'));
 const Contact = lazy(() => import('@/components/sections/Contact'));
 
@@ -47,6 +48,7 @@ export default function HomePage() {
         <LazySection><VideoShowcase /></LazySection>
         <LazySection><Timeline /></LazySection>
         <LazySection><Skills /></LazySection>
+        <LazySection><TechnologyStack /></LazySection>
         <LazySection><Achievements /></LazySection>
         <LazySection><Contact /></LazySection>
       </main>

@@ -5,25 +5,25 @@
   "focusAreas": [
     {
       "id": "product-engineering",
-      "icon": "Box",
+      "icon": "product-engineer",
       "title": "Product Engineering",
       "description": "Designing and building complete products from concept through prototyping, testing, validation, and deployment."
     },
     {
       "id": "embedded-systems",
-      "icon": "Cpu",
+      "icon": "tools",
       "title": "Embedded Systems",
       "description": "Developing embedded hardware and firmware using ESP32 platforms, sensors, communication modules, and peripheral interfaces."
     },
     {
       "id": "iot",
-      "icon": "Wifi",
+      "icon": "iot-icon",
       "title": "Internet of Things (IoT)",
       "description": " Building connected embedded systems using BLE, Wi-Fi, GSM, GPS, and cloud-ready communication architectures."
     },
     {
       "id": "system-architecture",
-      "icon": "Boxes",
+      "icon": "system-archi",
       "title": "System Architecture",
       "description": "Designing complete engineering ecosystems by integrating embedded hardware, firmware, software, mobile applications, and modular workflows."
     },
@@ -35,13 +35,13 @@
     },
     {
       "id": "research-engineering",
-      "icon": "Microscope",
+      "icon": "test-tube-research",
       "title": "Research Engineering",
       "description": "Conducting engineering research through literature review, experimentation, technical validation, documentation, and publication preparation."
     },
     {
       "id": "patent-oriented-development",
-      "icon": "Lightbulb",
+      "icon": "patent",
       "title": "Patent-Oriented Development",
       "description": "Developing innovative engineering concepts with potential intellectual property value through technical design, documentation, and invention-oriented product development."
     },

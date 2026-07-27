@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <!-- PCB Board Outline with rounded corners -->
+  <rect x="2" y="2" width="20" height="20" rx="3.5" stroke="#1B5E20" stroke-width="1.5" fill="#E8F5E9"/>
+  
+  <!-- Complex Circuit Traces (Gold/Copper Style) -->
+  <path d="M6 6H10V10H14V14H18" stroke="#F57F17" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M6 18H10V14" stroke="#F57F17" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 6L14 10" stroke="#F57F17" stroke-width="1.2" stroke-linecap="round"/>
+  
+  <!-- Central Microcontroller IC Package -->
+  <rect x="8" y="8" width="8" height="8" rx="1.5" stroke="#1C274C" stroke-width="1.5" fill="#FAFAFA"/>
+  
+  <!-- IC Core Pin 1 Dot Marker -->
+  <circle cx="9.5" cy="9.5" r="0.75" fill="#1C274C"/>
+  
+  <!-- Mounting Vias / Pads (Solder Rings) -->
+  <circle cx="6" cy="6" r="1.5" stroke="#1C274C" stroke-width="1.2" fill="#F57F17"/>
+  <circle cx="18" cy="6" r="1.5" stroke="#1C274C" stroke-width="1.2" fill="#F57F17"/>
+  <circle cx="6" cy="18" r="1.5" stroke="#1C274C" stroke-width="1.2" fill="#F57F17"/>
+  <circle cx="18" cy="18" r="1.5" stroke="#1C274C" stroke-width="1.2" fill="#F57F17"/>
+  <circle cx="14" cy="14" r="1.2" stroke="#1C274C" stroke-width="1" fill="#F57F17"/>
+</svg>
