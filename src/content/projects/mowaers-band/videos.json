@@ -1,11 +1,11 @@
 {
   "videos": [
     {
-      "title": "MOWAERS System Demo",
+      "title": "GT-Band System Demo",
       "description": "Full system demonstration showing real-time health monitoring, emergency response triggers, and caregiver dashboard.",
       "thumbnail": {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
-        "caption": "MOWAERS System Demo",
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468000/GT-BAND_lxh1p1.jpg",
+        "caption": "GT-Band System Demo",
         "type": "image"
       },
       "duration": "3:45",

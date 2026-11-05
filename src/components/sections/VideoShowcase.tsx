@@ -10,6 +10,7 @@ import { useInView } from '@/hooks/useInView';
 import SectionHeader from '@/components/ui/SectionHeader';
 import Container from '@/components/ui/Container';
 import YouTubeVideoModal from '@/components/ui/YouTubeVideoModal';
+import { resolveImageSrc } from '@/lib/media';
 
 const CinematicVideoCard = memo(function CinematicVideoCard({ video, index }: { video: VideoItem; index: number }) {
   const { ref, isInView } = useInView({ rootMargin: '-50px' });
@@ -22,6 +23,7 @@ const CinematicVideoCard = memo(function CinematicVideoCard({ video, index }: { 
   const handleClose = useCallback(() => setIsPlayerOpen(false), []);
 
   const hasVideo = Boolean(video.youtubeUrl && video.youtubeUrl.trim());
+  const thumbnailSrc = resolveImageSrc(video.thumbnail);
 
   return (
     <>
@@ -35,17 +37,23 @@ const CinematicVideoCard = memo(function CinematicVideoCard({ video, index }: { 
         onMouseLeave={handleMouseLeave}
       >
         <div
-          className={`relative aspect-[16/9] overflow-hidden rounded-3xl border border-white/10 bg-void/70 shadow-2xl ${hasVideo ? 'cursor-pointer' : 'cursor-default'}`}
+          className={`relative aspect-[16/9] overflow-hidden rounded-2xl border border-white/10 bg-void/70 shadow-2xl ${hasVideo ? 'cursor-pointer' : 'cursor-default'}`}
           onClick={hasVideo ? handleOpen : undefined}
         >
-          <Image
-            src={video.thumbnail.src || '/images/techlance/Screenshot 2026-04-28 230510.png'}
-            alt={video.title}
-            fill
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
-            unoptimized={video.thumbnail.src?.startsWith('http')}
-          />
+          {thumbnailSrc ? (
+            <Image
+              src={thumbnailSrc}
+              alt={video.title}
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
+              unoptimized={thumbnailSrc.startsWith('http')}
+            />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-void to-void/80 font-body text-sm text-void14">
+              No Thumbnail Available
+            </div>
+          )}
           <div className="absolute inset-0 bg-gradient-to-t from-void/95 via-void/30 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-r from-void/40 via-transparent to-void/20" />
 
@@ -59,8 +67,8 @@ const CinematicVideoCard = memo(function CinematicVideoCard({ video, index }: { 
 
           <div className="absolute inset-0 flex items-center justify-center">
             {hasVideo ? (
-              <div className="flex h-24 w-24 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-xl transition-colors group-hover:bg-white/20">
-                <Play size={36} className="ml-1 text-white" />
+                <div className="flex h-20 w-20 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-xl transition-colors group-hover:bg-white/20">
+                <Play size={30} className="ml-1 text-white" />
               </div>
             ) : (
               <div className="rounded-full border border-white/20 bg-void/70 px-4 py-2 font-body text-sm text-white/80 backdrop-blur-xl">
@@ -70,7 +78,7 @@ const CinematicVideoCard = memo(function CinematicVideoCard({ video, index }: { 
           </div>
 
           <motion.div
-            className="absolute bottom-0 left-0 right-0 p-6 lg:p-8"
+            className="absolute bottom-0 left-0 right-0 p-4 lg:p-5"
             initial={{ y: 20, opacity: 0 }}
             animate={isHovered ? { y: 0, opacity: 1 } : { y: 10, opacity: 0.9 }}
             transition={{ duration: 0.3 }}
@@ -97,7 +105,7 @@ const CinematicVideoCard = memo(function CinematicVideoCard({ video, index }: { 
         isOpen={isPlayerOpen}
         videoUrl={video.youtubeUrl}
         title={video.title}
-        thumbnailUrl={video.thumbnail.src}
+        thumbnailUrl={thumbnailSrc}
         onClose={handleClose}
       />
     </>
@@ -115,12 +123,12 @@ export default function VideoShowcase() {
         />
 
         {/* Featured Video - Large */}
-        <div className="mb-8">
+        <div className="mx-auto mb-6 max-w-4xl">
           <CinematicVideoCard video={videos[0]} index={0} />
         </div>
 
         {/* Secondary Videos - Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 lg:grid-cols-2">
           {videos.slice(1).map((video, i) => (
             <CinematicVideoCard key={video.id} video={video} index={i + 1} />
           ))}

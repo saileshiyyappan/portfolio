@@ -27,6 +27,10 @@
     "type": "svg",
     "src": "/assets/icons/map-pin.svg"
   },
+  "phone": {
+    "type": "svg",
+    "src": "/assets/icons/phone.svg"
+  },
 
   "linkedin": {
     "type": "image",

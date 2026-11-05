@@ -11,6 +11,8 @@ import { scrollRevealLeft, scrollRevealRight } from '@/lib/animations';
 import SectionHeader from '@/components/ui/SectionHeader';
 import Container from '@/components/ui/Container';
 import ImageViewer from '@/components/ui/ImageViewer';
+import timing from '@/content/timing.json';
+import { resolveImageSrc } from '@/lib/media';
 
 function StatusBadge({ status }: { status: Project['status'] }) {
   const statusConfig = {
@@ -29,7 +31,11 @@ function StatusBadge({ status }: { status: Project['status'] }) {
 
 const ProjectShowcase = memo(function ProjectShowcase({ project, index }: { project: Project; index: number }) {
   const { ref, isInView } = useInView({ rootMargin: '-50px' });
-  const safeImages = useMemo(() => Array.isArray(project.galleryImages) ? project.galleryImages : [], [project.galleryImages]);
+  const safeImages = useMemo(
+    () => (Array.isArray(project.galleryImages) ? project.galleryImages : [])
+      .filter((image) => Boolean(resolveImageSrc(image))),
+    [project.galleryImages]
+  );
   const [activeImage, setActiveImage] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
@@ -54,7 +60,7 @@ const ProjectShowcase = memo(function ProjectShowcase({ project, index }: { proj
   }, [safeImages]);
 
   const lightboxItems = safeImages.map((img) => ({
-    src: img.src,
+    src: resolveImageSrc(img)!,
     caption: img.caption,
   }));
 
@@ -68,6 +74,19 @@ const ProjectShowcase = memo(function ProjectShowcase({ project, index }: { proj
       setActiveImage(safeImages.length - 1);
     }
   }, [safeImages.length, activeImage]);
+
+  useEffect(() => {
+    const intervalSeconds = Number(timing.projectImageInterval);
+    if (!isInView || lightboxOpen || safeImages.length <= 1 || !Number.isFinite(intervalSeconds) || intervalSeconds <= 0) {
+      return;
+    }
+
+    const interval = window.setInterval(() => {
+      setActiveImage((prev) => (prev + 1) % safeImages.length);
+    }, intervalSeconds * 1000);
+
+    return () => window.clearInterval(interval);
+  }, [isInView, lightboxOpen, safeImages.length]);
 
   return (
     <>
@@ -85,20 +104,28 @@ const ProjectShowcase = memo(function ProjectShowcase({ project, index }: { proj
             {/* Image Side */}
             <div className={`relative ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
               <motion.div
-                className="relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[400px] cursor-pointer overflow-hidden"
+                className="relative aspect-[16/9] lg:aspect-auto lg:h-full min-h-[280px] cursor-pointer overflow-hidden"
                 whileHover={{ scale: 1.01 }}
                 transition={{ duration: 0.6 }}
                 onClick={() => openLightbox(activeImage)}
               >
                 {safeImages.length > 0 ? (
-                  <Image
-                    src={safeImages[activeImage].src}
-                    alt={safeImages[activeImage].caption || ''}
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                    unoptimized={safeImages[activeImage].src.startsWith('http')}
-                  />
+                  <motion.div
+                    key={activeImage}
+                    className="absolute inset-0"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.35 }}
+                  >
+                    <Image
+                      src={resolveImageSrc(safeImages[activeImage])!}
+                      alt={safeImages[activeImage].caption || ''}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                      unoptimized={resolveImageSrc(safeImages[activeImage])!.startsWith('http')}
+                    />
+                  </motion.div>
                 ) : (
                   <div className="w-full h-full flex items-center justify-center bg-void11 text-void14 text-sm font-body">
                     No Image Available
@@ -125,9 +152,9 @@ const ProjectShowcase = memo(function ProjectShowcase({ project, index }: { proj
             </div>
 
             {/* Content Side */}
-            <div className={`p-8 lg:p-12 flex flex-col justify-center ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
+            <div className={`p-5 lg:p-6 flex flex-col justify-center ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
               {/* Category & Status */}
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-3">
                 <span className={`inline-block font-body text-xs tracking-[0.2em] uppercase bg-gradient-to-r ${project.color} bg-clip-text text-transparent font-semibold`}>
                   {project.category}
                 </span>
@@ -135,17 +162,17 @@ const ProjectShowcase = memo(function ProjectShowcase({ project, index }: { proj
               </div>
 
               {/* Title */}
-              <h3 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white mb-4">
+              <h3 className="font-heading font-bold text-2xl sm:text-3xl lg:text-4xl text-white mb-2">
                 {project.title}
               </h3>
 
               {/* Description */}
-              <p className="font-body text-void14 leading-relaxed mb-6 text-base">
+              <p className="font-body text-void14 leading-relaxed mb-3 text-base">
                 {project.shortDescription}
               </p>
 
               {/* Technology Tags */}
-              <div className="flex flex-wrap gap-2 mb-8">
+              <div className="flex flex-wrap gap-2 mb-5">
                 {project.technologies.slice(0, 6).map((tech) => (
                   <span
                     key={tech}
@@ -162,9 +189,9 @@ const ProjectShowcase = memo(function ProjectShowcase({ project, index }: { proj
               </div>
 
               {/* Metrics */}
-              <div className="grid grid-cols-2 gap-4 mb-8">
+              <div className="grid grid-cols-2 gap-2 mb-5">
                 {project.metrics.slice(0, 4).map((metric) => (
-                  <div key={metric.label} className="glass rounded-xl p-4">
+                  <div key={metric.label} className="glass rounded-xl p-2.5">
                     <div className="font-heading font-bold text-xl text-gradient mb-1">{metric.value}</div>
                     <div className="font-body text-xs text-void13">{metric.label}</div>
                   </div>
@@ -174,7 +201,7 @@ const ProjectShowcase = memo(function ProjectShowcase({ project, index }: { proj
               {/* CTA */}
               <Link
                 href={`/projects/${project.slug}`}
-                className="group/btn inline-flex items-center gap-3 px-8 py-4 bg-white text-void font-heading font-semibold rounded-full hover:bg-neon-cyan transition-colors w-fit"
+                className="group/btn inline-flex items-center gap-3 px-7 py-3 bg-white text-void font-heading font-semibold rounded-full hover:bg-neon-cyan transition-colors w-fit"
               >
                 View Case Study
                 <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform" />
@@ -215,7 +242,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" className="relative py-16 sm:py-20 overflow-hidden">
+    <section id="projects" className="relative py-12 sm:py-16 overflow-hidden">
       <Container>
         <SectionHeader
           subtitle="Featured Work"
@@ -223,7 +250,7 @@ export default function Projects() {
           description="A curated selection of engineering systems spanning wearable technology, AI platforms, and consumer hardware — each built with patent-worthy innovation and deployable outcomes."
         />
 
-        <div className="space-y-16 md:space-y-20">
+        <div className="space-y-12 md:space-y-16">
           {projects.map((project, i) => (
             <ProjectShowcase key={project.id} project={project} index={i} />
           ))}

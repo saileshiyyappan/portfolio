@@ -3,7 +3,9 @@
 export interface MediaItem {
   src: string;
   caption?: string;
+  description?: string;
   type?: 'image' | 'video' | 'document' | 'pdf';
+  thumbnail?: MediaItem;
 }
 
 export interface LinkItem {
@@ -17,6 +19,12 @@ export interface MetricItem {
   value: string;
 }
 
+export interface ProjectDocument {
+  title: string;
+  url: string;
+  type?: string;
+}
+
 // ==================== PROJECT ====================
 
 export type ProjectStatus = 'active' | 'completed' | 'in-development' | 'archived';
@@ -28,10 +36,23 @@ export interface Project {
   subtitle: string;
   category: string;
   status: ProjectStatus;
+  year?: string;
   shortDescription: string;
   fullDescription: string;
+  problemStatement?: string;
+  solution?: string;
+  architecture?: string[];
+  innovation?: string[];
+  futureWork?: string[];
+  currentStatus?: string;
+  documents?: ProjectDocument[];
   coverImage: MediaItem;
+  heroImage?: MediaItem;
   galleryImages: MediaItem[];
+  architectureImages?: MediaItem[];
+  flowcharts?: MediaItem[];
+  screenshots?: MediaItem[];
+  prototypeImages?: MediaItem[];
   videos: MediaItem[];
   technologies: string[];
   features: string[];
@@ -105,11 +126,6 @@ export interface Achievement {
 
 // ==================== SKILL ====================
 
-export interface SkillTechnology {
-  name: string;
-  image?: string;
-}
-
 export interface Skill {
   id: string;
   title: string;
@@ -118,7 +134,7 @@ export interface Skill {
   icon: string;
   color: string;
   category?: string;
-  technologies?: SkillTechnology[];
+  technologies?: string[];
 }
 
 // ==================== TIMELINE ====================
@@ -137,12 +153,8 @@ export interface TimelineItem {
 // ==================== GALLERY ====================
 
 export interface GalleryItem {
-  id: string;
   src: string;
   caption: string;
-  category: string;
-  projectId?: string;
-  date?: string;
   aspectRatio?: 'portrait' | 'square' | 'landscape';
 }
 
@@ -201,7 +213,6 @@ export interface HeroData {
   subtitle: string;
   description: string;
   ctaPrimary: { label: string; href: string };
-  ctaSecondary: { label: string; href: string };
 }
 
 // ==================== ABOUT ====================

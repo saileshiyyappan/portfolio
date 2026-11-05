@@ -1,96 +1,59 @@
 'use client';
 
-import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { technologyCategories } from '@/data/techstack';
 import { useInView } from '@/hooks/useInView';
 import SectionHeader from '@/components/ui/SectionHeader';
 import Container from '@/components/ui/Container';
-import technologyStackContent from '@/content/sections/technologyStack.json';
-
-interface TechnologyStackItem {
-  name: string;
-  image?: string;
-  alt?: string;
-  website?: string;
-}
-
-interface TechnologyStackCategory {
-  title: string;
-  items: TechnologyStackItem[];
-}
-
-interface TechnologyStackContent {
-  title: string;
-  subtitle: string;
-  categories: TechnologyStackCategory[];
-}
-
-const content = technologyStackContent as TechnologyStackContent;
+import TechnologyBadge from '@/components/ui/TechnologyBadge';
 
 export default function TechnologyStack() {
-  const { ref, isInView } = useInView({
-    threshold: 0.1,
-    once: true,
-  });
+  const { ref, isInView } = useInView({ threshold: 0.1, once: true });
 
   return (
-    <section
-      id="technology-stack"
-      className="relative py-24 sm:py-28 lg:py-32"
-    >
+    <section id="technology-stack" className="relative overflow-hidden py-16 sm:py-20 lg:py-24">
       <Container>
-        <div ref={ref} className="space-y-10">
+        <div ref={ref} className="space-y-12">
           <SectionHeader
-            title={content.title}
-            subtitle={content.subtitle}
+            title="Technology Stack"
+            subtitle="Technologies, platforms and engineering domains I use to design intelligent products."
           />
 
-          <div className="grid gap-6 lg:grid-cols-2">
-            {content.categories.map((category, categoryIndex) => (
-              <motion.div
-                key={category.title}
-                initial={{ opacity: 0, y: 24 }}
-                animate={
-                  isInView
-                    ? { opacity: 1, y: 0 }
-                    : { opacity: 0, y: 24 }
-                }
-                transition={{
-                  duration: 0.45,
-                  delay: categoryIndex * 0.05,
-                }}
-                className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_0_30px_rgba(0,0,0,0.18)] backdrop-blur-xl"
-              >
-                <h3 className="mb-4 text-lg font-semibold text-white">
-                  {category.title}
-                </h3>
+          <div className="space-y-8">
+            {technologyCategories.map((category) => {
+              const direction = category.order % 2 === 0 ? 'tech-lane-left' : 'tech-lane-right';
+              const badges = [...category.badges, ...category.badges];
 
-                <div className="flex flex-wrap gap-3">
-                  {category.items.map((item) => (
-                    <a
-                      key={`${category.title}-${item.name}`}
-                      href={item.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 rounded-full border border-cyan-400/25 bg-gradient-to-r from-cyan-400/15 to-cyan-300/10 px-3 py-2 text-sm text-slate-200 transition-all duration-300 hover:border-cyan-300 hover:scale-105 hover:shadow-[0_0_18px_rgba(34,211,238,0.25)]"
-                    >
-                      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 ring-1 ring-cyan-400/20 overflow-hidden">
-                        <Image
-                          src={item.image || "/assets/logos/default-tech.svg"}
-                          alt={item.alt || item.name}
-                          width={20}
-                          height={20}
-                          className="h-5 w-5 object-contain"
-                          unoptimized={item.image?.startsWith('http')}
+              return (
+                <motion.div
+                  key={category.category}
+                  initial={{ opacity: 0, y: 18 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 18 }}
+                  transition={{ duration: 0.5, delay: category.order * 0.06 }}
+                >
+                  <div className="mb-3 flex items-baseline gap-3 px-1">
+                    <span className="font-heading text-xs tracking-[0.2em] text-neon-cyan">
+                      {String(category.order).padStart(2, '0')}
+                    </span>
+                    <h3 className="font-heading text-sm font-semibold uppercase tracking-[0.14em] text-white/80 sm:text-base">
+                      {category.category}
+                    </h3>
+                  </div>
+
+                  <div className="tech-lane-mask relative overflow-hidden py-1">
+                    <div className={`tech-lane-track ${direction} flex w-max gap-3 pr-3`}>
+                      {badges.map((badge, index) => (
+                        <TechnologyBadge
+                          key={`${category.category}-${badge.src}-${index}`}
+                          src={badge.src}
+                          decorative={index >= category.badges.length}
                         />
-                      </div>
-
-                      <span>{item.name}</span>
-                    </a>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </Container>

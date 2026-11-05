@@ -2,14 +2,15 @@
 
 import { memo } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, ArrowUpRight } from 'lucide-react';
-import { contactData } from '@/data/contact';
+import { ArrowUpRight } from 'lucide-react';
+import contactItems from '@/content/contact.json';
 import { socialLinks } from '@/data/socials';
 import { useInView } from '@/hooks/useInView';
 import { staggerContainer, staggerItem } from '@/lib/animations';
 import SectionHeader from '@/components/ui/SectionHeader';
 import Container from '@/components/ui/Container';
 import TechnologyLogo from '@/components/ui/TechnologyLogo';
+import IconRenderer from '@/components/ui/IconRenderer';
 
 const SocialLink = memo(function SocialLink({ social }: { social: typeof socialLinks[0] }) {
   return (
@@ -55,32 +56,32 @@ export default function Contact() {
             <div className="glass rounded-2xl p-6 lg:p-8">
               <h3 className="font-heading font-semibold text-xl text-white mb-6">Contact Information</h3>
               <div className="space-y-4">
-                <motion.a
-                  href={`mailto:${contactData.email}`}
-                  className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/[0.05] transition-colors"
-                  variants={staggerItem}
-                  whileHover={{ x: 5 }}
-                >
-                  <div className="w-10 h-10 rounded-lg bg-neon-blue/10 flex items-center justify-center flex-shrink-0">
-                    <Mail size={18} className="text-neon-cyan" />
-                  </div>
-                  <div>
-                    <div className="font-body text-xs text-void13 mb-1">Email</div>
-                    <div className="font-body text-white text-sm">{contactData.email}</div>
-                  </div>
-                </motion.a>
-                <motion.div
-                  className="flex items-center gap-4 p-4 rounded-xl"
-                  variants={staggerItem}
-                >
-                  <div className="w-10 h-10 rounded-lg bg-neon-blue/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin size={18} className="text-neon-cyan" />
-                  </div>
-                  <div>
-                    <div className="font-body text-xs text-void13 mb-1">Location</div>
-                    <div className="font-body text-white text-sm">{contactData.location}</div>
-                  </div>
-                </motion.div>
+                {contactItems.map((item) => {
+                  const href = item.type === 'email'
+                    ? `mailto:${item.value}`
+                    : item.type === 'phone'
+                      ? `tel:${item.value}`
+                      : undefined;
+                  const Item = href ? motion.a : motion.div;
+
+                  return (
+                    <Item
+                      key={`${item.type}-${item.value}`}
+                      {...(href ? { href } : {})}
+                      className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/[0.05] transition-colors"
+                      variants={staggerItem}
+                      whileHover={{ x: 5 }}
+                    >
+                      <div className="w-10 h-10 rounded-lg bg-neon-blue/10 flex items-center justify-center flex-shrink-0">
+                        <IconRenderer name={item.icon} size={18} className="text-neon-cyan" />
+                      </div>
+                      <div>
+                        <div className="font-body text-xs text-void13 mb-1">{item.label}</div>
+                        <div className="font-body text-white text-sm">{item.value}</div>
+                      </div>
+                    </Item>
+                  );
+                })}
               </div>
             </div>
           </motion.div>

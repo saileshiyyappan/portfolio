@@ -3,7 +3,7 @@
     "id": "build-real-products",
     "icon": "wrench",
     "title": "Build Real Products",
-    "description": "Every project must result in a working, testable, and deployable product — not a concept or prototype that stops at the demo stage.",
+    "description": "Every project should result in a working, testable, and usable engineering system — not a concept or prototype that stops at the demonstration stage.",
     "color": "from-neon-blue to-neon-cyan"
   },
   {
@@ -31,7 +31,7 @@
     "id": "deployable-outcomes",
     "icon": "focus",
     "title": "Focus on Deployable Outcomes",
-    "description": "Engineering is complete when the system is deployed, monitored, and validated in the real world. Documentation and testing are part of the deliverable.",
+    "description": "Engineering is complete when the system has been tested, validated, and documented for practical use. Documentation and testing are part of the deliverable.",
     "color": "from-neon-purple to-neon-pink"
   },
   {

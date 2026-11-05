@@ -1,6 +1,7 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
-import { LinkItem, Project } from '@/types';
+import { LinkItem, Project, ProjectDocument } from '@/types';
+import { resolveImageSrc, resolveMediaCaption, resolveMediaDescription } from '@/lib/media';
 import projectRegistry from '@/content/projects/project_registry.json';
 import projectOrder from '@/content/projects/project_order.json';
 
@@ -13,6 +14,20 @@ function ensureArray<T>(value: unknown): T[] {
 
 function ensureStringArray(value: unknown): string[] {
   return Array.isArray(value) ? value.filter((item) => typeof item === 'string') as string[] : [];
+}
+
+function ensureOptionalString(value: unknown): string | undefined {
+  return typeof value === 'string' && value.trim() ? value : undefined;
+}
+
+function ensureDocuments(value: unknown): ProjectDocument[] {
+  return ensureArray<Record<string, unknown>>(value)
+    .filter((document) => typeof document.title === 'string' && typeof document.url === 'string')
+    .map((document) => ({
+      title: document.title as string,
+      url: document.url as string,
+      type: typeof document.type === 'string' ? document.type : undefined,
+    }));
 }
 
 function ensureTimeline(value: unknown): Project['timeline'] {
@@ -31,9 +46,10 @@ function ensureTimeline(value: unknown): Project['timeline'] {
 function ensureMediaItem(value: unknown): Project['coverImage'] {
   const item = value as Partial<Project['coverImage']> | undefined;
   return {
-    src: item?.src || '',
-    caption: item?.caption,
-    type: item?.type,
+    src: resolveImageSrc(value) || '',
+    caption: resolveMediaCaption(value),
+    description: resolveMediaDescription(value),
+    type: item?.type === 'video' ? 'video' : 'image',
   };
 }
 
@@ -85,35 +101,54 @@ export async function loadProjectFromCMS(slug: string): Promise<Project | null> 
     const projectData = await loadJson<Record<string, unknown>>(join(process.cwd(), 'src', 'content', 'projects', slug, 'project.json'), {});
     const galleryData = await loadJson<Record<string, unknown>>(join(process.cwd(), 'src', 'content', 'projects', slug, 'gallery.json'), {});
     const videosData = await loadJson<Record<string, unknown>>(join(process.cwd(), 'src', 'content', 'projects', slug, 'videos.json'), { videos: [] });
-
-  const allGalleryImages = [
-    ...ensureArray<unknown>(galleryData.galleryImages),
-    ...ensureArray<unknown>(galleryData.architectureImages),
-    ...ensureArray<unknown>(galleryData.flowcharts),
-    ...ensureArray<unknown>(galleryData.screenshots),
-    ...ensureArray<unknown>(galleryData.prototypeImages),
-  ];
-
-    const videos = ensureArray<Record<string, unknown>>(videosData.videos).map((v) => ({
-      src: (v.youtubeUrl as string) || '',
-      caption: (v.title as string) || '',
-      type: 'video' as const,
-    }));
+    const documentsData = await loadJson<Record<string, unknown>>(join(process.cwd(), 'src', 'content', 'projects', slug, 'documents.json'), {});
 
     const baseProject = projectData as Partial<Project>;
+    const documentsFromFile = Object.values(documentsData).flatMap((value) => ensureDocuments(value));
+    const documents = ensureDocuments(baseProject.documents).length > 0
+      ? ensureDocuments(baseProject.documents)
+      : documentsFromFile;
 
 const normalizeMedia = (it: unknown): Project['galleryImages'][0] => {
   const item = it as Partial<Project['galleryImages'][0]> | undefined;
 
-  const mediaType: 'image' | 'video' =
-    item?.type === 'video' ? 'video' : 'image';
-
   return {
-    src: typeof item?.src === 'string' ? item.src : '',
-    caption: typeof item?.caption === 'string' ? item.caption : '',
-    type: mediaType,
+    src: resolveImageSrc(it) || '',
+    caption: resolveMediaCaption(it) || '',
+    description: resolveMediaDescription(it),
+    type: item?.type === 'video' ? 'video' : 'image',
   };
 };
+
+    const normalizeImageCollection = (key: string): Project['galleryImages'] => {
+      const projectValue = (baseProject as Record<string, unknown>)[key];
+      const values = Array.isArray(galleryData[key]) ? galleryData[key] : projectValue;
+      return ensureArray<unknown>(values)
+        .map(normalizeMedia)
+        .filter((image) => Boolean(image.src));
+    };
+
+const normalizeVideo = (it: unknown): Project['videos'][0] => {
+  const item = it as Record<string, unknown> | undefined;
+  const thumbnail = ensureMediaItem(item?.thumbnail);
+
+  return {
+    src: typeof item?.src === 'string' ? item.src.trim() : '',
+    caption: typeof item?.caption === 'string' ? item.caption : '',
+    type: 'video',
+    thumbnail: thumbnail.src ? thumbnail : undefined,
+  };
+};
+
+    const videos = ensureArray<Record<string, unknown>>(videosData.videos).map((v) => {
+      const thumbnail = ensureMediaItem(v.thumbnail);
+      return {
+        src: typeof v.youtubeUrl === 'string' ? v.youtubeUrl.trim() : '',
+        caption: typeof v.title === 'string' ? v.title : '',
+        type: 'video' as const,
+        thumbnail: thumbnail.src ? thumbnail : undefined,
+      };
+    });
 
     const project: Project = {
     id: (baseProject.id as string) || slug,
@@ -122,17 +157,34 @@ const normalizeMedia = (it: unknown): Project['galleryImages'][0] => {
     subtitle: (baseProject.subtitle as string) || '',
     category: (baseProject.category as string) || '',
     status: (baseProject.status as Project['status']) || 'archived',
+    year: ensureOptionalString(baseProject.year),
     shortDescription: (baseProject.shortDescription as string) || '',
     fullDescription: (baseProject.fullDescription as string) || '',
-    coverImage: ensureMediaItem(galleryData.coverImage) || ensureMediaItem(baseProject.coverImage),
-    galleryImages: (() => {
-      const fromGallery = allGalleryImages.length > 0 ? allGalleryImages.map(normalizeMedia) as Project['galleryImages'] : [];
-      const fromBase = ensureArray<unknown>(baseProject.galleryImages).map(normalizeMedia) as Project['galleryImages'];
-      const merged = fromGallery.length > 0 ? fromGallery : fromBase;
-      // Only keep items that have a non-empty src string
-      return merged.filter((m) => typeof m.src === 'string' && m.src.length > 0);
+    problemStatement: ensureOptionalString(baseProject.problemStatement),
+    solution: ensureOptionalString(baseProject.solution),
+    architecture: ensureStringArray(baseProject.architecture),
+    innovation: ensureStringArray(baseProject.innovation),
+    futureWork: ensureStringArray(baseProject.futureWork),
+    currentStatus: ensureOptionalString(baseProject.currentStatus),
+    documents,
+    coverImage: (() => {
+      const galleryCover = ensureMediaItem(galleryData.coverImage);
+      return galleryCover.src ? galleryCover : ensureMediaItem(baseProject.coverImage);
     })(),
-    videos: videos.length > 0 ? videos : ensureArray<Project['videos'][0]>(baseProject.videos),
+    heroImage: (() => {
+      const galleryHero = ensureMediaItem(galleryData.heroImage);
+      if (galleryHero.src) return galleryHero;
+      const baseHero = ensureMediaItem((baseProject as Record<string, unknown>).heroImage);
+      return baseHero.src ? baseHero : undefined;
+    })(),
+    galleryImages: normalizeImageCollection('galleryImages'),
+    architectureImages: normalizeImageCollection('architectureImages'),
+    flowcharts: normalizeImageCollection('flowcharts'),
+    screenshots: normalizeImageCollection('screenshots'),
+    prototypeImages: normalizeImageCollection('prototypeImages'),
+    videos: videos.length > 0
+      ? videos
+      : ensureArray<unknown>(baseProject.videos).map(normalizeVideo),
     technologies: ensureStringArray(baseProject.technologies),
     features: ensureStringArray(baseProject.features),
     roles: ensureStringArray(baseProject.roles),

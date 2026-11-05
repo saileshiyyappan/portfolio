@@ -59,19 +59,16 @@ export default function Navigation() {
 
   return (
     <>
-      <motion.nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 h-[var(--navbar-height)] ${
           isModalOpen ? 'pointer-events-none opacity-0' : 'pointer-events-auto opacity-100'
         } ${
-          isScrolled ? 'bg-void/80 backdrop-blur-2xl border-b border-white/5 py-3' : 'bg-transparent py-6'
+          isScrolled ? 'bg-void/80 backdrop-blur-2xl border-b border-white/5' : 'bg-transparent'
         }`}
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-full flex items-center justify-between">
           <Link href="/" className="font-heading font-bold text-xl text-white tracking-tight z-50">
-            SI<span className="text-neon-cyan">.</span>
+            SAILESH IYYAPPAN . JR
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
@@ -88,7 +85,7 @@ export default function Navigation() {
             {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
-      </motion.nav>
+      </nav>
 
       <AnimatePresence>
         {isMobileOpen && !isModalOpen && (

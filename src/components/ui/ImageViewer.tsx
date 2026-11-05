@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useCallback, useRef, useState, memo } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react';
 import { useModal } from '@/context/ModalContext';
@@ -35,8 +36,13 @@ const ImageViewerContent = memo(function ImageViewerContent({
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
   const [touchStartX, setTouchStartX] = useState(0);
+  const [mounted, setMounted] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const { openModal, closeModal } = useModal();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const currentItem = items[currentIndex];
 
@@ -132,9 +138,9 @@ const ImageViewerContent = memo(function ImageViewerContent({
     else setScale(2);
   };
 
-  if (!currentItem) return null;
+  if (!mounted || !currentItem) return null;
 
-  return (
+  return createPortal(
     <AnimatePresence>
       {isOpen && (
         <motion.div
@@ -264,7 +270,8 @@ const ImageViewerContent = memo(function ImageViewerContent({
           </div>
         </motion.div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 });
 

@@ -1,14 +1,14 @@
 {
   "videos": [
     {
-      "title": "MOWAERS System Demo",
+      "title": "BLE BUG System Demo",
       "description": "Full system demonstration showing real-time health monitoring, emergency response triggers, and caregiver dashboard.",
       "thumbnail": {
-        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
-        "caption": "MOWAERS System Demo",
+        "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1785144857/ble-bug-2_olfpaf.jpg",
+        "caption": "BLE BUG System Demo",
         "type": "image"
       },
-      "duration": "3:45",
+      "duration": "",
       "category": "Product Demo",
       "youtubeUrl": ""
     }

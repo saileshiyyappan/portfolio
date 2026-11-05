@@ -1,0 +1,20 @@
+[
+  {
+    "label": "Email",
+    "value": "jr.saileshiyyappan@gmail.com",
+    "type": "email",
+    "icon": "mail"
+  },
+  {
+    "label": "Location",
+    "value": "Erode, Tamil Nadu, India",
+    "type": "location",
+    "icon": "map-pin"
+  },
+  {
+    "label": "Phone",
+    "value": "9486277916",
+    "type": "phone",
+    "icon": "phone"
+  }
+]

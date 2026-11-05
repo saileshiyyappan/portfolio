@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { galleryImages } from '@/data/gallery';
 import { generateSEO } from '@/lib/seo';
 import GalleryGrid from '@/components/gallery/GalleryGrid';
 
@@ -12,7 +11,7 @@ export default function GalleryPage() {
   return (
     <main className="relative min-h-screen bg-void">
       <div className="pt-24 sm:pt-32 pb-20">
-        <GalleryGrid images={galleryImages} />
+        <GalleryGrid />
       </div>
     </main>
   );

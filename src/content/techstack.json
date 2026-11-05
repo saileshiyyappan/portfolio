@@ -1,0 +1,125 @@
+[
+  {
+    "category": "Programming Languages",
+    "order": 1,
+    "badges": [
+      { "src": "/assets/badges/c.svg" },
+      { "src": "/assets/badges/cpp.svg" },
+      { "src": "/assets/badges/python.svg" },
+      { "src": "/assets/badges/java.svg" },
+      { "src": "/assets/badges/javascript.svg" },
+      { "src": "/assets/badges/typescript.svg" },
+      { "src": "/assets/badges/html5.svg" },
+      { "src": "/assets/badges/css3.svg" }
+    ]
+  },
+  {
+    "category": "Embedded Systems & IoT",
+    "order": 2,
+    "badges": [
+      { "src": "/assets/badges/esp32.svg" },
+      { "src": "/assets/badges/esp32-c3.svg" },
+      { "src": "/assets/badges/arduino.svg" },
+      { "src": "/assets/badges/arduino-framework.svg" },
+      { "src": "/assets/badges/platformio.svg" },
+      { "src": "/assets/badges/platformio-ide.svg" },
+      { "src": "/assets/badges/bluetooth-low-energy.svg" },
+      { "src": "/assets/badges/wifi.svg" },
+      { "src": "/assets/badges/gps.svg" },
+      { "src": "/assets/badges/sim800l.svg" },
+      { "src": "/assets/badges/pcb-design.svg" },
+      { "src": "/assets/badges/embedded_firmware.svg" },
+      { "src": "/assets/badges/sensors_actuators.svg" },
+      { "src": "/assets/badges/microcontrollers.svg" },
+      { "src": "/assets/badges/serial_communication.svg" },
+      { "src": "/assets/badges/i2c.svg" },
+      { "src": "/assets/badges/spi.svg" },
+      { "src": "/assets/badges/uart.svg" },
+      { "src": "/assets/badges/microsd.svg" },
+      { "src": "/assets/badges/iot.svg" }
+    ]
+  },
+  {
+    "category": "Full Stack Development",
+    "order": 3,
+    "badges": [
+      { "src": "/assets/badges/react.svg" },
+      { "src": "/assets/badges/nextjs.svg" },
+      { "src": "/assets/badges/vite.svg" },
+      { "src": "/assets/badges/nodejs.svg" },
+      { "src": "/assets/badges/expressjs.svg" },
+      { "src": "/assets/badges/flask.svg" },
+      { "src": "/assets/badges/firebase.svg" },
+      { "src": "/assets/badges/firestore.svg" },
+      { "src": "/assets/badges/tailwind-css.svg" },
+      { "src": "/assets/badges/rest-api.svg" },
+      { "src": "/assets/badges/responsive_web_design.svg" }
+    ]
+  },
+  {
+    "category": "Artificial Intelligence & Data",
+    "order": 4,
+    "badges": [
+      { "src": "/assets/badges/gemini-api.svg" },
+      { "src": "/assets/badges/vertex-ai.svg" },
+      { "src": "/assets/badges/openai-api.svg" },
+      { "src": "/assets/badges/machine-learning.svg" },
+      { "src": "/assets/badges/data-processing.svg" },
+      { "src": "/assets/badges/data_analysis.svg" },
+      { "src": "/assets/badges/prompt_engineering.svg" },
+      { "src": "/assets/badges/rule_based_intelligence.svg" },
+      { "src": "/assets/badges/ai_assisted_systems.svg" },
+      { "src": "/assets/badges/ai_workflows.svg" },
+      { "src": "/assets/badges/applied_research.svg" },
+      { "src": "/assets/badges/opencv.svg" }
+    ]
+  },
+  {
+    "category": "Database & Cloud",
+    "order": 5,
+    "badges": [
+      { "src": "/assets/badges/cloud-firestore.svg" },
+      { "src": "/assets/badges/firebase-storage.svg" },
+      { "src": "/assets/badges/google-cloud.svg" },
+      { "src": "/assets/badges/cloud-storage.svg" }
+    ]
+  },
+  {
+    "category": "Developer Tools",
+    "order": 6,
+    "badges": [
+      { "src": "/assets/badges/git.svg" },
+      { "src": "/assets/badges/github.svg" },
+      { "src": "/assets/badges/gitlab.svg" },
+      { "src": "/assets/badges/figma.svg" },
+      { "src": "/assets/badges/linux.svg" },
+      { "src": "/assets/badges/vscode.svg" },
+      { "src": "/assets/badges/postman.svg" },
+      { "src": "/assets/badges/docker.svg" },
+      { "src": "/assets/badges/windows.svg" }
+    ]
+  },
+  {
+    "category": "Engineering & Research",
+    "order": 7,
+    "badges": [
+      { "src": "/assets/badges/product_design.svg" },
+      { "src": "/assets/badges/rapid_prototyping.svg" },
+      { "src": "/assets/badges/cad_design.svg" },
+      { "src": "/assets/badges/system_design.svg" },
+      { "src": "/assets/badges/documentation.svg" },
+      { "src": "/assets/badges/modular_architecture.svg" },
+      { "src": "/assets/badges/embedded_architecture.svg" },
+      { "src": "/assets/badges/api_design.svg" },
+      { "src": "/assets/badges/workflow_design.svg" },
+      { "src": "/assets/badges/research_writing.svg" },
+      { "src": "/assets/badges/ieee_format.svg" },
+      { "src": "/assets/badges/literature_review.svg" },
+      { "src": "/assets/badges/experimental_design.svg" },
+      { "src": "/assets/badges/patent_drafting.svg" },
+      { "src": "/assets/badges/prior_art_search.svg" },
+      { "src": "/assets/badges/technical_drawings.svg" },
+      { "src": "/assets/badges/product_innovation.svg" }
+    ]
+  }
+]

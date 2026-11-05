@@ -20,7 +20,7 @@ export default function Footer() {
           {/* Logo & Tagline */}
           <div className="text-center md:text-left">
             <Link href="/" className="font-heading font-bold text-2xl text-white mb-2 block">
-              SI<span className="text-neon-cyan">.</span>
+              SAILESH IYYAPPAN.JR<span className="text-neon-cyan">.</span>
             </Link>
             <p className="font-body text-sm text-void12">
               Systems Product Engineer & Technical Founder

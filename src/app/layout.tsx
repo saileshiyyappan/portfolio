@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
-import { Inter, Space_Grotesk } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 import { ModalProvider } from '@/context/ModalContext';
 
-const inter = Inter({
-  subsets: ['latin'],
+const geistBody = localFont({
+  src: './fonts/GeistVF.woff',
   variable: '--font-inter',
   display: 'swap',
 });
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
+const geistHeading = localFont({
+  src: './fonts/GeistVF.woff',
   variable: '--font-space-grotesk',
   display: 'swap',
 });
@@ -116,7 +116,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${spaceGrotesk.variable} bg-void text-void18 antialiased`}
+        className={`${geistBody.variable} ${geistHeading.variable} bg-void text-void18 antialiased`}
       >
         <ModalProvider>
           {children}

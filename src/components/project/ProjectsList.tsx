@@ -8,6 +8,7 @@ import { Project } from '@/types';
 import Container from '@/components/ui/Container';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { staggerContainer, staggerItem } from '@/lib/animations';
+import { resolveImageSrc } from '@/lib/media';
 
 interface ProjectsListProps {
   projects: Project[];
@@ -36,14 +37,20 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
           >
             <Link href={`/projects/${project.slug}`} className="group block">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
-                <Image
-                  src={project.coverImage.src}
-                  alt={project.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  unoptimized={project.coverImage.src.startsWith('http')}
-                />
+                {resolveImageSrc(project.coverImage) ? (
+                  <Image
+                    src={resolveImageSrc(project.coverImage)!}
+                    alt={project.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    unoptimized={resolveImageSrc(project.coverImage)!.startsWith('http')}
+                  />
+                ) : (
+                  <div className="flex h-full w-full items-center justify-center bg-void11 font-body text-sm text-void14">
+                    No Image Available
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-transparent to-transparent" />
                 <div className="absolute top-4 right-4 w-10 h-10 rounded-full glass flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                   <ArrowUpRight size={18} className="text-white" />

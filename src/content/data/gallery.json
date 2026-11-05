@@ -1,98 +1,686 @@
 [
   {
-    "id": "g-1",
-    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476795/PATENT_IMG_FRONT_VIEW_nuup6p.webp",
-    "caption": "MOWAERS Patent Front View",
-    "category": "MOWAERS",
-    "projectId": "mowaers-band",
-    "aspectRatio": "landscape"
-  },
-  {
-    "id": "g-2",
-    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476801/VERSION_1_BAND_yl6j3h.webp",
-    "caption": "MOWAERS Version 1 Prototype",
-    "category": "MOWAERS",
-    "projectId": "mowaers-band",
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476797/PARTIAL_VERSION_2_BAND_dazqbs.webp",
+    "caption": "GT-Band / MOWAERS Version 2 Prototype",
     "aspectRatio": "portrait"
   },
   {
-    "id": "g-3",
-    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477085/Screenshot_2026-04-28_230510_rhozme.webp",
-    "caption": "TECHLANCE Engineering Platform",
-    "category": "TECHLANCE",
-    "projectId": "techlance",
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476801/VERSION_1_BAND_yl6j3h.webp",
+    "caption": "GT-Band Version 1 Main Band Prototype",
     "aspectRatio": "square"
   },
   {
-    "id": "g-4",
-    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476995/COVER_IMAGE_rrovmw.webp",
-    "caption": "Highlighter Speaker Prototype",
-    "category": "Highlighter",
-    "projectId": "highlighter-speaker",
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476891/VERSION_1_D_BAND_oisbrw.webp",
+    "caption": "GT-Band Version 1 Detachable D-Band",
     "aspectRatio": "landscape"
   },
   {
-    "id": "g-5",
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476860/VERSION_1_PANEL_VIEW_gbc9ku.webp",
+    "caption": "GT-Band Internal Panel Layout",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476798/PCB_DESIGN_V1_ofqzul.webp",
+    "caption": "GT-Band PCB Design V1",
+    "aspectRatio": "square"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476799/Screenshot_2026-03-11_125516_eliuos.webp",
+    "caption": "GT-Band Embedded System Architecture",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476800/SHB_DASHBOARD_xhvtih.webp",
+    "caption": "Sensor Handling Block Dashboard",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476793/DATA_MEASURING_USING_GADGET_ndunyw.webp",
+    "caption": "Real-time Health Parameter Measurement",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476851/VITAL_MEASURING_GADGET_FOR_DATA_uenrub.webp",
+    "caption": "Wearable Capturing Multiple Vital Signs",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476800/V1_PROTOTYPE_DEMO_PURPOSE_jmfnbw.webp",
+    "caption": "GT-Band Demonstration Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476783/ASM_001_ASSEMBLY_OF_INTERNAL_COMPONENTS_M_BAND_sqkaxe.webp",
+    "caption": "Main Band Internal Components Assembly",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476777/ASM_002_ASSEMBLE_OF_INTERNAL_COMPONENTS_IN_M_BAND_BOTTOM_k8fbz1.webp",
+    "caption": "Main Band Bottom Housing Assembly",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476778/ASM_003_VERSION_1_COMPONENTS_ASEMBLE_v9rlti.webp",
+    "caption": "Version 1 Components Fully Arranged",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476771/ASM_004_FINAL_ASSEMBLY_OF_COMPONENTS_M_BAND_o2yt3t.webp",
+    "caption": "Final Main Band Component Assembly",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476770/ASM_005_ASSEMBLE_OF_INTERNAL_COMPONENTS_IN_D_BAND_rfr0zl.webp",
+    "caption": "D-Band Internal Electronics Installation",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476767/ASM_006_COMPLETE_BODY_DESING_CUTS_yqb3se.webp",
+    "caption": "Structural Parts Before Assembly",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476772/ASM_007_M_BAND_BODY_ASSEMBLE_azhyhb.webp",
+    "caption": "Main Band Outer Body Assembly",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476773/ASM_008_COMPLETED_M_BAND_BODY_jko81i.webp",
+    "caption": "Completed Main Band Enclosure",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476799/ASM_080_COMPLETE_M_BAND_BODY_ASSEMBLE_lvshku.webp",
+    "caption": "Completed Main Band Assembly View",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476781/ASM_009_D_BAND_TOP_COMPONENTS_ASSEMBLE_hrbiuq.webp",
+    "caption": "D-Band Top Components Assembly",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476777/ASM_010_COMPLETE_BODY_OF_M_AND_D_BANDS_phlqxn.webp",
+    "caption": "Complete Mechanical Bodies of Both Bands",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476783/ASM_011_ASSEMBLE_OF_M_AND_D_BAND_ibn0ru.webp",
+    "caption": "Main + Detachable Bands Connected",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476786/ASM_012_INTERNAL_COMPONENTS_ASSEMBLED_M_BAND_BOTTOM_aea813.webp",
+    "caption": "Main Band Bottom Internal Components",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476785/ASM_013_INTERNAL_COMPONENTS_OF_M_BAND_BOTTOM_wtjt1p.webp",
+    "caption": "Main Band Bottom Electronics Detail",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476788/ASM_014_INTERNAL_COMPONENTS_OF_M_BAMD_TOP_yjciez.webp",
+    "caption": "Main Band Top Internal Electronics",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476792/ASM_015_D_BAND_TOP_COMPONENTS_ASSEMBLED_jgsswz.webp",
+    "caption": "D-Band Top Module Fully Assembled",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476791/ASM_016_D_BAND_BOTTOM_COMPLETE_SENSOR_NODE_ASSEMBLED_fmvvwr.webp",
+    "caption": "D-Band Complete Sensor Node",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476795/ASM_017_COMPLETED_BODY_OF_M_AND_D_BAND_TOP_AND_BOTTOM_fblkje.webp",
+    "caption": "Completed Top & Bottom Band Housings",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476793/ASM_018_INTERNAL_CONNECTION_utzyoa.webp",
+    "caption": "Internal Wiring Connections",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476799/ASM_019_INTERNAL_CONNECTIONS_yqqmb3.webp",
+    "caption": "Final Internal Electrical Connections",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468000/GT-BAND_lxh1p1.jpg",
+    "caption": "GT-Band Wearable Prototype",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468000/GT-BAND_TOPVIEW_uskspj.jpg",
+    "caption": "GT-Band Top View",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468000/GT-BAND_BACKVIEW_bdqmab.jpg",
+    "caption": "GT-Band Rear View",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468000/D-BAND_pej0c6.jpg",
+    "caption": "GT-Band Detachable D-Band",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791467999/D-BAND_SENSOR_CLOSEUP_VIEW_sew3jb.jpg",
+    "caption": "D-Band Sensor Module Close-up",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791467999/GOATEST_HOME_PAGE_jm89ya.jpg",
+    "caption": "GOATEST Home Dashboard",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468000/GOATEST_SHBLIVE_TEST_PAGE_mds2uq.jpg",
+    "caption": "GOATEST Live Health Test Interface",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791467999/GOATEST_APP_SHB_PAGE_ah5lzh.jpg",
+    "caption": "GOATEST Health Testing Module",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791467998/DAY_REPORT_PREVIEW_BOX_ttlpba.jpg",
+    "caption": "Day Report Preview",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791467999/DAY_REPORT_PAGE_h7xlzj.jpg",
+    "caption": "Daily Health Report",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791467998/COMPARE_RESULT_TABLE_cvblmz.jpg",
+    "caption": "Personalized Comparison Results",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791467998/COMPARE_TABLE_STAGES_rtkvqn.jpg",
+    "caption": "Comparison Across Health Stages",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791467998/ALL_REPORT_VIEW_OR_REPORT_PAGE_ersk9i.jpg",
+    "caption": "GOATEST Reports Dashboard",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791467999/AI_TEST_REPORT_AND_GUIDANCE_wgtswm.jpg",
+    "caption": "AI Test Report & Guidance",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791467998/CONDITION_OUTPUT_PAGE_v5rs29.jpg",
+    "caption": "Condition Analysis Output",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468000/FINAL_REPORT_PDF_uwqwxo.jpg",
+    "caption": "Final Health Report PDF",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468000/SHB_TEST_SHAKE_INTERUPT_ALERT_yrxmoa.jpg",
+    "caption": "Test Interruption Alert",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468001/SHB_TEST_TERMINATED_DUE_TO_EVENTS_igsks9.jpg",
+    "caption": "Test Termination Notification",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468001/TEST_COMPLETED_USER_NOTIFICATION_gb5pto.jpg",
+    "caption": "Test Completed Notification",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468001/TEST_REPORT_GRAPH_oe8xsz.jpg",
+    "caption": "Test Report Graph",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468002/TEST_REPORT_PREVIEW_BOX_SUMMARY_DETAILS_wh60oz.jpg",
+    "caption": "Test Report Summary Preview",
+    "aspectRatio": "portrait"
+  },
+
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476995/COVER_IMAGE_rrovmw.webp",
+    "caption": "Highlighter Bluetooth Speaker Prototype",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476997/HIGHLIGHTER_IMG_001_ajpfyo.webp",
+    "caption": "Highlighter Speaker MVP Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477003/HIGHLIGHTER_IMG_001_WITH_STATIONARY_vyx8ha.webp",
+    "caption": "Highlighter Speaker with Stationery",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477003/HIGHLIGHTER_IMG_001_WITH_TWS_mybeml.webp",
+    "caption": "Highlighter Speaker with TWS Comparison",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477005/HIGHLIGHTER_IMG_002_fh0ggv.webp",
+    "caption": "Highlighter Speaker Prototype View",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477013/HIGHLIGHTER_IMG_002_WITH_STATIONARY_rjaxun.webp",
+    "caption": "Highlighter Speaker Product Context",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477011/HIGHLIGHTER_IMG_002_WITH_TWS_uzofty.webp",
+    "caption": "Highlighter Speaker Size Comparison",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477010/HIGHLIGHTER_IMG_003_p54b8y.webp",
+    "caption": "Highlighter Speaker Detailed View",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477013/HIGHLIGHTER_IMG_004_wiyuye.webp",
+    "caption": "Highlighter Speaker Final Prototype",
+    "aspectRatio": "landscape"
+  },
+
+  {
     "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477063/PAPER_SPEAKER_COVER_IMAGE_xkbpue.webp",
     "caption": "Paper Thin Speaker Prototype",
-    "category": "Paper Speaker",
-    "projectId": "paper-thin-speaker-fcw-method",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477084/PAPER_SPEAKER_VERSION_2_TESTING_AND_COMPLETE_PROJECT_ON_TABLE_fmx4tm.webp",
+    "caption": "Paper Thin Speaker Testing Setup",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477053/PAPER_SPEAKER__vs3y7z.webp",
+    "caption": "Paper Thin Speaker Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477078/PAPER_SPEAKER_VERSION_1_SQUARE_SPEAKER_ejjwps.webp",
+    "caption": "Paper Thin Speaker Version 1",
     "aspectRatio": "square"
   },
   {
-    "id": "g-6",
-    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476920/AUTOMATIC__PCB_MISMANTLE_COVER_IMAGE_tpqvgf.webp",
-    "caption": "Eco Industrial Park Concept",
-    "category": "EIP",
-    "projectId": "eip",
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477078/PAPER_SPEAKER_VERSION_2_BODY_BASE_gm3t6q.webp",
+    "caption": "Paper Thin Speaker Version 2 Base",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477074/PAPER_SPEAKER_VERSION_2_BODY_002_otgwo7.webp",
+    "caption": "Paper Thin Speaker Version 2 Body",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477071/PAPER_SPEAKER_V2_BODY_BASE_AND_FRAME_o6kb1l.webp",
+    "caption": "Paper Thin Speaker Frame Development",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477064/PAPER_SPEAKER_DISMANTLED_SQUARE_SPEAKER_ir8ya0.webp",
+    "caption": "Paper Thin Speaker Dismantled View",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477069/PAPER_SPEAKER_THINKNESS_OF_THE_SQUARE_SPEAKER_brzy5k.webp",
+    "caption": "Paper Thin Speaker Thickness Detail",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477060/PAPER_SPEAKER_BACK_SIDE_OF_THE_SQUARE_SPEAKER_gbw6qd.webp",
+    "caption": "Paper Thin Speaker Rear Structure",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477058/PAPER_SPEAKER_BACK_SIDE_wfa1qf.webp",
+    "caption": "Paper Thin Speaker Back Side",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477071/PAPER_SPEAKER_FCW_COPPER_COIL_WINEDING_tqc6s3.webp",
+    "caption": "FCW Copper Coil Winding",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477063/PAPER_SPEAKER_COPPER_WINEDING_002_neg2e7.webp",
+    "caption": "Copper Coil Development",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477063/PAPER_SPEAKER_CONNECTING_TERMINALS_TO_THE_COIL_re9zic.webp",
+    "caption": "Terminal Connection to Coil",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477083/PAPER_SPEAKER_WIRING_THE_TERMINALS_av5nip.webp",
+    "caption": "Terminal Wiring Assembly",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477055/PAPER_SPEAKER_ASM_001_FCW_ON_BASE_hiu1yw.webp",
+    "caption": "FCW Assembly on Base",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477062/PAPER_SPEAKER_ASSEMBLED_DIAPHRAGM_bhi6iq.webp",
+    "caption": "Assembled Diaphragm",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477072/PAPER_SPEAKER_TESTING_WITHOUT_DIAPHRAGM_f4vrx4.webp",
+    "caption": "Testing Without Diaphragm",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477070/PAPER_SPEAKER_TESTING_WITHOUT_DIAPHRAGM_002_af8tnb.webp",
+    "caption": "Testing Setup",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477072/PAPER_SPEAKER_TOOLS_USED_FOR_FCW_goqfky.webp",
+    "caption": "FCW Development Tools",
+    "aspectRatio": "landscape"
+  },
+
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477085/Screenshot_2026-04-28_230510_rhozme.webp",
+    "caption": "Craftlance Engineering Platform",
     "aspectRatio": "portrait"
   },
   {
-    "id": "g-7",
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477081/Screenshot_2026-04-28_222500_sj1vqw.webp",
+    "caption": "Craftlance MVP Interface",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477075/Screenshot_2026-04-27_184756_d1ymih.webp",
+    "caption": "Craftlance Prototype Screen",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477077/Screenshot_2026-04-27_192112_iga94o.webp",
+    "caption": "Craftlance Interface",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477078/Screenshot_2026-04-28_221950_zzuzfn.webp",
+    "caption": "Craftlance Dashboard View",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477079/Screenshot_2026-04-28_222157_hbz9zl.webp",
+    "caption": "Craftlance Feature Screen",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477080/Screenshot_2026-04-28_222319_tdsdpo.webp",
+    "caption": "Craftlance Application View",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477084/Screenshot_2026-04-28_230300_cwwq2e.webp",
+    "caption": "Craftlance MVP Dashboard",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477082/Screenshot_2026-04-28_230127_fzx4f0.webp",
+    "caption": "Craftlance Interface Detail",
+    "aspectRatio": "landscape"
+  },
+
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476920/AUTOMATIC__PCB_MISMANTLE_COVER_IMAGE_tpqvgf.webp",
+    "caption": "Automatic PCB Dismantling System",
+    "aspectRatio": "portrait"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476911/AUTOMATIC__PCB_MISMANTLE_001_mg99bl.webp",
+    "caption": "Automatic PCB Dismantling MVP Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476915/AUTOMATIC__PCB_MISMANTLE_002_u27gjg.webp",
+    "caption": "PCB Dismantling Prototype Development",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476913/AUTOMATIC__PCB_MISMANTLE_003_hrx1sz.webp",
+    "caption": "PCB Dismantling Mechanical Structure",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476913/AUTOMATIC__PCB_MISMANTLE_004_rx1fes.webp",
+    "caption": "PCB Dismantling System Development",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476916/AUTOMATIC__PCB_MISMANTLE_005_d3pyxt.webp",
+    "caption": "PCB Dismantling Engineering Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468715/EIP_COVER_PPT_SLIDE_btzrqm.png",
+    "caption": "Eco-Industrial Park Overview",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468713/EIP_SECTOR_CATOGORY_bhfvuv.png",
+    "caption": "EIP Waste & Recycling Sector Categories",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468714/EIP_INTER_CCONNECTIVITY_r4nsfu.png",
+    "caption": "EIP Interconnected Industrial Network",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468715/INTER_CONNECTIVITY_FLOW_mzxa6c.png",
+    "caption": "Inter-Plant Material Flow",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468713/EIP_STAGE_1_t6ohcs.png",
+    "caption": "EIP Development Stage 1",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468714/EIP_STAGE_2_z3b6hz.png",
+    "caption": "EIP Development Stage 2",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468714/EIP_STAGE_3_j7s1rh.png",
+    "caption": "EIP Development Stage 3",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468713/EIP_ELECTRICAL_PARTS_SEPARATION_zwhrik.png",
+    "caption": "Electronic Component Separation Concept",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468715/PCB_DISMANTLING_DISADVANTAGE_ianbcf.png",
+    "caption": "Existing PCB Dismantling Challenges",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468715/COMPAONTNETS_OF_PROTOTYPE_bheyuw.png",
+    "caption": "PCB Dismantling Prototype Components",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468717/PROTOTYPE_BLUEPRINT_iqzveu.png",
+    "caption": "PCB Dismantling Prototype Blueprint",
+    "aspectRatio": "landscape"
+  },
+
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476899/CNC_PLOTTER_COVER_IMAGE_kyp1dq.webp",
+    "caption": "Mini CNC Plotter Project",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476901/IMG-20240106-WA0014_sv53m7.webp",
+    "caption": "Mini CNC Plotter MVP Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476899/IMG-20231231-WA0011_d7aks4.webp",
+    "caption": "Mini CNC Plotter Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476906/SPARE_OLD_DVD_PLAYER_vlnd29.webp",
+    "caption": "Mini CNC Plotter Development",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476904/IRON_MAN_SKETCH_dbsxls.webp",
+    "caption": "Mini CNC Plotter Output Sample",
+    "aspectRatio": "square"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476898/IMAGE_GCODE_xhvkki.webp",
+    "caption": "Mini CNC Plotter G-Code Preview",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476904/SOFTWARE_IRON_MAN_GCODE_b66jlb.webp",
+    "caption": "Mini CNC Plotter Software Output",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476901/INK_SOFTWARE_zglmxz.webp",
+    "caption": "Mini CNC Plotter Software Interface",
+    "aspectRatio": "landscape"
+  },
+
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477377/FRIDGE_COVER_IMAGE_opzwrw.webp",
+    "caption": "Portable Thermoelectric Mini Fridge",
+    "aspectRatio": "square"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477378/FRIDGE_IMAGE_001_yyqeu7.webp",
+    "caption": "Portable Mini Fridge MVP Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477385/FRIDGE_IMAGE_002_tixl1u.webp",
+    "caption": "Portable Mini Fridge Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477381/FRIDGE_IMAGE_003_zcbmqm.webp",
+    "caption": "Portable Mini Fridge Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477383/FRIDGE_IMAGE_004_n3yrug.webp",
+    "caption": "Portable Mini Fridge Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477384/FRIDGE_IMAGE_005_kzotfb.webp",
+    "caption": "Portable Mini Fridge Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477380/FRIDGE_CIRCUITS_AND_COMPONENTS_PELTIER_SMPS_PELTIER_MODULE_xrgrgh.webp",
+    "caption": "Mini Fridge Hardware Components",
+    "aspectRatio": "landscape"
+  },
+
+  {
     "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477097/W_FRIDGE_COVER_IMAGE_lzvoqe.webp",
     "caption": "Water Based Cooling Fridge",
-    "category": "Cooling",
-    "projectId": "water-based-cooling-fridge",
     "aspectRatio": "landscape"
   },
   {
-    "id": "g-8",
-    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477377/FRIDGE_COVER_IMAGE_opzwrw.webp",
-    "caption": "Thermoelectric Mini Fridge",
-    "category": "Cooling",
-    "projectId": "fridge",
-    "aspectRatio": "square"
-  },
-  {
-    "id": "g-9",
-    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476899/CNC_PLOTTER_COVER_IMAGE_kyp1dq.webp",
-    "caption": "Mini CNC Plotter",
-    "category": "Automation",
-    "projectId": "cnc-plotter",
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477089/W_FRIDGE_001_z2u9lm.webp",
+    "caption": "Water Based Cooling Fridge MVP",
     "aspectRatio": "landscape"
   },
   {
-    "id": "g-10",
-    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477017/PATENT_IMAGE_EXPLODED_VIEW_yi4p5u.webp",
-    "caption": "Highlighter Patent Exploded View",
-    "category": "Patent",
-    "projectId": "highlighter-speaker",
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477091/W_FRIDGE_002_ayigre.webp",
+    "caption": "Water Based Cooling Fridge Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477092/W_FRIDGE_003_mv9byy.webp",
+    "caption": "Water Based Cooling Fridge Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477092/W_FRIDGE_004_pc212c.webp",
+    "caption": "Water Based Cooling Fridge Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477093/W_FRIDGE_005_gmrpkm.webp",
+    "caption": "Water Based Cooling Fridge Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477098/W_FRIDGE_BOTTOM_PIC_a54vwq.webp",
+    "caption": "Water Based Cooling Fridge Bottom Assembly",
+    "aspectRatio": "landscape"
+  },
+
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1785144857/ble-bug-2_olfpaf.jpg",
+    "caption": "BLE Bug Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1785144857/ble-bug-1_sft4fx.jpg",
+    "caption": "BLE Bug Prototype",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1785144856/ble-bug-3_pk0si7.jpg",
+    "caption": "BLE Bug Hardware",
+    "aspectRatio": "landscape"
+  },
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1785144857/app-bug_lpftda.jpg",
+    "caption": "BLE Bug Mobile Application",
     "aspectRatio": "portrait"
   },
   {
-    "id": "g-11",
-    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476798/PCB_DESIGN_V1_ofqzul.webp",
-    "caption": "MOWAERS PCB Design V1",
-    "category": "Hardware",
-    "projectId": "mowaers-band",
-    "aspectRatio": "square"
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1785144856/app-bug1_q4winc.jpg",
+    "caption": "BLE Bug Application Interface",
+    "aspectRatio": "portrait"
+  },
+
+  {
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1785140672/mp3-skp1_ufomym.jpg",
+    "caption": "MP3 Speaker Prototype",
+    "aspectRatio": "landscape"
   },
   {
-    "id": "g-12",
-    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784477084/PAPER_SPEAKER_VERSION_2_TESTING_AND_COMPLETE_PROJECT_ON_TABLE_fmx4tm.webp",
-    "caption": "Paper Speaker Prototype Testing",
-    "category": "Research",
-    "projectId": "paper-thin-speaker-fcw-method",
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1785140672/mp3-skp2_smothu.jpg",
+    "caption": "MP3 Speaker Prototype",
     "aspectRatio": "landscape"
   }
 ]

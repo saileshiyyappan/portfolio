@@ -8,7 +8,7 @@
   ],
   "technicalDocuments": [
     {
-      "title": "MOWAERS System Architecture Specification",
+      "title": "GOATEST System Architecture Specification",
       "url": "#",
       "type": "pdf"
     },
@@ -20,7 +20,7 @@
   ],
   "patentDocuments": [
     {
-      "title": "Modular Wearable Sensor Architecture - Patent Filing",
+      "title": "GOATEST Wearable Sensor Architecture - Patent Filing",
       "url": "#",
       "type": "pdf"
     },
@@ -32,7 +32,7 @@
   ],
   "pdfs": [
     {
-      "title": "MOWAERS User Manual",
+      "title": "GOATEST User Manual",
       "url": "#",
       "type": "pdf"
     }

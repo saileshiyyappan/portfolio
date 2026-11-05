@@ -1,23 +1,33 @@
 {
   "coverImage": {
-    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1785140672/mp3-skp1_ufomym.jpg",
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791810578/spk_jscyoh.jpg",
     "caption": "MP3 Speaker Prototype",
     "type": "image"
   },
   "heroImage": {
-    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1785140672/mp3-skp2_smothu.jpg",
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791810578/spk_jscyoh.jpg",
     "caption": "MP3 Speaker Prototype",
     "type": "image"
   },
   "galleryImages": [
     {
-      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1785140672/mp3-skp1_ufomym.jpg",
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791810578/spk_jscyoh.jpg",
       "caption": "MP3 Speaker Prototype",
       "type": "image"
     },
     {
       "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1785140672/mp3-skp2_smothu.jpg",
       "caption": "MP3 Speaker Prototype",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1785140672/mp3-skp1_ufomym.jpg",
+      "caption": "MP3 Speaker Prototype",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791810578/spk_internal_phssg6.jpg",
+      "caption": "MP3 Speaker Prototype Internal View",
       "type": "image"
     }
   ],

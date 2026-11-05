@@ -1,44 +1,129 @@
+
 {
   "coverImage": {
-    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476920/AUTOMATIC__PCB_MISMANTLE_COVER_IMAGE_tpqvgf.webp",
-    "caption": "Automatic PCB Dismantling System Cover",
+    "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468715/EIP_COVER_PPT_SLIDE_btzrqm.png",
+    "caption": "Eco-Industrial Park — Integrated Recycling Ecosystem",
+    "description": "Overview of the Eco-Industrial Park concept, presenting the project as a centralized and interconnected ecosystem for waste management, recycling, resource recovery, shared infrastructure, renewable energy, water recycling, and sustainable industrial development.",
     "type": "image"
   },
-
   "heroImage": {
     "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476911/AUTOMATIC__PCB_MISMANTLE_001_mg99bl.webp",
-    "caption": "Automatic PCB Dismantling MVP Prototype",
+    "caption": "Automatic PCB Dismantling — Prototype Development",
+    "description": "Prototype development of the Automatic PCB Dismantling project, one of the e-waste-focused engineering components being developed within the wider Eco-Industrial Park concept.",
     "type": "image"
   },
-
   "galleryImages": [
     {
       "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476915/AUTOMATIC__PCB_MISMANTLE_002_u27gjg.webp",
-      "caption": "Automatic PCB Dismantling Prototype 1",
+      "caption": "Automatic PCB Dismantling Prototype — Development View",
+      "description": "Development-stage view of the PCB dismantling prototype, documenting the progression from the initial concept toward a practical recycling-machine prototype.",
       "type": "image"
     },
     {
       "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476913/AUTOMATIC__PCB_MISMANTLE_003_hrx1sz.webp",
-      "caption": "Automatic PCB Dismantling Prototype 2",
+      "caption": "Automatic PCB Dismantling Prototype — Mechanical Structure",
+      "description": "Prototype view highlighting the physical machine structure developed as part of the e-waste recovery research within EIP.",
       "type": "image"
     },
     {
       "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476913/AUTOMATIC__PCB_MISMANTLE_004_rx1fes.webp",
-      "caption": "Automatic PCB Dismantling Prototype 3",
+      "caption": "Automatic PCB Dismantling Prototype — System Development",
+      "description": "Another development-stage view of the PCB dismantling machine, showing the ongoing engineering work associated with improving electronic-waste processing.",
       "type": "image"
     },
     {
       "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476916/AUTOMATIC__PCB_MISMANTLE_005_d3pyxt.webp",
-      "caption": "Automatic PCB Dismantling Prototype 4",
+      "caption": "Automatic PCB Dismantling Prototype — Engineering Development",
+      "description": "Prototype documentation representing the practical engineering development of an automated PCB dismantling subsystem for the EIP e-waste segment.",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468713/EIP_SECTOR_CATOGORY_bhfvuv.png",
+      "caption": "EIP Waste & Recycling Sector Categories",
+      "description": "Overview of the different waste and recycling sectors considered within the Eco-Industrial Park, illustrating the broad scope of the proposed multi-sector recycling ecosystem.",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468714/EIP_INTER_CCONNECTIVITY_r4nsfu.png",
+      "caption": "EIP Interconnected Industrial Network",
+      "description": "Conceptual representation of the interconnectivity between different recycling sectors, showing the EIP as a connected industrial network rather than a collection of isolated recycling facilities.",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468715/INTER_CONNECTIVITY_FLOW_mzxa6c.png",
+      "caption": "Inter-Plant Material Flow",
+      "description": "Conceptual flow representation showing how materials and recoverable resources can move between different stages and sectors of the Eco-Industrial Park to support continuous resource utilization.",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468713/EIP_STAGE_1_t6ohcs.png",
+      "caption": "EIP Development Stage 1",
+      "description": "Early-stage representation of the proposed Eco-Industrial Park structure, establishing the initial organization of waste handling and recycling activities.",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468714/EIP_STAGE_2_z3b6hz.png",
+      "caption": "EIP Development Stage 2",
+      "description": "Intermediate development view showing the expansion of the EIP concept toward greater industrial connectivity and integration between recycling sectors.",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468714/EIP_STAGE_3_j7s1rh.png",
+      "caption": "EIP Development Stage 3",
+      "description": "Further-developed representation of the Eco-Industrial Park ecosystem, illustrating the progression toward a broader interconnected industrial infrastructure.",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468713/EIP_ELECTRICAL_PARTS_SEPARATION_zwhrik.png",
+      "caption": "Electronic Component Separation Concept",
+      "description": "Conceptual representation associated with the electronic-waste processing segment, focusing on the separation and recovery of useful components from discarded electronic materials.",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468715/PCB_DISMANTLING_DISADVANTAGE_ianbcf.png",
+      "caption": "Existing PCB Dismantling — Identified Challenges",
+      "description": "Summary of challenges identified in conventional PCB dismantling approaches, including processing limitations, time requirements, manual involvement, environmental concerns, scalability, recovery efficiency, and component loss.",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468715/EIP_COVER_PPT_SLIDE_btzrqm.png",
+      "caption": "Eco-Industrial Park Project Overview",
+      "description": "Project overview visual summarizing the broader EIP vision, including centralized recycling, waste segregation, resource recovery, shared machinery, circular material use, renewable energy, water recycling, and economic opportunities.",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468715/COMPAONTNETS_OF_PROTOTYPE_bheyuw.png",
+      "caption": "Automatic PCB Dismantling Prototype Components",
+      "description": "Component-level view of the PCB dismantling prototype, documenting the physical elements considered during the machine development process.",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1791468717/PROTOTYPE_BLUEPRINT_iqzveu.png",
+      "caption": "Automatic PCB Dismantling Prototype Blueprint",
+      "description": "Engineering blueprint representing the planned structure and arrangement of the PCB dismantling prototype during the machine development stage.",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476911/AUTOMATIC__PCB_MISMANTLE_001_mg99bl.webp",
+      "caption": "Automatic PCB Dismantling MVP Prototype",
+      "description": "Physical prototype representing the first practical development of the automatic PCB dismantling subsystem within the EIP e-waste research segment.",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476915/AUTOMATIC__PCB_MISMANTLE_002_u27gjg.webp",
+      "caption": "PCB Dismantling Prototype Development",
+      "description": "Prototype documentation showing the ongoing mechanical development and construction of the automatic PCB dismantling system.",
+      "type": "image"
+    },
+    {
+      "src": "https://res.cloudinary.com/b62vgfoq/image/upload/v1784476913/AUTOMATIC__PCB_MISMANTLE_003_hrx1sz.webp",
+      "caption": "PCB Dismantling Machine — Physical Development",
+      "description": "Physical development view of the prototype created to investigate automated electronic component recovery within the EIP framework.",
       "type": "image"
     }
   ],
-
   "architectureImages": [],
-
   "flowcharts": [],
-
   "screenshots": [],
-
   "prototypeImages": []
 }

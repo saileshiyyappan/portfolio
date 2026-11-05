@@ -4,9 +4,9 @@
 
 @layer base {
   :root {
-    --font-inter: 'Inter', sans-serif;
-    --font-space-grotesk: 'Space Grotesk', sans-serif;
-    --navbar-height: 96px;
+    --font-inter: 'Geist', sans-serif;
+    --font-space-grotesk: 'Geist', sans-serif;
+    --navbar-height: 64px;
   }
 
   section[id] {
@@ -15,6 +15,7 @@
 
   html {
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: transparent;
@@ -169,6 +170,30 @@
 }
 
 @layer utilities {
+  .tech-lane-mask {
+    mask-image: linear-gradient(90deg, transparent, black 7%, black 93%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 7%, black 93%, transparent);
+  }
+
+  .tech-lane-track {
+    animation-duration: 48s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+  }
+
+  .tech-lane-track:hover {
+    animation-play-state: paused;
+  }
+
+  .tech-lane-right {
+    animation-name: tech-lane-right;
+  }
+
+  .tech-lane-left {
+    animation-name: tech-lane-left;
+  }
+
   .perspective-1000 {
     perspective: 1000px;
   }
@@ -185,5 +210,15 @@
     0% { opacity: 0.5; }
     50% { opacity: 0.8; }
     100% { opacity: 0.5; }
+  }
+
+  @keyframes tech-lane-right {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+  }
+
+  @keyframes tech-lane-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
   }
 }

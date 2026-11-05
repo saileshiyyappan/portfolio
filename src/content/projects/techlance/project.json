@@ -1,53 +1,55 @@
 {
   "id": "techlance",
   "slug": "techlance",
-  "title": "TECHLANCE",
-  "subtitle": "AI-Powered Engineering Collaboration Ecosystem",
-  "category": "AI-Powered Engineering Platform",
+  "title": "CRAFTLANCE",
+  "subtitle": "Engineering Project & Talent Collaboration Platform",
+  "category": "Engineering Collaboration Platform",
   "status": "active",
   "year": "2025",
-  "shortDescription": "Techlance is an AI-powered engineering collaboration platform that brings innovators, engineers, researchers, and suppliers together within a unified ecosystem. It combines project intelligence, AI-assisted decision making, collaboration tools, and blockchain-based trust mechanisms to transform engineering ideas into real-world products.",
+  "shortDescription": "Craftlance is a startup-oriented engineering collaboration platform designed to connect people who need engineering projects with students, graduates, and engineers who can build them. It provides a structured space for project discovery, skill-based collaboration, practical work opportunities, and professional reputation building.",
 
-  "fullDescription": "TECHLANCE is a full-stack AI-powered engineering collaboration ecosystem developed to address one of the biggest challenges faced by engineering students, innovators, startups, freelancers, and technical professionals—the absence of a single platform that supports the complete engineering lifecycle. Existing platforms solve only isolated problems such as freelancing, project management, hardware sourcing, code hosting, or communication. Techlance integrates these fragmented workflows into one intelligent ecosystem. The platform enables users to submit engineering ideas, receive AI-powered project analysis, identify technical risks, evaluate innovation potential, predict project success, estimate development cost, match with suitable collaborators, source hardware components, communicate securely, and manage complete project execution from concept to delivery. By combining artificial intelligence, machine learning, cloud technologies, and blockchain-based trust systems, Techlance provides an intelligent engineering workspace capable of assisting technical teams throughout the entire product development lifecycle while reducing project failures and improving collaboration quality.",
+  "fullDescription": "CRAFTLANCE is an engineering collaboration platform being developed as a startup project to connect two sides of the engineering ecosystem: people who need affordable and suitable support for engineering projects, and students, graduates, and engineers looking for practical project opportunities. The platform is designed around a project-based collaboration model where users can present engineering requirements and discover suitable engineers based on skills, experience, project interests, and availability. For engineers, Craftlance provides an opportunity to work on practical projects, earn through completed work, strengthen their portfolios, and build a reputation based on demonstrated experience rather than relying only on academic qualifications. The long-term vision extends beyond project collaboration by creating a practical-skill visibility layer through which proven project experience can help skilled individuals become more discoverable for future professional opportunities. Craftlance is currently being developed as a working product prototype and is intended to progress through field testing, user validation, refinement, and eventual startup development.",
 
-  "problemStatement": "Engineering innovation is often slowed by fragmented ecosystems where idea validation, technical collaboration, hardware procurement, project management, trust verification, and execution are distributed across multiple independent platforms. Students, researchers, startups, and freelance engineers frequently struggle to identify suitable collaborators, estimate project feasibility, evaluate technical risks, verify ownership of ideas, and manage engineering projects efficiently. The absence of an integrated engineering ecosystem results in duplicated effort, poor collaboration, increased project failure rates, limited visibility into project health, and reduced innovation productivity.",
+  "problemStatement": "Students and individuals who need engineering projects often face difficulty finding capable and affordable people who can provide suitable technical support. At the same time, many engineering students, graduates, and skilled professionals have useful technical abilities but limited access to practical paid projects through which they can gain experience, income, and demonstrable work. Traditional academic networks, general freelancing platforms, and informal project channels do not always provide an engineering-focused environment that connects these two groups effectively. Craftlance addresses this gap by creating a dedicated platform centered around engineering projects, practical skills, collaboration, and project-based professional growth.",
 
-  "solution": "Techlance introduces a unified AI-powered engineering ecosystem that integrates project creation, AI-driven engineering intelligence, smart collaborator matching, supplier marketplace, blockchain-based trust verification, and collaborative project execution into a single platform. The system leverages multiple AI models to evaluate project novelty, estimate success probability, detect risks, recommend suitable engineering teams, estimate budgets, monitor project progress, and provide intelligent recovery recommendations. By combining these capabilities with real-time collaboration and secure blockchain-backed ownership mechanisms, Techlance transforms isolated engineering workflows into a connected, intelligent, and scalable development ecosystem.",
+  "solution": "Craftlance provides a dedicated environment where project-seeking users can describe engineering requirements and connect with suitable engineers for project work. Engineers can present their skills, experience, previous work, and interests while discovering projects that match their capabilities. The platform brings project discovery, professional profiles, collaboration, communication, project progress, and reputation into one engineering-focused environment. Its broader model is intended to make engineering project opportunities more accessible while helping skilled individuals convert practical ability into experience, income, portfolio value, and stronger professional visibility.",
 
   "architecture": [
-    "Next.js and React frontend providing responsive multi-role dashboards",
-    "Node.js and Express backend exposing modular REST APIs",
-    "Firebase Authentication for secure user and role management",
-    "Cloud Firestore for real-time project, collaboration, AI, and marketplace data",
-    "Firebase Storage for media, project documents, and user assets",
-    "Gemini API for intelligent project understanding and engineering assistance",
-    "Vertex AI and Vertex Embeddings for machine learning workflows and semantic analysis",
-    "AI Orchestrator coordinating multiple engineering intelligence models",
-    "Polygon blockchain integration for idea ownership proof, NDA verification, escrow concepts, and reputation systems"
+    "Next.js and React frontend for responsive user, engineer, project, and platform interfaces",
+    "Node.js and Express backend for modular application services and REST APIs",
+    "Firebase Authentication for account access and role-based user management",
+    "Cloud Firestore for project, profile, collaboration, and platform data",
+    "Firebase Storage for project files, profile assets, and supporting media",
+    "Gemini API for selected AI-assisted project and engineering support features",
+    "Vertex AI services for selected intelligent analysis and future machine learning capabilities",
+    "Modular service architecture designed to support future expansion of Craftlance into a larger engineering ecosystem",
+    "Polygon blockchain technology explored as a future layer for selected trust, ownership, and contribution-related capabilities"
   ],
 
   "innovation": [
-    "Unified engineering collaboration ecosystem combining AI, cloud, marketplace, and blockchain technologies",
-    "Multi-model AI orchestration framework integrating Risk AI, Trust AI, Progress AI, Success Prediction, Fraud Detection, Semantic Search, Dynamic Pricing, and Actor Matching",
-    "AI-assisted engineering project intelligence that evaluates feasibility before development begins",
-    "Engineering-specific collaborator recommendation engine based on technical skills, experience, availability, and AI compatibility",
-    "Integrated supplier marketplace enabling direct hardware procurement alongside software collaboration",
-    "Blockchain-backed trust architecture supporting idea ownership verification, contribution tracking, reputation management, and future milestone escrow mechanisms",
-    "Semantic engineering search using embeddings for discovering related ideas, projects, and technical experts",
-    "Scalable modular architecture supporting future enterprise deployment and intelligent engineering ecosystems"
+    "Engineering-focused collaboration model connecting project requirements with people who have relevant practical skills",
+    "Two-sided ecosystem designed to benefit both project seekers and project makers",
+    "Practical project opportunities that allow students and engineers to strengthen experience, portfolios, and professional reputation",
+    "Skill- and project-oriented discovery designed specifically for engineering work rather than general-purpose freelancing",
+    "AI-assisted project support intended to improve project understanding, requirement organization, and suitable engineer discovery",
+    "A reputation model based on completed project work, demonstrated skills, experience, and collaboration history",
+    "Long-term talent visibility model allowing companies to discover engineering ability through practical project evidence",
+    "Startup-oriented platform model that can expand from individual project collaboration toward colleges, engineering communities, organizations, and industry partnerships"
   ],
 
   "futureWork": [
-    "Native Android and iOS mobile applications",
-    "Production deployment with enterprise-grade scalability and monitoring",
-    "Expansion of AI models using custom engineering datasets for improved prediction accuracy",
-    "Real-time collaborative whiteboard and engineering documentation tools",
-    "Voice-assisted engineering AI agent for project planning and technical consultation",
-    "Advanced blockchain implementation including decentralized reputation, milestone escrow, and immutable contribution tracking",
-    "Integration with CAD software, simulation platforms, Git repositories, and IoT development environments",
-    "Support for universities, research laboratories, startup incubators, innovation centers, and enterprise engineering organizations",
-    "Internationalization with multilingual engineering collaboration support",
-    "Comprehensive analytics dashboard providing engineering productivity, collaboration, and project performance insights"
+    "Field testing with students, engineers, and project seekers",
+    "Expansion of the engineering project and talent discovery network",
+    "Improved skill-based and AI-assisted project matching",
+    "Project milestone, payment, dispute, and completion workflows",
+    "Enhanced engineer portfolios and practical-skill reputation profiles",
+    "Company and organization access for discovering proven engineering talent",
+    "Partnerships with colleges, engineering communities, incubators, and technical organizations",
+    "Mobile applications for convenient project and collaboration management",
+    "Additional AI-assisted productivity and project support capabilities",
+    "Advanced trust, verification, and contribution systems",
+    "Expansion into broader engineering services and professional opportunities",
+    "Commercial launch and development of Craftlance as a scalable startup platform"
   ],
 
   "technologies": [
@@ -61,11 +63,8 @@
     "Firebase Storage",
     "Gemini API",
     "Vertex AI",
-    "Vertex Embeddings",
-    "Vertex AutoML",
     "Google Cloud Platform",
     "Machine Learning",
-    "Cosine Similarity",
     "REST APIs",
     "Blockchain",
     "Polygon Amoy Testnet",
@@ -78,20 +77,20 @@
 
   "tags": [
     "AI",
-    "Machine Learning",
-    "Engineering Platform",
+    "Engineering",
     "Collaboration",
     "Full Stack",
-    "Firebase",
-    "Vertex AI",
-    "Gemini",
-    "Blockchain",
     "Startup",
-    "Research",
     "SaaS",
-    "Engineering Intelligence",
-    "Innovation",
-    "Marketplace"
+    "Project Platform",
+    "Talent Platform",
+    "Freelancing",
+    "Firebase",
+    "Gemini",
+    "Vertex AI",
+    "Blockchain",
+    "Marketplace",
+    "Product Development"
   ],
 
   "color": "from-neon-purple to-neon-pink",
@@ -103,7 +102,6 @@
     "Backend Developer",
     "Frontend Developer",
     "AI Engineer",
-    "ML Engineer",
     "Product Designer",
     "Technical Researcher",
     "Project Lead"
@@ -115,23 +113,23 @@
       "value": "Working Prototype"
     },
     {
-      "label": "AI Modules",
-      "value": "10+"
+      "label": "Core Actors",
+      "value": "2"
     },
     {
-      "label": "User Roles",
-      "value": "3"
+      "label": "Platform Focus",
+      "value": "Engineering Collaboration"
     },
     {
-      "label": "Platform",
-      "value": "End-to-End Ecosystem"
+      "label": "Business Direction",
+      "value": "Startup Project"
     }
   ],
 
   "links": [
     {
       "label": "Live Platform",
-      "url": "https://techlance.vercel.app",
+      "url": "https://craftlance.vercel.app",
       "icon": "Globe"
     },
     {
@@ -151,28 +149,28 @@
     "milestones": [
       {
         "date": "2025-01",
-        "title": "Problem Identification & Concept Formation",
-        "description": "Identified the fragmented nature of engineering collaboration platforms and defined the vision for an AI-powered engineering ecosystem integrating collaboration, AI intelligence, marketplace services, and trust mechanisms."
+        "title": "Concept & Product Direction",
+        "description": "Defined the concept of an engineering-focused collaboration platform designed to connect people who need project support with students, graduates, and engineers who can contribute practical technical skills."
       },
       {
         "date": "2025-03",
-        "title": "System Architecture Design",
-        "description": "Designed the complete multi-layer architecture including frontend, backend, AI orchestration, Firebase cloud infrastructure, blockchain integration strategy, and modular engineering workflows."
+        "title": "Platform Planning & Architecture",
+        "description": "Established the initial product structure, user roles, engineering project workflows, technology stack, cloud architecture, and long-term direction for developing Craftlance as a scalable product."
       },
       {
         "date": "2025-05",
         "title": "Core Platform Development",
-        "description": "Developed responsive frontend interfaces, backend APIs, authentication, project management modules, supplier marketplace, user role system, and cloud database integration."
+        "description": "Developed the core web platform with user accounts, engineering profiles, project-oriented interfaces, collaboration functionality, backend services, and Firebase-based data management."
       },
       {
         "date": "2025-06",
-        "title": "AI & Machine Learning Integration",
-        "description": "Integrated Gemini API, Vertex AI, semantic embeddings, and multiple engineering intelligence models including risk analysis, progress prediction, trust evaluation, actor matching, novelty detection, and project success prediction."
+        "title": "AI-Assisted Features",
+        "description": "Introduced AI-assisted capabilities to support selected project and engineering workflows while keeping the platform architecture flexible for future intelligent features."
       },
       {
         "date": "2025-06",
-        "title": "Working Prototype & Field Testing Preparation",
-        "description": "Completed an end-to-end working prototype integrating frontend, backend, AI systems, Firebase services, and blockchain concepts. The platform is currently being prepared for real-world field testing, user validation, and future startup development."
+        "title": "Working Product Prototype",
+        "description": "Reached a working product prototype representing the core direction of Craftlance. The project is now positioned for continued refinement, field testing, user validation, and development toward a future startup."
       }
     ]
   }

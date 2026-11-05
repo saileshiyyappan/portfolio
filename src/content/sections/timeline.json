@@ -28,12 +28,12 @@
     "id": "university-beginning",
     "year": "2023",
     "title": "University & Tier-1 Projects",
-    "description": "Joined VIT AP University and transitioned from educational prototypes to large-scale product engineering, beginning the development of patent-oriented Tier-1 projects with complete hardware and software ecosystems.",
+    "description": "Joined VIT AP University and transitioned from educational prototypes to larger-scale product engineering, beginning the development of patent-oriented Tier-1 projects with integrated hardware and software systems.",
     "icon": "college-cap",
     "color": "text-neon-teal",
     "bgColor": "bg-neon-teal/10",
     "relatedProjectIds": [
-      "mowaers-band",
+      "goatest-band",
       "highlighter-speaker",
       "paper-thin-speaker-fcw-method"
     ]
@@ -47,8 +47,8 @@
     "color": "text-neon-green",
     "bgColor": "bg-neon-green/10",
     "relatedProjectIds": [
-      "mowaers-band",
-      "techlance",
+      "goatest-band",
+      "craftlance",
       "highlighter-speaker",
       "paper-thin-speaker-fcw-method"
     ]
@@ -62,23 +62,23 @@
     "color": "text-neon-purple",
     "bgColor": "bg-neon-purple/10",
     "relatedProjectIds": [
-      "mowaers-band",
+      "goatest-band",
       "highlighter-speaker",
       "paper-thin-speaker-fcw-method",
-      "techlance"
+      "craftlance"
     ]
   },
   {
     "id": "portfolio-phase",
     "year": "2026",
     "title": "Engineering Portfolio & Professional Presence",
-    "description": "Established a complete engineering portfolio, technical documentation, professional profiles, and project ecosystem while preparing products for research publications, collaborations, internships, startup opportunities, and future commercialization.",
+    "description": "Established a complete engineering portfolio, technical documentation, professional profiles, and project ecosystem while preparing projects for research publications, technical collaborations, product development, and future commercialization.",
     "icon": "patent",
     "color": "text-neon-orange",
     "bgColor": "bg-neon-orange/10",
     "relatedProjectIds": [
-      "mowaers-band",
-      "techlance",
+      "goatest-band",
+      "craftlance",
       "highlighter-speaker",
       "paper-thin-speaker-fcw-method"
     ]

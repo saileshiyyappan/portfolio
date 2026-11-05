@@ -1,130 +1,369 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, memo, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ZoomIn } from 'lucide-react';
 import { galleryImages } from '@/data/gallery';
+import { GalleryItem as GalleryItemType } from '@/types';
+import timing from '@/content/timing.json';
 import { useInView } from '@/hooks/useInView';
 import SectionHeader from '@/components/ui/SectionHeader';
 import Container from '@/components/ui/Container';
 import ImageViewer from '@/components/ui/ImageViewer';
 
-const GalleryItem = memo(function GalleryItem({
-  img,
-  index,
-  onClick,
-}: {
-  img: (typeof galleryImages)[0];
+const SLOT_COUNT = 16;
+const ROTATION_COUNT = 6;
+const PACKING_GAP = 4;
+
+interface GallerySlot {
+  id: string;
   index: number;
-  onClick: () => void;
+  image: GalleryItemType;
+}
+
+interface PackedTile {
+  slot: GallerySlot;
+  left: number;
+  top: number;
+  width: number;
+  height: number;
+}
+
+interface PackedLayout {
+  tiles: PackedTile[];
+  height: number;
+}
+
+function uniqueImages(images: GalleryItemType[]): GalleryItemType[] {
+  const seen = new Set<string>();
+  return images.filter((image) => {
+    if (!image.src || seen.has(image.src)) return false;
+    seen.add(image.src);
+    return true;
+  });
+}
+
+function shuffled<T>(items: T[]): T[] {
+  const result = [...items];
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [result[index], result[swapIndex]] = [result[swapIndex], result[index]];
+  }
+  return result;
+}
+
+function createInitialSlots(images: GalleryItemType[]): GallerySlot[] {
+  return images.slice(0, SLOT_COUNT).map((image, index) => ({
+    id: `gallery-slot-${String(index + 1).padStart(2, '0')}`,
+    index,
+    image,
+  }));
+}
+
+function getFallbackAspect(image: GalleryItemType): number {
+  switch (image.aspectRatio) {
+    case 'portrait':
+      return 0.7;
+    case 'square':
+      return 1;
+    default:
+      return 1.65;
+  }
+}
+
+function getLogicalColumnCount(width: number): number {
+  if (width >= 1100) return 12;
+  if (width >= 700) return 9;
+  if (width >= 460) return 6;
+  return 3;
+}
+
+function getTileSpan(aspect: number, logicalColumns: number): number {
+  if (aspect >= 1.35) return Math.min(logicalColumns, Math.ceil(logicalColumns / 2));
+  return Math.min(3, logicalColumns);
+}
+
+function packSlots(
+  slots: GallerySlot[],
+  measuredAspects: Record<string, number>,
+  width: number,
+): PackedLayout {
+  if (!width || slots.length === 0) return { tiles: [], height: 0 };
+
+  const logicalColumns = getLogicalColumnCount(width);
+  const unitWidth = (width - PACKING_GAP * (logicalColumns - 1)) / logicalColumns;
+  const columnHeights = Array.from({ length: logicalColumns }, () => 0);
+  const tiles: PackedTile[] = [];
+
+  slots.forEach((slot) => {
+    const aspect = measuredAspects[slot.image.src] || getFallbackAspect(slot.image);
+    const span = getTileSpan(aspect, logicalColumns);
+    const tileWidth = unitWidth * span + PACKING_GAP * (span - 1);
+    const tileHeight = tileWidth / aspect;
+    let bestStart = 0;
+    let bestTop = Number.POSITIVE_INFINITY;
+    let bestResultingHeight = Number.POSITIVE_INFINITY;
+
+    for (let start = 0; start <= logicalColumns - span; start += 1) {
+      const top = Math.max(...columnHeights.slice(start, start + span));
+      const resultingHeight = Math.max(
+        ...columnHeights,
+        top + tileHeight + PACKING_GAP,
+      );
+
+      if (
+        resultingHeight < bestResultingHeight ||
+        (resultingHeight === bestResultingHeight && top < bestTop)
+      ) {
+        bestStart = start;
+        bestTop = top;
+        bestResultingHeight = resultingHeight;
+      }
+    }
+
+    const left = bestStart * (unitWidth + PACKING_GAP);
+    tiles.push({
+      slot,
+      left,
+      top: bestTop,
+      width: tileWidth,
+      height: tileHeight,
+    });
+
+    for (let column = bestStart; column < bestStart + span; column += 1) {
+      columnHeights[column] = bestTop + tileHeight + PACKING_GAP;
+    }
+  });
+
+  return {
+    tiles,
+    height: Math.max(0, Math.max(...columnHeights) - PACKING_GAP),
+  };
+}
+
+function preloadImage(src: string): Promise<{ width: number; height: number }> {
+  return new Promise((resolve, reject) => {
+    const image = new window.Image();
+    image.onload = () => {
+      const finish = () => resolve({ width: image.naturalWidth, height: image.naturalHeight });
+      if ('decode' in image) image.decode().then(finish).catch(finish);
+      else finish();
+    };
+    image.onerror = () => reject(new Error(`Unable to preload gallery image: ${src}`));
+    image.src = src;
+  });
+}
+
+const GalleryItem = memo(function GalleryItem({
+  tile,
+  onClick,
+  onImageLoad,
+}: {
+  tile: PackedTile;
+  onClick: (index: number) => void;
+  onImageLoad: (src: string, width: number, height: number) => void;
 }) {
-  const aspect = index % 3 === 0 ? 'aspect-[4/5]' : index % 3 === 1 ? 'aspect-square' : 'aspect-[3/4]';
+  const { slot } = tile;
 
   return (
-    <motion.div
-      className="break-inside-avoid relative group cursor-pointer rounded-xl overflow-hidden"
-      layout
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.9 }}
-      transition={{ duration: 0.4, delay: index * 0.05 }}
-      onClick={onClick}
+    <button
+      type="button"
+      className="group absolute overflow-hidden rounded-2xl text-left"
+      style={{ left: tile.left, top: tile.top, width: tile.width, height: tile.height }}
+      onClick={() => onClick(slot.index)}
+      aria-label={`Open ${slot.image.caption}`}
     >
-      <div className={`relative ${aspect}`}>
-        <Image
-          src={img.src}
-          alt={img.caption}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-          unoptimized={img.src.startsWith('http')}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-void/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          <div className="w-12 h-12 rounded-full glass flex items-center justify-center">
-            <ZoomIn size={20} className="text-white" />
-          </div>
-        </div>
-        <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          <span className="font-body text-xs text-neon-cyan uppercase tracking-wider">{img.category}</span>
-          <p className="font-heading text-white text-sm mt-1">{img.caption}</p>
+      <Image
+        src={slot.image.src}
+        alt={slot.image.caption}
+        fill
+        sizes="(max-width: 460px) 92vw, (max-width: 700px) 46vw, (max-width: 1100px) 30vw, 24vw"
+        className="block h-full w-full object-contain"
+        unoptimized={slot.image.src.startsWith('http')}
+        onLoad={(event) => {
+          const image = event.currentTarget;
+          onImageLoad(slot.image.src, image.naturalWidth, image.naturalHeight);
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-void/85 via-void/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full glass">
+          <ZoomIn size={17} className="text-white" />
         </div>
       </div>
-    </motion.div>
+      <p className="absolute bottom-3 left-3 right-3 translate-y-2 font-heading text-xs text-white opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+        {slot.image.caption}
+      </p>
+    </button>
   );
 });
 
 export default function Gallery() {
   const { ref, isInView } = useInView({ rootMargin: '-100px' });
+  const sourceImages = useMemo(() => uniqueImages(galleryImages), []);
+  const [slots, setSlots] = useState<GallerySlot[]>(() => createInitialSlots(sourceImages));
+  const [measuredAspects, setMeasuredAspects] = useState<Record<string, number>>({});
+  const [containerWidth, setContainerWidth] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
-  const [filter, setFilter] = useState('All');
+  const packingRef = useRef<HTMLDivElement>(null);
+  const slotsRef = useRef(slots);
+  const recentlyChangedRef = useRef<number[]>([]);
+  const rotationInProgressRef = useRef(false);
 
-  const categories = ['All', ...Array.from(new Set(galleryImages.map((img) => img.category)))];
-  const filteredImages = filter === 'All' ? galleryImages : galleryImages.filter((img) => img.category === filter);
+  useEffect(() => {
+    slotsRef.current = slots;
+  }, [slots]);
 
-  const openLightbox = useCallback((idx: number) => {
-    setLightboxIndex(idx);
+  useEffect(() => {
+    const element = packingRef.current;
+    if (!element) return;
+
+    const updateWidth = () => {
+      const nextWidth = Math.round(element.getBoundingClientRect().width);
+      setContainerWidth((currentWidth) => currentWidth === nextWidth ? currentWidth : nextWidth);
+    };
+
+    updateWidth();
+    const observer = new ResizeObserver(updateWidth);
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const intervalSeconds = Number(timing.galleryImageInterval);
+    if (
+      !isInView ||
+      lightboxOpen ||
+      sourceImages.length <= SLOT_COUNT ||
+      !Number.isFinite(intervalSeconds) ||
+      intervalSeconds <= 0
+    ) {
+      return;
+    }
+
+    const rotateSlots = async () => {
+      if (rotationInProgressRef.current) return;
+      rotationInProgressRef.current = true;
+
+      try {
+        const currentSlots = slotsRef.current;
+        const lockedSlots = new Set(recentlyChangedRef.current);
+        const eligibleSlots = currentSlots
+          .map((slot) => slot.index)
+          .filter((index) => !lockedSlots.has(index));
+        const selectedSlots = shuffled(eligibleSlots).slice(0, Math.min(ROTATION_COUNT, eligibleSlots.length));
+        const visibleSources = new Set(currentSlots.map((slot) => slot.image.src));
+        const replacementSources = new Set<string>();
+        const replacements = selectedSlots.map((slotIndex) => {
+          const candidates = shuffled(sourceImages).filter(
+            (image) => !visibleSources.has(image.src) && !replacementSources.has(image.src)
+          );
+          const replacement = candidates[0];
+          if (replacement) replacementSources.add(replacement.src);
+          return { slotIndex, replacement };
+        }).filter(
+          (entry): entry is { slotIndex: number; replacement: GalleryItemType } => Boolean(entry.replacement)
+        );
+
+        if (replacements.length === 0) return;
+
+        const readyReplacements = await Promise.all(
+          replacements.map(async (entry) => {
+            try {
+              const dimensions = await preloadImage(entry.replacement.src);
+              return {
+                ...entry,
+                aspect: dimensions.width / dimensions.height,
+              };
+            } catch {
+              return null;
+            }
+          })
+        );
+        const ready = readyReplacements.filter(
+          (entry): entry is { slotIndex: number; replacement: GalleryItemType; aspect: number } => Boolean(entry)
+        );
+
+        if (ready.length === 0) return;
+
+        const readyBySlot = new Map(ready.map((entry) => [entry.slotIndex, entry.replacement]));
+        const changedSlots = ready.map((entry) => entry.slotIndex);
+        setSlots((current) => current.map((slot) => {
+          const replacement = readyBySlot.get(slot.index);
+          return replacement ? { ...slot, image: replacement } : slot;
+        }));
+        setMeasuredAspects((current) => {
+          const next = { ...current };
+          ready.forEach((entry) => { next[entry.replacement.src] = entry.aspect; });
+          return next;
+        });
+        recentlyChangedRef.current = changedSlots;
+      } finally {
+        rotationInProgressRef.current = false;
+      }
+    };
+
+    const interval = window.setInterval(() => void rotateSlots(), intervalSeconds * 1000);
+    return () => window.clearInterval(interval);
+  }, [isInView, lightboxOpen, sourceImages]);
+
+  const packedLayout = useMemo(
+    () => packSlots(slots, measuredAspects, containerWidth),
+    [slots, measuredAspects, containerWidth]
+  );
+
+  const handleImageLoad = useCallback((src: string, width: number, height: number) => {
+    if (!width || !height) return;
+    const aspect = width / height;
+    setMeasuredAspects((current) => current[src] === aspect ? current : { ...current, [src]: aspect });
+  }, []);
+
+  const lightboxItems = slots.map((slot) => ({
+    src: slot.image.src,
+    caption: slot.image.caption,
+  }));
+
+  const openLightbox = useCallback((index: number) => {
+    setLightboxIndex(index);
     setLightboxOpen(true);
   }, []);
 
   const nextImage = useCallback(() => {
-    setLightboxIndex((prev) => (prev + 1) % filteredImages.length);
-  }, [filteredImages.length]);
+    setLightboxIndex((current) => (current + 1) % SLOT_COUNT);
+  }, []);
 
   const prevImage = useCallback(() => {
-    setLightboxIndex((prev) => (prev - 1 + filteredImages.length) % filteredImages.length);
-  }, [filteredImages.length]);
-
-  const lightboxItems = filteredImages.map((img) => ({
-    src: img.src,
-    caption: img.caption,
-    category: img.category,
-  }));
+    setLightboxIndex((current) => (current - 1 + SLOT_COUNT) % SLOT_COUNT);
+  }, []);
 
   return (
-    <section id="gallery" className="relative py-16 sm:py-20 overflow-hidden">
-      <Container ref={ref}>
-        <SectionHeader
-          subtitle="Visual Archive"
-          title={<>Engineering <span className="text-gradient">Gallery</span></>}
-          description="A visual journey through prototypes, designs, systems, and the engineering process."
-        />
+    <section id="gallery" className="relative overflow-hidden py-12 sm:py-16">
+      <Container ref={ref} size="full">
+        <div className="mx-auto w-[92%] max-w-[1500px]">
+          <SectionHeader
+            subtitle="Visual Archive"
+            title={<>Engineering <span className="text-gradient">Gallery</span></>}
+            description="A compact visual archive of prototypes, designs, systems, and the engineering process."
+          />
 
-        {/* Filter Tabs */}
-        <motion.div
-          className="flex flex-wrap justify-center gap-3 mb-10"
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setFilter(cat)}
-              className={`px-5 py-2 rounded-full font-body text-sm transition-all ${
-                filter === cat
-                  ? 'bg-white text-void font-semibold'
-                  : 'glass text-void14 hover:bg-white/10'
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </motion.div>
-
-        {/* Masonry Grid */}
-        <motion.div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4" layout>
-          <AnimatePresence mode="popLayout">
-            {filteredImages.map((img, i) => (
-              <GalleryItem key={`${img.id}-${i}`} img={img} index={i} onClick={() => openLightbox(i)} />
+          <div
+            ref={packingRef}
+            className="relative w-full"
+            style={{ height: packedLayout.height || undefined }}
+          >
+            {packedLayout.tiles.map((tile) => (
+              <GalleryItem
+                key={tile.slot.id}
+                tile={tile}
+                onClick={openLightbox}
+                onImageLoad={handleImageLoad}
+              />
             ))}
-          </AnimatePresence>
-        </motion.div>
+          </div>
+        </div>
       </Container>
 
-      {/* Single Image Viewer - only one close button */}
       <ImageViewer
         isOpen={lightboxOpen}
         items={lightboxItems}

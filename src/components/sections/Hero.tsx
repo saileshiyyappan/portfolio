@@ -1,39 +1,42 @@
 'use client';
 
-import { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { Sparkles, ArrowDown } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { Sparkles } from 'lucide-react';
 import { heroData } from '@/data/hero';
+import resume from '@/content/resume.json';
+import profilePic from '@/content/profile_pic.json';
 
 export default function Hero() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start start', 'end start'],
-  });
+  const [profileImageAvailable, setProfileImageAvailable] = useState(true);
+  const [isProfilePreviewOpen, setIsProfilePreviewOpen] = useState(false);
+  const profileImage = typeof (profilePic as { image?: unknown }).image === 'string'
+    ? profilePic.image.trim()
+    : '';
+  const profileImageAlt = typeof (profilePic as { alt?: unknown }).alt === 'string'
+    ? profilePic.alt
+    : 'Sailesh Iyyappan Jr.';
 
-  const y = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.95]);
+  useEffect(() => {
+    if (!isProfilePreviewOpen) return;
 
-  const scrollTo = (href: string) => {
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setIsProfilePreviewOpen(false);
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isProfilePreviewOpen]);
 
   return (
     <section
-      ref={containerRef}
       id="hero"
-      className="relative min-h-[calc(100vh-var(--navbar-height))] flex items-start justify-center pt-[var(--navbar-height)] pb-8 overflow-hidden"
+      className="relative min-h-[calc(100vh-var(--navbar-height))] flex items-start justify-center pt-[var(--navbar-height)] pb-2"
     >
-      <motion.div
-        className="relative z-10 max-w-6xl mx-auto px-6 text-center"
-        style={{ y, opacity, scale }}
-      >
+      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         {/* Availability Badge */}
         <motion.div
-          className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-8"
+          className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-5"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -49,7 +52,7 @@ export default function Hero() {
 
         {/* Profile Image Placeholder */}
         <motion.div
-          className="relative mx-auto mb-8 w-32 h-32 sm:w-40 sm:h-40"
+          className="relative mx-auto mb-5 w-32 h-32 sm:w-40 sm:h-40"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -57,13 +60,61 @@ export default function Hero() {
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-neon-blue/20 to-neon-cyan/10 animate-pulse-slow" />
           <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-neon-blue/30 via-neon-cyan/20 to-neon-teal/10 blur-sm" />
           <div className="relative w-full h-full rounded-full glass border border-white/10 flex items-center justify-center overflow-hidden">
-            <span className="font-heading font-bold text-3xl sm:text-4xl text-white/60">SI</span>
+            {profileImageAvailable && profileImage ? (
+              <img
+                src={profileImage}
+                alt={profileImageAlt}
+                className="w-full h-full object-cover cursor-zoom-in"
+                role="button"
+                tabIndex={0}
+                aria-label="View profile picture"
+                onClick={() => setIsProfilePreviewOpen(true)}
+                onKeyDown={(event) => {
+                  if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    setIsProfilePreviewOpen(true);
+                  }
+                }}
+                onError={() => setProfileImageAvailable(false)}
+              />
+            ) : (
+              <span className="font-heading font-bold text-3xl sm:text-4xl text-white/60">SAILESH IYYAPPAN.JR</span>
+            )}
           </div>
         </motion.div>
 
+        {isProfilePreviewOpen && (
+          <div
+            className="fixed inset-0 z-[300] flex items-center justify-center bg-black/65 p-4"
+            onClick={() => setIsProfilePreviewOpen(false)}
+          >
+            <div
+              className="relative h-[min(85vh,640px)] w-[min(92vw,640px)]"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Profile picture preview"
+            >
+              <button
+                type="button"
+                className="absolute right-2 top-2 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/70 text-3xl leading-none text-white hover:bg-black/90"
+                aria-label="Close profile picture preview"
+                onClick={() => setIsProfilePreviewOpen(false)}
+              >
+                ×
+              </button>
+              <img
+                src={profileImage}
+                alt={profileImageAlt}
+                className="h-full w-full rounded-lg object-contain"
+                onClick={(event) => event.stopPropagation()}
+              />
+            </div>
+          </div>
+        )}
+
         {/* Title Badge */}
         <motion.div
-          className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-6"
+          className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-3"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
@@ -76,7 +127,7 @@ export default function Hero() {
 
         {/* Name */}
         <motion.h1
-          className="font-heading font-bold text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight leading-[0.9] mb-6"
+          className="font-heading font-bold text-5xl sm:text-7xl md:text-8xl lg:text-[7.5rem] text-white tracking-tight leading-[0.9] mb-3"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -88,7 +139,7 @@ export default function Hero() {
 
         {/* Hero Statement */}
         <motion.p
-          className="font-body text-lg sm:text-xl md:text-2xl text-void14 max-w-3xl mx-auto mb-4 leading-relaxed"
+          className="font-body text-lg sm:text-xl md:text-xl lg:text-[1.3rem] text-void14 max-w-5xl mx-auto mb-2 leading-[1.45]"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -98,7 +149,7 @@ export default function Hero() {
 
         {/* Supporting Statement */}
         <motion.p
-          className="font-body text-sm text-void12 mb-12 max-w-2xl mx-auto leading-relaxed"
+          className="font-body text-sm md:text-[12px] text-void12 mb-2 max-w-4xl mx-auto leading-[1.45]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
@@ -108,13 +159,13 @@ export default function Hero() {
 
         {/* CTAs - Belong ONLY to hero section, scroll away naturally */}
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
         >
-          <motion.button
-            onClick={() => scrollTo(heroData.ctaPrimary.href)}
+          <motion.a
+            href={heroData.ctaPrimary.href}
             className="group relative px-8 py-4 bg-white text-void font-heading font-semibold rounded-full overflow-hidden"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
@@ -129,33 +180,20 @@ export default function Hero() {
             <span className="absolute inset-0 z-10 flex items-center justify-center text-white font-heading font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
               {heroData.ctaPrimary.label}
             </span>
-          </motion.button>
+          </motion.a>
 
-          <motion.button
-            onClick={() => scrollTo(heroData.ctaSecondary.href)}
+          <motion.a
+            href={resume.file}
+            download={resume.filename}
             className="px-8 py-4 glass rounded-full font-heading font-medium text-white hover:bg-white/10 transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
-            {heroData.ctaSecondary.label}
-          </motion.button>
+            {resume.title}
+          </motion.a>
         </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          className="absolute bottom-12 left-1/2 -translate-x-1/2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
-            <ArrowDown size={20} className="text-void12" />
-          </motion.div>
-        </motion.div>
-      </motion.div>
+      </div>
 
       {/* Decorative elements */}
       <div className="absolute top-1/3 left-[10%] w-32 h-32 border border-white/5 rounded-full" />
